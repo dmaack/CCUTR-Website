@@ -1,0 +1,29 @@
+{
+  "name": "ls",
+  "version": "1.0.0",
+  "description": "Corner Canyon Utlra Trail Run website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmaack/ccutr-website.git"
+  },
+  "keywords": [
+    "Corner",
+    "Canyon",
+    "Ultra",
+    "Trail",
+    "Run"
+  ],
+  "author": "Dominique Maack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmaack/ccutr-website/issues"
+  },
+  "homepage": "https://github.com/dmaack/ccutr-website#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
