@@ -39,6 +39,21 @@ img {
 }
 
 // Main Nav
+nav {
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            color: $light-color;
+        }
+    }
+}
 
 
 // Header
@@ -46,7 +61,8 @@ img {
     &-home {
         background: $bg-image no-repeat center right / cover;
         height: 40vh;
-        // color: #fff;
+        color: #fff;
+        text-align: center;
     }
 
     &-inner {

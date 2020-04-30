@@ -31,6 +31,20 @@ img {
   color: #fff;
   text-transform: uppercase; }
 
+nav {
+  background-color: green;
+  display: flex;
+  justify-content: space-between; }
+  nav ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    nav ul a {
+      color: #f4f4f4; }
+
 #header-home {
   background: url("../img/header.jpg") no-repeat center right/cover;
-  height: 40vh; }
+  height: 40vh;
+  color: #fff;
+  text-align: center; }
