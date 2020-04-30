@@ -1,4 +1,5 @@
 @import 'config';
+@import 'utilities';
 
 // General Styles
 
@@ -27,4 +28,28 @@ h2, h3, h4 {
 
 img {
     width: 100%; // will take up 100% of their container
+}
+
+// Logo
+#logo {
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+// Main Nav
+
+
+// Header
+#header {
+    &-home {
+        background: $bg-image no-repeat center right / cover;
+        height: 40vh;
+        // color: #fff;
+    }
+
+    &-inner {
+
+    }
 }
