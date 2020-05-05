@@ -4,6 +4,22 @@
   margin: auto;
   overflow: hidden; }
 
+.btn-main, .btn-light {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  color: #333;
+  background-color: #28A228; }
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4;
+  font-size: 1.1rem; }
+
 * {
   margin: 0;
   padding: 0; }

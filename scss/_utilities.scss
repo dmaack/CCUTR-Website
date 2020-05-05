@@ -19,4 +19,10 @@
         color: #333;
         background-color: $main-color;
     }
+    &-light {
+        @extend %btn-shared;
+        color: #333;
+        background-color: $light-color;
+        font-size: 1.1rem;
+    }
 }
