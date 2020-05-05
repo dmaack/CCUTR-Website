@@ -1,0 +1,28 @@
+.container {
+    max-width: $website-width;
+    padding: 1.5rem;
+    margin: auto;
+    overflow: hidden; // so nothing flow out of container
+}
+
+%btn-shared {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    &-main {
+        @extend %btn-shared;
+        color: #333;
+        background-color: $main-color;
+    }
+    &-light {
+        @extend %btn-shared;
+        color: #333;
+        background-color: $light-color;
+        font-size: 1.1rem;
+    }
+}

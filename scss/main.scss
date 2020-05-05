@@ -39,17 +39,36 @@ img {
 }
 
 // Main Nav
+nav {
+    //background-color: green;
+    //border-bottom: 3px solid #A7C957;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            //color: $light-color;
+            color: #342E37;
+        }
+    }
+}
 
 
 // Header
 #header {
     &-home {
         background: $bg-image no-repeat center right / cover;
-        height: 40vh;
-        // color: #fff;
+        height: 50vh;
+        color: #fff;
+        text-align: center;
     }
 
-    &-inner {
-
+    h1 {
+        margin-top: 2rem;
     }
 }
