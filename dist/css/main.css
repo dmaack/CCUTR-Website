@@ -96,21 +96,20 @@ img {
     display: flex;
     justify-content: space-between; }
     #main-nav ul li {
+      display: inline-block;
       position: relative;
       padding: 1rem 1.5rem;
       font-size: 1.2rem;
       text-transform: uppercase; }
       #main-nav ul li ul {
-        display: none;
-        position: absolute;
-        z-index: 1; }
+        display: none; }
       #main-nav ul li:hover {
         cursor: pointer; }
       #main-nav ul li:hover ul {
         display: block;
         position: absolute;
         left: 0;
-        width: 150px;
+        width: 125px;
         margin-top: 1rem; }
         #main-nav ul li:hover ul li {
           display: block;
@@ -121,6 +120,7 @@ img {
             background: #e0e0e0;
             color: inherit; }
     #main-nav ul a {
+      display: block;
       font-size: 1.2rem;
       text-decoration: none;
       color: #fff;
@@ -143,7 +143,8 @@ img {
   #header-home .header-content {
     text-align: center;
     padding-top: 5%;
-    position: relative; }
+    position: relative;
+    z-index: 0; }
     #header-home .header-content h1 {
       font-size: 4rem;
       margin-bottom: 1.5rem; }

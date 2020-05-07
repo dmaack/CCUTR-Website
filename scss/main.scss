@@ -42,10 +42,46 @@ img {
 }
 
 
+// #main-nav ul li {
+//     color: #fff;
+//     display: inline-block;
+//     padding: 1rem;
+//     position: relative;
+// }
+
+// #main-nav ul li a {
+//     color: #fff;
+//     text-decoration: none;
+// }
+
+// /* Hide nested ul by default */
+// #main-nav ul li ul {
+//     display: none;
+// }
+
+// #main-nav ul li:hover {
+//     cursor: pointer;
+//     background-color: #333;
+// }
+
+// #main-nav ul li:hover ul {
+//     display: block;
+//     position: absolute;
+//     left: 0;
+//     width: 200px;
+//     margin-top: 1rem;
+// }
+
+// #main-nav ul li:hover ul li {
+//     display: block;
+//     background: coral;
+// }
+
+
+
 // Main Nav
 #main-nav {
     //border-bottom: 3px solid $main-color;
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,7 +93,7 @@ img {
         justify-content: space-between;
 
         li {
-            //display: inline-block;
+            display: inline-block;
             position: relative; // relative to the li postition
             padding: 1rem 1.5rem;
             font-size: 1.2rem;
@@ -66,28 +102,32 @@ img {
             // Hide nested ul by default
             ul {
                 display: none;
-                position: absolute;
-                z-index: 1;
+                // position: absolute;
+                // z-index: 1;
             }
-
+    
+            // ul li:hover
             &:hover {
                 cursor: pointer;
-                //background: #e0e0e0;
+                //background: red;
             }
 
             &:hover ul {
                 display: block;
                 position: absolute;
+                // right: 0;
                 left: 0;
-                width: 150px;
+                width: 125px;
                 margin-top: 1rem;
             
                 li {
                     display: block;
                     background: #e7e7e7;
+                    
 
                     a {
                         color: #333;
+                        
                     }
                     
                     &:hover {
@@ -101,12 +141,10 @@ img {
         }
 
         a {
-            
+            display: block;
             font-size: 1.2rem;
             text-decoration: none;
-            //color: #342E37;
             color: #fff;
-            //font-weight: bold;
             text-transform: uppercase;
             border-bottom: 3px transparent solid;
             padding-bottom: 0.5rem;
@@ -162,6 +200,7 @@ img {
             // margin-top: 4rem;
             padding-top: 5%;
             position: relative;
+            z-index: 0;
 
             h1 {
                 font-size: 4rem;
