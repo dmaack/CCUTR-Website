@@ -25,7 +25,7 @@
   padding: 0; }
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   background: #fff; }
 
@@ -75,13 +75,27 @@ nav {
   background: url("../img/header.jpg") no-repeat center right/cover;
   height: 50vh;
   color: #fff;
-  text-align: center; }
+  position: relative; }
+  #header-home * {
+    z-index: 10; }
   #header-home .header-content {
-    margin-top: 4rem; }
+    text-align: center;
+    padding-top: 5%;
+    position: relative; }
     #header-home .header-content h1 {
-      font-size: 3.5rem; }
+      font-size: 4rem;
+      margin-bottom: 1.5rem; }
     #header-home .header-content p {
       font-size: 1.5rem;
-      margin-bottom: 2rem; }
+      font-weight: bold; }
     #header-home .header-content a {
-      color: #fff; }
+      color: #fff;
+      font-size: 1.2rem; }
+  #header-home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); }
