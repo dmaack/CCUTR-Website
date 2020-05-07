@@ -9,7 +9,9 @@
 }
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    //font-family: 'Roboto', sans-serif;
+    //font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Dosis', sans-serif;
     line-height: 1.6;
     background: #fff;
 }
@@ -40,20 +42,37 @@ img {
 
 // Main Nav
 nav {
-    //background-color: green;
-    //border-bottom: 3px solid #A7C957;
-    padding-bottom: 1rem;
+    //border-bottom: 3px solid $main-color;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 1rem;
 
     ul {
         width: 40%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        li {
+            padding: 1rem 1.5rem;
+        }
+
         a {
-            //color: $light-color;
+            font-size: 1.1rem;
+            text-decoration: none;
             color: #342E37;
+            text-transform: uppercase;
+            border-bottom: 3px transparent solid;
+            padding-bottom: 0.5rem;
+            transition: border-color .5s;
+
+            &:hover {
+                border-color: $medium-color;
+            }
+    
+            &.current {
+                border-color: $main-color;
+            }
         }
     }
 }
@@ -66,9 +85,25 @@ nav {
         height: 50vh;
         color: #fff;
         text-align: center;
+
+        .header-content {
+            margin-top: 4rem;
+
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            a {
+                color: #fff;
+            }
+
+        }
     }
 
-    h1 {
-        margin-top: 2rem;
-    }
+    
 }
