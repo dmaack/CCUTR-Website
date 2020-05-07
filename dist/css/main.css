@@ -88,21 +88,22 @@ img {
 
 #main-nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding-bottom: 1rem; }
   #main-nav ul {
     width: 40%;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    justify-content: space-between; }
     #main-nav ul li {
-      display: inline-block;
       position: relative;
       padding: 1rem 1.5rem;
       font-size: 1.2rem;
       text-transform: uppercase; }
       #main-nav ul li ul {
-        display: none; }
+        display: none;
+        position: absolute;
+        z-index: 1; }
       #main-nav ul li:hover {
         cursor: pointer; }
       #main-nav ul li:hover ul {
