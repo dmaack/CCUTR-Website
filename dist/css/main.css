@@ -13,12 +13,53 @@
 
 .btn-main {
   color: #333;
-  background-color: #28A228; }
+  background-color: #157F1F; }
 
 .btn-light {
   color: #333;
-  background-color: #f4f4f4;
+  background-color: #FAFFFD;
   font-size: 1.1rem; }
+
+.text-center {
+  text-align: center; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-3 {
+  padding: 4rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-3 {
+  margin: 4rem 0; }
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: bold; }
+
+.bottom-line {
+  height: 4px;
+  width: 4rem;
+  background: #157F1F;
+  display: block;
+  margin: 0 auto 1rem auto; }
 
 * {
   margin: 0;
@@ -34,9 +75,6 @@ a {
 
 ul {
   list-style: none; }
-
-h2, h3, h4 {
-  text-transform: uppercase; }
 
 img {
   width: 100%; }
@@ -59,17 +97,17 @@ nav {
     nav ul li {
       padding: 1rem 1.5rem; }
     nav ul a {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       text-decoration: none;
-      color: #342E37;
+      color: #fff;
       text-transform: uppercase;
       border-bottom: 3px transparent solid;
       padding-bottom: 0.5rem;
       transition: border-color .5s; }
       nav ul a:hover {
-        border-color: #ccc; }
+        border-color: #F5FBEF; }
       nav ul a.current {
-        border-color: #28A228; }
+        border-color: #157F1F; }
 
 #header-home {
   background: url("../img/header.jpg") no-repeat center right/cover;
@@ -88,9 +126,13 @@ nav {
     #header-home .header-content p {
       font-size: 1.5rem;
       font-weight: bold; }
-    #header-home .header-content a {
+    #header-home .header-content .btn-main {
+      margin-top: 1%;
       color: #fff;
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      border: none; }
+      #header-home .header-content .btn-main:hover {
+        background: #136A1A; }
   #header-home::before {
     content: '';
     position: absolute;
@@ -98,4 +140,4 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2); }
+    background: rgba(0, 0, 0, 0.15); }
