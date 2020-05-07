@@ -1,10 +1,11 @@
 .container {
     max-width: $website-width;
-    padding: 1.5rem;
+    padding: 0 1.5rem;
     margin: auto;
-    overflow: hidden; // so nothing flow out of container
+    overflow: hidden;
 }
 
+// Buttons
 %btn-shared {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -25,6 +26,11 @@
         background-color: $light-color;
         font-size: 1.1rem;
     }
+}
+
+.lead {
+    font-size: 1.3rem;
+    //margin-bottom: 1rem;
 }
 
 
