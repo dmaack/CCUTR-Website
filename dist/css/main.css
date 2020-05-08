@@ -175,11 +175,28 @@ img {
   grid-gap: 3rem;
   padding: 1rem; }
   #home-b .about h2 {
-    margin-bottom: 2rem; }
+    margin-bottom: 4rem;
+    font-size: 2.3rem; }
   #home-b .about p {
-    margin-bottom: 2rem; }
+    margin-bottom: 2.5rem; }
   #home-b .about a {
     color: #fff; }
+
+#home-c .sponsor {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 3rem; }
+  #home-c .sponsor div:nth-child(11) {
+    grid-column: 2 / span 1; }
+
+#home-c .sponsor-logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 1rem; }
+  #home-c .sponsor-logo img {
+    object-fit: fill; }
 
 #main-footer {
   background: #342E37;

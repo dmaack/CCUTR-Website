@@ -189,15 +189,45 @@ img {
             padding: 1rem;
 
             h2 {
-                margin-bottom: 2rem;
+                //border: 1px solid black;
+                margin-bottom: 4rem;
+                font-size: 2.3rem;
             }
 
             p {
-                margin-bottom: 2rem;
+                margin-bottom: 2.5rem;
             }
 
             a {
                 color: #fff;
+            }
+        }
+    }
+
+    &-c {
+        .sponsor {
+            //border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 3rem;
+            // padding-left: 2rem;
+
+            div:nth-child(11) {
+                grid-column: 2 / span 1;
+            }
+        }
+
+        .sponsor-logo {
+            //border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            margin-top: 2.5rem;
+            padding-left: 2.5rem;
+            padding-right: 1rem;
+            
+            img {
+                //border: 1px solid black;
+                object-fit: fill;
             }
         }
     }
