@@ -17,7 +17,7 @@
 
 .btn-light {
   color: #333;
-  background-color: #FAFFFD;
+  background-color: #F5FBEF;
   font-size: 1.1rem; }
 
 .lead {
@@ -162,3 +162,55 @@ img {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2); }
+
+#home-a .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 1rem; }
+
+#home-b .about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  padding: 1rem; }
+  #home-b .about h2 {
+    margin-bottom: 2rem; }
+  #home-b .about p {
+    margin-bottom: 2rem; }
+  #home-b .about a {
+    color: #fff; }
+
+#main-footer {
+  background: #342E37;
+  color: #fff;
+  padding: 2rem 0; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  #main-footer .address {
+    text-align: center; }
+  #main-footer .footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 2; }
+    #main-footer .footer-links a {
+      color: #fff; }
+  #main-footer .social .fab {
+    margin-right: 1rem;
+    border: 2px #fff solid;
+    border-radius: 20%;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: .5rem;
+    color: #fff; }
+    #main-footer .social .fab:hover {
+      background: #157F1F; }
+  #main-footer .copyright {
+    padding-top: 2rem;
+    font-size: 1rem;
+    text-align: center; }
