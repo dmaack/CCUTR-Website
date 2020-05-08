@@ -3,9 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8ed908e81d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <title>Contact Us | Corner Canyon Ultra Trail Run</title>
 </head>
 <body>
+    <header id='header-inner'> <!-- id's for the single elements -->
+        <!-- <div class="container">-->
+            <nav id="main-nav" class="top nav-bg">
+                <img src="img/logo.png" alt="Corner Canyon Trail Run Logo" id="logo"><a href="index.html"></a></img>
+                <ul>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href=""> Races <i class="fas fa-angle-down"></i>  </a>
+                        <ul class='sub-menu'>
+                            <li><a href="#" class="race-link">50k</a></li>
+                            <li><a href="#" class="race-link">25k</a></li>
+                            <li><a href="#" class="race-link">5k</a></li>
+                        </ul>
+                            
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <!-- </div> -->
+    </header>
+
+
+    <!-- Section A: Contact Form -->
+    <section id="contact-a" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="bottom-line"></div>
+            <p class="lead">Here is how you can reach us</p>
+
+            <form method='POST' data-netlify='true' data-netlify-recaptcha='true'>
+                <div class="text-fields">
+                    <input type="text" class="text-input name-input" name ='name' placeholder="Name">
+                    <input type="email" class="text-input email-input" name ='email' placeholder="Email Address">
+                    <input type="text" class="text-input subject-input" name ='subject' placeholder="Subject">
+                    <input type="text" class="text-input phone-input" name ='phone' placeholder="Phone Number">
+                    <textarea class="text-input message-input" name ='message' placeholder="Enter a message"></textarea>
+                    <div class="my-2">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                </div>
+                <button type='submit' class="btn-dark">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section B: Contact Info -->
+    <!-- <section id="contact-b" class="py-3 bg-dark">
+        <div class="container">
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <h3>Email</h3>
+                    <p>dominiquemaack@gmail.com</p>
+                </div>
+                <div>
+                    <i class="fab fa-github fa-2x"></i>
+                    <h3>GitHub</h3>
+                    <a href='https://github.com/dmaack' target='_blank'>See My Code</a>
+                </div>
+                <div>
+                    <i class="fas fa-address-card fa-2x"></i>
+                    <h3>Location</h3>
+                    <p>Salt Lake City, Utah</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+     <footer id="main-footer">
+        <div class="footer-content container">
+            <div class="address">
+                <p class="strong">Andy Ballard Arena</p>
+                <p>
+                    1600 E Highland Drive <br>
+                    Draper, UT 84020
+                </p>
+            </div>
     
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="#">Become a Volunteer</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+                    
+                    
+            <div class="social">
+                <a href='https://www.facebook.com/CornerCanyonUltraTrailRun/' target='_blank'><i class="fab fa-facebook"></i></a>
+                <a href='https://www.instagram.com/corner_canyon_ultra_trail_race/?hl=en' target='_blank'><i class="fab fa-instagram"></i></a>
+            </div>
+                    
+            </div>
+
+            <div class="copyright">
+                <p> Copyright &copy; 2020. All Rights Reserved</p>
+            </div>
+    </footer>
 </body>
 </html>

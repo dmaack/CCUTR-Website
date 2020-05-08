@@ -180,6 +180,13 @@ img {
             background: rgba(0,0,0,0.2);
         }
     }
+
+    // Header Inner
+    &-inner {
+        background: $bg-image no-repeat 20% 30% / cover;
+        height: 6rem;
+        border-bottom: 3px solid $main-color;
+    }
 }
 
 
@@ -292,6 +299,83 @@ img {
             padding-left: 2.5rem;
             padding-right: 1rem;
 
+        }
+    }
+}
+
+
+// Contact Page
+#contact {
+    &-a {
+        .text-fields {
+            display: grid;
+            grid-template-areas: 
+            'name email'
+            'subject phone'
+            'message message';
+            grid-gap: 1.2rem;
+            margin-bottom: 1.2rem;
+
+            // grid areas --connecting the grid areas
+            .name-input {
+                grid-area: name;
+            }
+            .email-input {
+                grid-area: email;
+            }
+            .subject-input {
+                grid-area: subject;
+            }
+            .phone-input {
+                grid-area: phone;
+            }
+            .message-input {
+                grid-area: message;
+                height: 100px;
+            }
+
+            .text-input {
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        button[type='submit'] {
+            width: 50%;
+            padding: 1rem;
+            background: $main-color;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            &:hover {
+                background:#136A1A;
+            }
+        }
+
+        p {
+            margin-bottom: 1.4rem;
+        }
+    }
+
+    &-b {
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+            color: #fff;
+
+            a {
+                color: #fff
+            }
+
+        }
+    }
+
+    &-c {
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: #fff;
+            padding: 4rem;
         }
     }
 }
