@@ -4,7 +4,7 @@
   margin: auto;
   overflow: hidden; }
 
-.btn-main, .btn-light {
+.btn-main, .btn-medium, .btn-light {
   display: inline-block;
   padding: 0.8rem 2rem;
   transition: all 0.5s;
@@ -15,9 +15,14 @@
   color: #333;
   background-color: #157F1F; }
 
-.btn-light {
+.btn-medium {
   color: #333;
   background-color: #F5FBEF;
+  font-size: 1.1rem; }
+
+.btn-light {
+  color: #333;
+  background-color: #fff;
   font-size: 1.1rem; }
 
 .lead {
@@ -111,11 +116,12 @@ img {
       width: 125px;
       margin-top: 1rem; }
       #main-nav li:hover ul li {
-        background: #fff; }
+        background: #F5FBEF; }
         #main-nav li:hover ul li a {
-          color: #333; }
+          color: #333;
+          border-bottom: none; }
         #main-nav li:hover ul li:hover {
-          background: #F5FBEF;
+          background: #e0e0e0;
           color: inherit; }
   #main-nav a {
     font-size: 1.2rem;
@@ -169,18 +175,44 @@ img {
   grid-gap: 2rem;
   padding: 1rem; }
 
-#home-b .about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
-  padding: 1rem; }
-  #home-b .about h2 {
-    margin-bottom: 4rem;
-    font-size: 2.3rem; }
-  #home-b .about p {
-    margin-bottom: 2.5rem; }
-  #home-b .about a {
-    color: #fff; }
+#home-a .item-image {
+  position: relative;
+  text-align: center;
+  color: #fff; }
+  #home-a .item-image .centered-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem; }
+  #home-a .item-image .centered-btn {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  #home-a .item-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background: rgba(0, 0, 0, 0.2); }
+
+#home-b {
+  background: #F5FBEF; }
+  #home-b .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    padding: 1rem; }
+    #home-b .about h2 {
+      margin-bottom: 4rem;
+      font-size: 2.3rem; }
+    #home-b .about p {
+      margin-bottom: 2.5rem; }
+    #home-b .about a {
+      color: #fff; }
 
 #home-c .sponsor {
   display: grid;
@@ -214,20 +246,21 @@ img {
     text-align: center;
     line-height: 2; }
     #main-footer .footer-links a {
-      color: #fff; }
+      color: #fff;
+      border-bottom: 3px transparent solid;
+      transition: border-color .5s; }
+      #main-footer .footer-links a:hover {
+        border-color: #157F1F; }
   #main-footer .social .fab {
     margin-right: 1rem;
     border: 2px #fff solid;
-    border-radius: 20%;
+    border-radius: 50%;
     height: 20px;
     width: 20px;
     line-height: 20px;
     text-align: center;
-    padding: .5rem;
-    color: #fff; }
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.5rem; }
     #main-footer .social .fab:hover {
       background: #157F1F; }
-  #main-footer .copyright {
-    padding-top: 2rem;
-    font-size: 1rem;
-    text-align: center; }
