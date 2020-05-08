@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+    <!-- <meta name='description' content=''> -->
+    <meta name='keywords' content='corner canyon, trail running, utah, trail race'>
     <script src="https://kit.fontawesome.com/8ed908e81d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"> -->
@@ -16,12 +18,12 @@
 
     <!-- Header -->
     <header id='header-home'> <!-- id's for the single elements -->
-        <div class="container"> <!-- classes for utilities -->
-            <nav id="main-nav">
-                <img src="img/logo.png" alt="Corner Canyon Trail Run Logo" id="logo"></img>
+        <!-- <div class="container">-->
+            <nav id="main-nav" class="top nav-bg">
+                <img src="img/logo.png" alt="Corner Canyon Trail Run Logo" id="logo"><a href="index.html"></a></img>
                 <ul>
                     <li><a href="index.html" class="current">Home</a></li>
-                    <li>Races <i class="fas fa-angle-down"></i>  
+                    <li><a href=""> Races <i class="fas fa-angle-down"></i>  </a>
                         <ul class='sub-menu'>
                             <li><a href="#" class="race-link">50k</a></li>
                             <li><a href="#" class="race-link">25k</a></li>
@@ -39,7 +41,7 @@
                 
                 <a href="races.html" class="btn-main">Register</a> <!-- Link to Races or Ultra Signup? -->
             </div>
-        </div>
+        <!-- </div> -->
     </header>
 
     <!-- Race Section-->
@@ -163,11 +165,11 @@
         <footer id="main-footer">
             <div class="footer-content container">
                 <div class="address">
+                    <p class="strong">Andy Ballard Arena</p>
                     <p>
                         <!-- Start Line: <br> -->
-                        Andy Ballard Equestrian Center <br>
-                        1600 E Highland Drive <br> <br>
-                        Copyright &copy; 2020. All Rights Reserved
+                        1600 E Highland Drive <br>
+                        Draper, UT 84020
                     </p>
                 </div>
 
@@ -185,7 +187,33 @@
                 
             </div>
             <!-- <p class="copyright">Copyright &copy; 2020. All Rights Reserved</p> -->
-
+            <div class="copyright">
+                <p> Copyright &copy; 2020. All Rights Reserved</p>
+            </div>
         </footer>
+
+
+        <script>
+            const navbar = document.getElementById('main-nav');
+            let scrolled = false;
+
+            window.onscroll = function() {
+                if(window.pageYOffset > 100 ) {
+                    navbar.classList.remove('top');
+                    navbar.style.zIndex = '15';
+                    //navbar.style.color = '#333';
+                    if(!scrolled) {
+                        navbar.style.transform = 'translateY(-70px)';
+                    }
+                    setTimeout(() => {
+                        navbar.style.transform = 'translateY(0)';
+                        scrolled = true;
+                    }, 200)
+                } else {
+                    navbar.classList.add('top');
+                    scrolled = false;
+                }
+            }
+        </script>
 </body>
 </html>
