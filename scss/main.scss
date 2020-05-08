@@ -183,9 +183,24 @@ img {
 
     // Header Inner
     &-inner {
-        background: $bg-image no-repeat 20% 30% / cover;
+        //background: $dark-color;
+        background: $bg-image no-repeat 20% 10% / cover;
         height: 6rem;
         border-bottom: 3px solid $main-color;
+        position: relative; // overlay
+        * {
+            z-index: 10;
+        }
+
+        &::before { // overlay
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.2);
+        }
     }
 }
 
@@ -307,6 +322,7 @@ img {
 // Contact Page
 #contact {
     &-a {
+        margin-bottom: 13rem;
         .text-fields {
             display: grid;
             grid-template-areas: 
