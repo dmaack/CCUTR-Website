@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+    <!-- <meta name='description' content=''> -->
+    <meta name='keywords' content='corner canyon, trail running, utah, trail race'>
     <script src="https://kit.fontawesome.com/8ed908e81d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"> -->
@@ -16,12 +18,12 @@
 
     <!-- Header -->
     <header id='header-home'> <!-- id's for the single elements -->
-        <div class="container"> <!-- classes for utilities -->
-            <nav id="main-nav">
-                <img src="img/logo.png" alt="Corner Canyon Trail Run Logo" id="logo"></img>
+        <!-- <div class="container">-->
+            <nav id="main-nav" class="top nav-bg">
+                <img src="img/logo.png" alt="Corner Canyon Trail Run Logo" id="logo"><a href="index.html"></a></img>
                 <ul>
                     <li><a href="index.html" class="current">Home</a></li>
-                    <li>Races <i class="fas fa-angle-down"></i>  
+                    <li><a href=""> Races <i class="fas fa-angle-down"></i>  </a>
                         <ul class='sub-menu'>
                             <li><a href="#" class="race-link">50k</a></li>
                             <li><a href="#" class="race-link">25k</a></li>
@@ -39,7 +41,7 @@
                 
                 <a href="races.html" class="btn-main">Register</a> <!-- Link to Races or Ultra Signup? -->
             </div>
-        </div>
+        <!-- </div> -->
     </header>
 
     <!-- Race Section-->
@@ -52,34 +54,40 @@
                     <div class="item">
                         <div class="item-image">
                             <img src="./img/rattlerTrail.jpg" alt="">
+                            <h2 class="centered-text">50k</h2>
+                            <a href="#" class="centered-btn btn-light">More Info</a>
                         </div>
                         <div class="item-text">
-                            <div class="item-text-wrap">
+                            <!-- <div class="item-text-wrap">
                                 <h2 class="item-text-title">50K</h2>
                                 <a href="#" class="btn-light">More Info</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="item">
                         <div class="item-image">
                             <img src="./img/greentrees.jpg" alt="">
+                            <h2 class="centered-text">25K</h2>
+                            <a href="#" class="centered-btn btn-light">More Info</a>
                         </div>
                         <div class="item-text">
-                            <div class="item-text-wrap">
+                            <!-- <div class="item-text-wrap">
                                 <h2 class="item-text-title">25K</h2>
                                 <a href="#" class="btn-light">More Info</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="item">
                         <div class="item-image">
                             <img src="./img/falltrees.jpg" alt="">
+                            <h2 class="centered-text">5K</h2>
+                            <a href="#" class="centered-btn btn-light">More Info</a>
                         </div>
                         <div class="item-text">
-                            <div class="item-text-wrap">
+                            <!-- <div class="item-text-wrap">
                                 <h2 class="item-text-title">5K</h2>
                                 <a href="#" class="btn-light">More Info</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -95,7 +103,7 @@
                     <div class="about-text">
                         <h2 class="section-title">About Us</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae cupiditate soluta eum nostrum tenetur voluptatibus dolorum voluptate ad alias nam vitae maiores neque inventore, odit laboriosam, laudantium, itaque sit!</p>
-                        <a href="#" class="btn-main">Learn More</a>
+                        <a href="about.html" class="btn-main">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -157,27 +165,54 @@
         <footer id="main-footer">
             <div class="footer-content container">
                 <div class="address">
+                    <p class="strong">Andy Ballard Arena</p>
                     <p>
-                        Andy Ballard Equestrian Center <br>
-                        1600 E Highland Drive
+                        1600 E Highland Drive <br>
+                        Draper, UT 84020
                     </p>
                 </div>
 
                 <div class="footer-links">
-                    <a href="#">About Us</a>
+                    <a href="about.html">About Us</a>
                     <a href="#">Become a Volunteer</a>
-                    <a href="#">Contact Us</a>
+                    <a href="contact.html">Contact Us</a>
                 </div>
                 
                 
                 <div class="social">
-                    <a href='https://github.com/dmaack' target='_blank'><i class="fab fa-facebook"></i></a>
-                    <a href='https://www.linkedin.com/in/dominique-maack/' target='_blank'><i class="fab fa-instagram"></i></a>
+                    <a href='https://www.facebook.com/CornerCanyonUltraTrailRun/' target='_blank'><i class="fab fa-facebook"></i></a>
+                    <a href='https://www.instagram.com/corner_canyon_ultra_trail_race/?hl=en' target='_blank'><i class="fab fa-instagram"></i></a>
                 </div>
                 
             </div>
-            <p class="copyright">Copyright &copy; 2020. All Rights Reserved</p>
-
+            <!-- <p class="copyright">Copyright &copy; 2020. All Rights Reserved</p> -->
+            <div class="copyright">
+                <p> Copyright &copy; 2020. All Rights Reserved</p>
+            </div>
         </footer>
+
+
+        <script>
+            const navbar = document.getElementById('main-nav');
+            let scrolled = false;
+
+            window.onscroll = function() {
+                if(window.pageYOffset > 100 ) {
+                    navbar.classList.remove('top');
+                    navbar.style.zIndex = '15';
+                    //navbar.style.color = '#333';
+                    if(!scrolled) {
+                        navbar.style.transform = 'translateY(-70px)';
+                    }
+                    setTimeout(() => {
+                        navbar.style.transform = 'translateY(0)';
+                        scrolled = true;
+                    }, 200)
+                } else {
+                    navbar.classList.add('top');
+                    scrolled = false;
+                }
+            }
+        </script>
 </body>
 </html>
