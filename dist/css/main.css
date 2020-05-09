@@ -220,7 +220,8 @@ img {
     transform: translate(-50%, -50%);
     font-weight: bold; }
     #home-a .item-image .centered-btn:hover {
-      background: #d0cbcb; }
+      background: #342E37;
+      color: #fff; }
   #home-a .item-image::before {
     content: '';
     position: absolute;
@@ -231,7 +232,7 @@ img {
     background: rgba(0, 0, 0, 0.2); }
 
 #home-b {
-  background: #F5FBEF; }
+  background: #d9ecc5; }
   #home-b .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
