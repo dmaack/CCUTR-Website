@@ -165,6 +165,16 @@ img {
                     background:#136A1A;
                 }
             }
+
+            .race-header {
+                font-size: 6rem;
+            }
+
+            .race-date {
+                padding: 1.5rem 2rem;
+                bottom: 0;
+                position: absolute;
+            }
         }
 
         &::before { // overlay
@@ -323,6 +333,67 @@ img {
     }
 }
 
+
+// Race Pages
+#races {
+    &-a {
+        //border: 1px solid black;
+    }
+    &-b {
+        display: flex;
+        margin: 0 2rem;
+        //border: 1px solid black;
+
+    #navbar-example3 {
+        font-size: 1.5rem;
+        width: 35%;
+        // border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+
+        //button
+        .navbar-brand {
+            text-align: center;
+            color: #fff;
+            width: 250px;
+            margin-left: 1.5rem;
+            // border-right: none;
+
+            &:hover {
+                background:#136A1A;
+            }
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000;
+            //border-right: 3px solid $main-color;
+            padding-right: 2rem;
+            margin-left: 1.5rem;
+        }
+    
+        .nav {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            line-height: 2.5;
+            // border: 1px solid blue;
+
+            .nav-link {
+                
+                
+
+                &:hover {
+                    margin-right: 5rem;
+                    border-right: 3px solid $main-color;
+
+                }
+            }
+        }
+    }    
+            
+}
+}
 
 // Contact Page
 #contact {
