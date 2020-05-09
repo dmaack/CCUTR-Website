@@ -48,7 +48,6 @@ img {
 
     //navbar addition
     background: $dark-color;
-    //opacity: .5;
     transition: .5s ease-in;
     position: fixed;
     width: 100%;
@@ -56,6 +55,7 @@ img {
     //navbar addition
     &.top {
         background: transparent;
+        z-index: 20;
     }
 
     ul {
@@ -64,7 +64,7 @@ img {
     }
 
     li {
-        position: relative; // relative to the li postition
+        position: relative;
         padding: 1rem 1.5rem;
         font-size: 1.2rem;
         text-transform: uppercase;
@@ -85,9 +85,10 @@ img {
             left: 0;
             width: 125px;
             margin-top: 1rem;
+            
         
             li {
-                background: $medium-color;
+                background: #fff;
 
                 a {
                     color: #333; 
@@ -96,6 +97,7 @@ img {
                 
                 &:hover {
                     background: #e0e0e0;
+                    
                     //background: #fff;
                     color: inherit; 
                 } 
@@ -141,10 +143,7 @@ img {
             align-items: center;
             height: 100%;
             justify-content: center;
-            // text-align: center;
-            // padding-top: 5%;
-            // position: relative;
-             z-index: 0;
+            z-index: 0;
 
             h1 {
                 font-size: 4rem;
@@ -162,11 +161,19 @@ img {
                 color: #fff;
                 font-size: 1.2rem;
                 border: none;
-                //transition: all .5s ease-out;
                 &:hover {
                     background:#136A1A;
-                    //color: $dark-color;
                 }
+            }
+
+            .race-header {
+                font-size: 6rem;
+            }
+
+            .race-date {
+                padding: 1.5rem 2rem;
+                bottom: 0;
+                position: absolute;
             }
         }
 
@@ -212,7 +219,7 @@ img {
     &-a {
         //background: $medium-color;
         .items {
-           
+            //box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 2rem;
@@ -220,11 +227,11 @@ img {
         }
 
         .item-image {
-            //border: 1px solid black;
             position: relative;
             text-align: center;
             color: #fff;
-
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+        
             .centered-text {
                 position: absolute;
                 top: 30%;
@@ -241,7 +248,11 @@ img {
                 font-weight: bold;
 
                 &:hover {
-                    background: #d0cbcb;
+                    //background: #d0cbcb;
+                    //background: #ece9e9;
+                    //border: 2px solid $main-color;
+                    background: $dark-color;
+                    color: #fff;
                 }
             }
 
@@ -251,8 +262,14 @@ img {
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 98%;
+                height: 100%;
                 background: rgba(0,0,0,0.2);
+            }
+
+            &:hover {
+                transform: scale(1) translateX(5px) translateY(5px); 
+                box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);  
+                // border-bottom: 4px solid $main-color; 
             }
         }
 
@@ -262,16 +279,16 @@ img {
 
     // Section: B - About Us
     &-b {
-        background: $medium-color;
+        //background: $medium-color;
+        background: #d9ecc5;
         .about {
-            // background-color: $medium-color;
+            //background-color: $medium-color;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 3rem;
             padding: 1rem;
 
             h2 {
-                //border: 1px solid black;
                 margin-bottom: 4rem;
                 font-size: 2.3rem;
             }
@@ -295,11 +312,10 @@ img {
 
         //background: $medium-color;
         .sponsor {
-            //border: 1px solid black;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             //grid-gap: 1rem;
-            // padding-left: 2rem;
+            //padding-left: 2rem;
 
             div:nth-child(11) {
                 grid-column: 2 / span 1;
@@ -307,7 +323,6 @@ img {
         }
 
         .sponsor-logo {
-            //border: 1px solid black;
             width: 175px;
             height: 175px;
             margin-top: 2.5rem;
@@ -318,6 +333,67 @@ img {
     }
 }
 
+
+// Race Pages
+#races {
+    &-a {
+        //border: 1px solid black;
+    }
+    &-b {
+        display: flex;
+        margin: 0 2rem;
+        //border: 1px solid black;
+
+    #navbar-example3 {
+        font-size: 1.5rem;
+        width: 35%;
+        // border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+
+        //button
+        .navbar-brand {
+            text-align: center;
+            color: #fff;
+            width: 250px;
+            margin-left: 1.5rem;
+            // border-right: none;
+
+            &:hover {
+                background:#136A1A;
+            }
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000;
+            //border-right: 3px solid $main-color;
+            padding-right: 2rem;
+            margin-left: 1.5rem;
+        }
+    
+        .nav {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            line-height: 2.5;
+            // border: 1px solid blue;
+
+            .nav-link {
+                
+                
+
+                &:hover {
+                    margin-right: 5rem;
+                    border-right: 3px solid $main-color;
+
+                }
+            }
+        }
+    }    
+            
+}
+}
 
 // Contact Page
 #contact {
@@ -332,7 +408,6 @@ img {
             grid-gap: 1.2rem;
             margin-bottom: 1.2rem;
 
-            // grid areas --connecting the grid areas
             .name-input {
                 grid-area: name;
             }
@@ -401,7 +476,6 @@ img {
 #main-footer {
     background: $dark-color;
     color: #fff;
-    //height: 5rem;
     padding: 2rem 0;
 
     .footer-content {
