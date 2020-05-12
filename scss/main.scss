@@ -404,6 +404,15 @@ img {
 
         span {
             color: red;
+            font-size: 1.2rem;
+        }
+
+        .btn-main {
+            color: #fff;
+
+            &:hover {
+                background:#136A1A;
+            }
         }
     }
             

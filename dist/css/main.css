@@ -307,7 +307,12 @@ img {
       font-size: 1.4rem;
       margin: 1rem 0; }
     #races-b .race-info span {
-      color: red; }
+      color: red;
+      font-size: 1.2rem; }
+    #races-b .race-info .btn-main {
+      color: #fff; }
+      #races-b .race-info .btn-main:hover {
+        background: #136A1A; }
 
 #contact-a {
   margin-bottom: 13rem; }
