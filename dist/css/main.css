@@ -303,6 +303,11 @@ img {
         border-right: 3px solid #28a745; }
   #races-b .race-info {
     margin: 0 3rem; }
+    #races-b .race-info h5 {
+      font-size: 1.4rem;
+      margin: 1rem 0; }
+    #races-b .race-info span {
+      color: red; }
 
 #contact-a {
   margin-bottom: 13rem; }
