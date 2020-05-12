@@ -244,7 +244,7 @@ img {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
 
 #home-b {
-  background: #d9ecc5; }
+  background-color: #eaf5e0; }
   #home-b .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
