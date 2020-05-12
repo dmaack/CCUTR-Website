@@ -22,8 +22,8 @@ ul {
     list-style: none;
 }
 
-h2, h3, h4 {
-    //text-transform: uppercase; // capitalize first letters
+h2, h3, h4, h5 {
+//    
 }
 
 img {
@@ -281,7 +281,8 @@ img {
     // Section: B - About Us
     &-b {
         //background: $medium-color;
-        background: #d9ecc5;
+        // background: #d9ecc5;
+        background-color: #eaf5e0;
         .about {
             //background-color: $medium-color;
             display: grid;
@@ -392,6 +393,28 @@ img {
             }
         }
     }    
+
+    .race-info {
+        margin: 0 3rem;
+
+        h5 {
+            font-size: 1.4rem;
+            margin: 1rem 0;
+        }
+
+        span {
+            color: red;
+            font-size: 1.2rem;
+        }
+
+        .btn-main {
+            color: #fff;
+
+            &:hover {
+                background:#136A1A;
+            }
+        }
+    }
             
 }
 }
