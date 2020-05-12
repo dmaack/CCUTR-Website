@@ -301,6 +301,8 @@ img {
       #races-b #navbar-example3 .nav .nav-link:hover {
         margin-right: 5rem;
         border-right: 3px solid #28a745; }
+  #races-b .race-info {
+    margin: 0 3rem; }
 
 #contact-a {
   margin-bottom: 13rem; }
