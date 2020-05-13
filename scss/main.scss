@@ -142,6 +142,10 @@ img {
             z-index: 10;
         }
 
+        &.races-header {
+            background: $races-image no-repeat center right / cover;
+        }
+
         .header-content {
             display: flex;
             flex-direction: column;
@@ -180,6 +184,8 @@ img {
                 bottom: 0;
                 position: absolute;
             }
+
+            
         }
 
         &::before { // overlay
@@ -191,6 +197,8 @@ img {
             height: 100%;
             background: rgba(0,0,0,0.3);
         }
+
+        
     }
 
     // Header Inner
@@ -349,11 +357,18 @@ img {
     &-b {
         display: flex;
         margin: 0 2rem;
+        padding: 3rem 0;
         //border: 1px solid black;
 
     #navbar-example3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         width: 35%;
+        // height: 100%;
+        // position: fixed;
+        // z-index: 1;
+        // top: 2000;
+        // left: 0;
+        // overflow-x: hidden;
         // border: 2px solid green;
         display: flex;
         flex-direction: column;
@@ -391,9 +406,9 @@ img {
                 
 
                 &:hover {
-                    margin-right: 5rem;
+                    //margin-right: 5rem;
                     border-right: 3px solid $main-color;
-
+                    //background-color: $medium-color;
                 }
             }
         }

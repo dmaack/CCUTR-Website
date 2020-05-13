@@ -154,12 +154,14 @@ img {
       border-color: #28a745; }
 
 #header-home {
-  background: url("../img/50kheader.jpg") no-repeat center right/cover;
+  background: url("../img/mainHeader2.jpg") no-repeat center right/cover;
   height: 50vh;
   color: #fff;
   position: relative; }
   #header-home * {
     z-index: 10; }
+  #header-home.races-header {
+    background: url("../img/50kheader.jpg") no-repeat center right/cover; }
   #header-home .header-content {
     display: flex;
     flex-direction: column;
@@ -196,7 +198,7 @@ img {
     background: rgba(0, 0, 0, 0.3); }
 
 #header-inner {
-  background: url("../img/50kheader.jpg") no-repeat 20% 10%/cover;
+  background: url("../img/mainHeader2.jpg") no-repeat 20% 10%/cover;
   height: 6rem;
   border-bottom: 3px solid #28a745;
   position: relative; }
@@ -282,9 +284,10 @@ img {
 
 #races-b {
   display: flex;
-  margin: 0 2rem; }
+  margin: 0 2rem;
+  padding: 3rem 0; }
   #races-b #navbar-example3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 35%;
     display: flex;
     flex-direction: column; }
@@ -306,7 +309,6 @@ img {
       padding: 1rem;
       line-height: 2.5; }
       #races-b #navbar-example3 .nav .nav-link:hover {
-        margin-right: 5rem;
         border-right: 3px solid #28a745; }
   #races-b .race-info {
     margin: 0 3rem; }
