@@ -9,6 +9,7 @@
   padding: 0.8rem 2rem;
   transition: all 0.5s;
   border: none;
+  border-radius: 5px;
   cursor: pointer; }
 
 .btn-main {
@@ -85,6 +86,12 @@ a {
 ul {
   list-style: none; }
 
+h1 {
+  font-family: 'Open Sans', sans-serif; }
+
+h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif; }
+
 img {
   width: 100%; }
 
@@ -97,8 +104,8 @@ img {
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  background: #342E37;
+  padding: .5rem;
+  background: #0B0F09;
   transition: .5s ease-in;
   position: fixed;
   width: 100%;
@@ -147,12 +154,14 @@ img {
       border-color: #28a745; }
 
 #header-home {
-  background: url("../img/header.jpg") no-repeat center right/cover;
-  height: 50vh;
+  background: url("../img/mainHeader2.jpg") no-repeat center right/cover;
+  height: 70vh;
   color: #fff;
   position: relative; }
   #header-home * {
     z-index: 10; }
+  #header-home.races-header {
+    background: url("../img/50kheader.jpg") no-repeat center right/cover; }
   #header-home .header-content {
     display: flex;
     flex-direction: column;
@@ -175,10 +184,11 @@ img {
         background: #136A1A; }
     #header-home .header-content .race-header {
       font-size: 6rem; }
-    #header-home .header-content .race-date {
+    #header-home .header-content p.race-date {
       padding: 1.5rem 2rem;
       bottom: 0;
-      position: absolute; }
+      position: absolute;
+      margin-bottom: 0; }
   #header-home::before {
     content: '';
     position: absolute;
@@ -186,10 +196,10 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2); }
+    background: rgba(0, 0, 0, 0.3); }
 
 #header-inner {
-  background: url("../img/header.jpg") no-repeat 20% 10%/cover;
+  background: url("../img/mainHeader2.jpg") no-repeat 20% 10%/cover;
   height: 6rem;
   border-bottom: 3px solid #28a745;
   position: relative; }
@@ -208,7 +218,8 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  padding: 1rem; }
+  padding: 1rem;
+  margin-bottom: 5rem; }
 
 #home-a .item-image {
   position: relative;
@@ -229,7 +240,7 @@ img {
     transform: translate(-50%, -50%);
     font-weight: bold; }
     #home-a .item-image .centered-btn:hover {
-      background: #342E37;
+      background: #0B0F09;
       color: #fff; }
   #home-a .item-image::before {
     content: '';
@@ -275,9 +286,10 @@ img {
 
 #races-b {
   display: flex;
-  margin: 0 2rem; }
+  margin: 0 2rem;
+  padding: 3rem 0; }
   #races-b #navbar-example3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 35%;
     display: flex;
     flex-direction: column; }
@@ -299,13 +311,12 @@ img {
       padding: 1rem;
       line-height: 2.5; }
       #races-b #navbar-example3 .nav .nav-link:hover {
-        margin-right: 5rem;
         border-right: 3px solid #28a745; }
   #races-b .race-info {
     margin: 0 3rem; }
     #races-b .race-info h5 {
       font-size: 1.4rem;
-      margin: 1rem 0; }
+      margin: 1.5rem 0; }
     #races-b .race-info span {
       color: red;
       font-size: 1.2rem; }
@@ -313,6 +324,15 @@ img {
       color: #fff; }
       #races-b .race-info .btn-main:hover {
         background: #136A1A; }
+    #races-b .race-info .course-information {
+      margin-bottom: 2rem; }
+      #races-b .race-info .course-information .course-marking {
+        display: flex;
+        justify-content: space-between; }
+        #races-b .race-info .course-information .course-marking div {
+          width: 55%; }
+        #races-b .race-info .course-information .course-marking img {
+          width: 30%; }
 
 #contact-a {
   margin-bottom: 13rem; }
@@ -361,7 +381,7 @@ img {
   padding: 4rem; }
 
 #main-footer {
-  background: #342E37;
+  background: #0B0F09;
   color: #fff;
   padding: 2rem 0; }
   #main-footer .footer-content {
