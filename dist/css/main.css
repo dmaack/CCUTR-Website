@@ -76,7 +76,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   background: #fff; }
 
@@ -104,7 +104,7 @@ img {
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: .5rem;
   background: #0B0F09;
   transition: .5s ease-in;
   position: fixed;
@@ -155,7 +155,7 @@ img {
 
 #header-home {
   background: url("../img/mainHeader2.jpg") no-repeat center right/cover;
-  height: 50vh;
+  height: 70vh;
   color: #fff;
   position: relative; }
   #header-home * {
@@ -184,10 +184,11 @@ img {
         background: #136A1A; }
     #header-home .header-content .race-header {
       font-size: 6rem; }
-    #header-home .header-content .race-date {
+    #header-home .header-content p.race-date {
       padding: 1.5rem 2rem;
       bottom: 0;
-      position: absolute; }
+      position: absolute;
+      margin-bottom: 0; }
   #header-home::before {
     content: '';
     position: absolute;
@@ -217,7 +218,8 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  padding: 1rem; }
+  padding: 1rem;
+  margin-bottom: 5rem; }
 
 #home-a .item-image {
   position: relative;
@@ -314,7 +316,7 @@ img {
     margin: 0 3rem; }
     #races-b .race-info h5 {
       font-size: 1.4rem;
-      margin: 1rem 0; }
+      margin: 1.5rem 0; }
     #races-b .race-info span {
       color: red;
       font-size: 1.2rem; }
@@ -322,6 +324,15 @@ img {
       color: #fff; }
       #races-b .race-info .btn-main:hover {
         background: #136A1A; }
+    #races-b .race-info .course-information {
+      margin-bottom: 2rem; }
+      #races-b .race-info .course-information .course-marking {
+        display: flex;
+        justify-content: space-between; }
+        #races-b .race-info .course-information .course-marking div {
+          width: 55%; }
+        #races-b .race-info .course-information .course-marking img {
+          width: 30%; }
 
 #contact-a {
   margin-bottom: 13rem; }
