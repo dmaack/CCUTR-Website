@@ -78,7 +78,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  background: #fff; }
+  background: #fff;
+  position: relative; }
 
 a {
   text-decoration: none; }
@@ -284,55 +285,9 @@ img {
   padding-left: 2.5rem;
   padding-right: 1rem; }
 
-#races-b {
-  display: flex;
-  margin: 0 2rem;
-  padding: 3rem 0; }
-  #races-b #navbar-example3 {
-    font-size: 1.3rem;
-    width: 35%;
-    display: flex;
-    flex-direction: column; }
-    #races-b #navbar-example3 .navbar-brand {
-      text-align: center;
-      color: #fff;
-      width: 250px;
-      margin-left: 1.5rem; }
-      #races-b #navbar-example3 .navbar-brand:hover {
-        background: #136A1A; }
-    #races-b #navbar-example3 a {
-      text-decoration: none;
-      color: #000;
-      padding-right: 2rem;
-      margin-left: 1.5rem; }
-    #races-b #navbar-example3 .nav {
-      display: flex;
-      flex-direction: column;
-      padding: 1rem;
-      line-height: 2.5; }
-      #races-b #navbar-example3 .nav .nav-link:hover {
-        border-right: 3px solid #28a745; }
-  #races-b .race-info {
-    margin: 0 3rem; }
-    #races-b .race-info h5 {
-      font-size: 1.4rem;
-      margin: 1.5rem 0; }
-    #races-b .race-info span {
-      color: red;
-      font-size: 1.2rem; }
-    #races-b .race-info .btn-main {
-      color: #fff; }
-      #races-b .race-info .btn-main:hover {
-        background: #136A1A; }
-    #races-b .race-info .course-information {
-      margin-bottom: 2rem; }
-      #races-b .race-info .course-information .course-marking {
-        display: flex;
-        justify-content: space-between; }
-        #races-b .race-info .course-information .course-marking div {
-          width: 55%; }
-        #races-b .race-info .course-information .course-marking img {
-          width: 30%; }
+#vert-nav {
+  position: fixed;
+  top: 20px; }
 
 #contact-a {
   margin-bottom: 13rem; }

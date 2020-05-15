@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='keywords' content='corner canyon, trail running, utah, trail race, 50k'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8ed908e81d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/8ed908e81d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -13,8 +17,8 @@
 <body>
 
     <!-- Header -->
-    <header id='header-home' class="races-header"> <!-- id's for the single elements -->
-        <!-- <div class="container">-->
+    <header id='header-home' class="races-header"> 
+       
             <nav id="main-nav" class="top nav-bg">
                 <img src="img/logo.png" alt="Corner Canyon Trail Run Logo" id="logo"><a href="index.html"></a></img>
                 <ul>
@@ -35,7 +39,7 @@
                 <h1 class="race-header">50k</h1>
                 <p class="race-date btn-main">October 10, 2020</p>
             </div>
-        <!-- </div> -->
+        
     </header>
 
     <!-- <section id="races-a">
@@ -46,17 +50,52 @@
         </div>
     </section> -->
 
-<section id="races-b">
+    <div class="container sticky-top">
+        <div class="row">
+            <div class="col-sm-3" style='border:1px solid #333'>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a href="#courseInfo" class="nav-link active">Course Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#courseMaps" class="nav-link">Course Maps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#aidStations" class="nav-link">Aid Stations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#racerInfo" class="nav-link">Racer Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#rules" class="nav-link">Rules & Etiquette</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#results" class="nav-link">Results & Entrants</a>
+                    </li>
+                </ul>
+       
+            </div>
+
+            <div class="col-sm-9" style='border:1px solid green'>
+
+            </div>
+
+        </div>
+    </div>
+
+<!-- Previous Code - saving for later in case I need to revert -->
+
+<!-- <section id="races-b">
     
-    <!-- <nav id="navbar-example3" class="navbar navbar-light nav-top bg-light">
+    <nav id="navbar-example3" class="navbar navbar-light nav-top bg-light">
         <a class="navbar-brand btn-main" href="https://ultrasignup.com/register.aspx?did=75438">Register</a>
         <nav class="nav nav-pills flex-column">
           <a class="nav-link" href="#item-1">Course Information</a>
           <a class="nav-link" href="#item-2">Course Maps</a>
           <a class="nav-link" href="#item-3">Aid Stations</a>
-          <a class="nav-link" href="#item-3">Racer Information</a>
-          <a class="nav-link" href="#item-3">Rules & Etiquette</a>
-          <a class="nav-link" href="#item-3">Results/Entrants</a>
+          <a class="nav-link" href="#item-4">Racer Information</a>
+          <a class="nav-link" href="#item-5">Rules & Etiquette</a>
+          <a class="nav-link" href="#item-6">Results/Entrants</a>
         </nav>
       </nav>
       
@@ -164,7 +203,7 @@
         </div>
 
         <div class="racer-information">
-            <h4 id="item-3" class="section-title">Racer Information</h4>
+            <h4 id="item-4" class="section-title">Racer Information</h4>
             <div class="bottom-line"></div>
             <div>
                 <h5>Start + Finish Location</h5>
@@ -191,7 +230,7 @@
         </div>
 
         <div class="rules-and-etiquette">
-            <h4 id="item-3" class="section-title">Rules and Etiquette</h4>
+            <h4 id="item-5" class="section-title">Rules and Etiquette</h4>
             <div class="bottom-line"></div>
             <h5>DNF/Drop From Race:</h5>
             <p>If you need to drop from the race it is critical you let an aid station volunteer know you will not finish the race. You can also have someone on your behalf come to the start/finish line and notify us that you have dropped and where</p>
@@ -202,15 +241,15 @@
         </div>
         
         <div class="results-and-entrants">
-            <h4 id="item-3" class="section-title">Results/Entrants</h4>
+            <h4 id="item-6" class="section-title">Results/Entrants</h4>
             <div class="bottom-line"></div>
             <a href="#" class="btn-main">View Results</a>
             <a href="#" class="btn-main">2020 Entrants</a>
         </div>
 
-    </div> -->
+    </div>
 
-</section>
+</section> -->
 
 
      <!-- Footer -->
@@ -243,28 +282,33 @@
             </div>
     </footer>
 
-    <script>
-        const navbar = document.getElementById('main-nav');
-        let scrolled = false;
 
-        window.onscroll = function() {
-            if(window.pageYOffset > 80 ) {
-                navbar.classList.remove('top');
-                navbar.style.zIndex = '15';
-                //navbar.style.color = '#333';
-                if(!scrolled) {
-                    navbar.style.transform = 'translateY(-70px)';
-                }
-                setTimeout(() => {
-                    navbar.style.transform = 'translateY(0)';
-                    scrolled = true;
-                }, 200)
-            } else {
-                navbar.classList.add('top');
-                scrolled = false;
+
+<script>
+    const navbar = document.getElementById('main-nav');
+    let scrolled = false;
+
+    window.onscroll = function() {
+        if(window.pageYOffset > 80 ) {
+            navbar.classList.remove('top');
+            navbar.style.zIndex = '15';
+            //navbar.style.color = '#333';
+            if(!scrolled) {
+                navbar.style.transform = 'translateY(-70px)';
             }
+            setTimeout(() => {
+                navbar.style.transform = 'translateY(0)';
+                scrolled = true;
+            }, 200)
+        } else {
+            navbar.classList.add('top');
+            scrolled = false;
         }
-    </script>
+    }
 
+
+
+   
+</script>
 </body>
 </html>
