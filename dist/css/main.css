@@ -162,7 +162,18 @@ img {
   #header-home * {
     z-index: 10; }
   #header-home.races-header {
-    background: url("../img/50kheader.jpg") no-repeat center right/cover; }
+    position: relative;
+    background: url("../img/50kheader.jpg") no-repeat center right/cover;
+    min-height: 50vh;
+    background-attachment: fixed; }
+    #header-home.races-header .race-header {
+      font-size: 6rem;
+      position: fixed; }
+    #header-home.races-header p.race-date {
+      padding: 1.5rem 2rem;
+      bottom: 0;
+      position: absolute;
+      margin-bottom: 0; }
   #header-home .header-content {
     display: flex;
     flex-direction: column;
@@ -183,13 +194,6 @@ img {
       border: none; }
       #header-home .header-content .btn-main:hover {
         background: #136A1A; }
-    #header-home .header-content .race-header {
-      font-size: 6rem; }
-    #header-home .header-content p.race-date {
-      padding: 1.5rem 2rem;
-      bottom: 0;
-      position: absolute;
-      margin-bottom: 0; }
   #header-home::before {
     content: '';
     position: absolute;
@@ -284,10 +288,6 @@ img {
   margin-top: 2.5rem;
   padding-left: 2.5rem;
   padding-right: 1rem; }
-
-#vert-nav {
-  position: fixed;
-  top: 20px; }
 
 #contact-a {
   margin-bottom: 13rem; }
