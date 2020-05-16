@@ -164,7 +164,7 @@ img {
   #header-home.races-header {
     position: relative;
     background: url("../img/50kheader.jpg") no-repeat center right/cover;
-    min-height: 50vh;
+    height: 50vh;
     background-attachment: fixed; }
     #header-home.races-header p.race-date {
       padding: 1.5rem 2rem;
@@ -220,7 +220,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  padding: 1rem;
+  padding: 2rem 1rem;
   margin-bottom: 5rem; }
 
 #home-a .item-image {
@@ -262,7 +262,7 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
-    padding: 1rem; }
+    padding: 3rem 1rem; }
     #home-b .about h2 {
       margin-bottom: 4rem;
       font-size: 2.3rem; }

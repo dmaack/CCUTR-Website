@@ -146,7 +146,7 @@ img {
         &.races-header {
             position: relative;
             background: $races-image no-repeat center right / cover;
-            min-height: 50vh;
+            height: 50vh;
             background-attachment: fixed;
             
             .race-header {
@@ -242,12 +242,13 @@ img {
     // Section: A - The Races
     &-a {
         //background: $medium-color;
+        
         .items {
             //box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 2rem;
-            padding: 1rem;
+            padding: 2rem 1rem;
             margin-bottom: 5rem;
         }
 
@@ -313,7 +314,7 @@ img {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 3rem;
-            padding: 1rem;
+            padding: 3rem 1rem;
 
             h2 {
                 margin-bottom: 4rem;
@@ -336,6 +337,8 @@ img {
                 width: 700px;
                 height: 400px;
             }
+
+
         }
     }
 
