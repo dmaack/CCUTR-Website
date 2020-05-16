@@ -166,9 +166,6 @@ img {
     background: url("../img/50kheader.jpg") no-repeat center right/cover;
     min-height: 50vh;
     background-attachment: fixed; }
-    #header-home.races-header .race-header {
-      font-size: 6rem;
-      position: fixed; }
     #header-home.races-header p.race-date {
       padding: 1.5rem 2rem;
       bottom: 0;
@@ -288,12 +285,6 @@ img {
   margin-top: 2.5rem;
   padding-left: 2.5rem;
   padding-right: 1rem; }
-
-.sticky-offset {
-  top: 90px; }
-
-#myScrollspy {
-  position: relative; }
 
 #contact-a {
   margin-bottom: 13rem; }
