@@ -324,12 +324,17 @@ img {
                 margin-bottom: 2.5rem;
             }
 
-            a {
+            a.btn-main {
                 color: #fff;
 
                 &:hover {
                     background:#136A1A;
                 }
+            }
+
+            img {
+                width: 700px;
+                height: 400px;
             }
         }
     }
