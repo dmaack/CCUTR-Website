@@ -362,7 +362,17 @@ img {
 
 
 // Race Pages
+#navScrollspy {
+//position: fixed;
+// top:90px;
+}
+.sticky-offset {
+    top: 90px;
+}
 
+#myScrollspy {
+    position: relative;
+}
 
 // #races {
 //     &-a {

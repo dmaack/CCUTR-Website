@@ -50,9 +50,9 @@
         </div>
     </section> -->
 
-    <div class="container sticky-top">
+    <div class="container sticky-top sticky-offset" >
         <div class="row">
-            <div class="col-sm-3" style='border:1px solid #333'>
+            <div id='navScrollspy' class="col-sm-3" style='border:1px solid #333'>
                 <ul class="nav nav-pills flex-column">
                     <li class="nav-link">
                         <a href="#" class="nav-link">Register</a>
@@ -79,9 +79,9 @@
        
             </div>
 
-            <div class="col-sm-9" style='border:1px solid green'>
-                <div class="course-information">
-                    <h4 id="courseInfo" class="section-title">Course Information</h4>
+            <div id='myScrollspy' class="col-sm-9 " style='border:1px solid green' data-spy='scroll' data-target='navScrollspy' data-offset='80'>
+                <div id='course-info' class="container">
+                    <h4 id="courseInfo" class="section-title pt-2">Course Information</h4>
                     <div class="bottom-line"></div>
                     <div>
                         <h5>Description</h5>
@@ -102,7 +102,7 @@
                     </div>
                 </div>
         
-                <div class="course-maps">
+                <div id='course-maps' class="container">
                     <h4 id="courseMaps" class="section-title">Course Maps</h4>
                     <div class="bottom-line"></div>
                     <h5>Profile</h5>
@@ -114,7 +114,7 @@
                     <a href="#" class="btn-main">Download GPX</a>
                  </div>  
         
-                <div class="aid-stations">
+                <div id='aid-station' class="container">
                     <h4 id="aidStations" class="section-title">Aid Stations</h4>
                     <div class="bottom-line"></div>
                     <table class="table">
@@ -181,7 +181,7 @@
                     </ul>
                 </div>
         
-                <div class="racer-information">
+                <div id='racer-info' class="container">
                     <h4 id="racerInfo" class="section-title">Racer Information</h4>
                     <div class="bottom-line"></div>
                     <div>
@@ -208,7 +208,7 @@
                     <p>There will be some snacks and sandwiches at the finish line. We hope you plan on staying around and getting a complimentary massage, telling us your stories and watching your friends finish</p>
                 </div>
         
-                <div class="rules-and-etiquette">
+                <div id='rules-etiquette' class="container">
                     <h4 id="#rules" class="section-title">Rules and Etiquette</h4>
                     <div class="bottom-line"></div>
                     <h5>DNF/Drop From Race:</h5>
@@ -219,7 +219,7 @@
                     <p>No dogs allowed. Sorry about that</p> 
                 </div>
                 
-                <div class="results-and-entrants">
+                <div id='results-entrants' class="container">
                     <h4 id="results" class="section-title">Results/Entrants</h4>
                     <div class="bottom-line"></div>
                     <a href="#" class="btn-main">View Results</a>
@@ -455,6 +455,7 @@
     }
 
 
+    $('div').scrollspy({ target: 'myScrollspy'});
 
    
 </script>

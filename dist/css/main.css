@@ -289,6 +289,12 @@ img {
   padding-left: 2.5rem;
   padding-right: 1rem; }
 
+.sticky-offset {
+  top: 90px; }
+
+#myScrollspy {
+  position: relative; }
+
 #contact-a {
   margin-bottom: 13rem; }
   #contact-a .text-fields {
