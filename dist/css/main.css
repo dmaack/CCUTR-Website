@@ -156,7 +156,7 @@ img {
 
 #header-home {
   background: url("../img/mainHeader2.jpg") no-repeat center right/cover;
-  height: 70vh;
+  height: 60vh;
   color: #fff;
   position: relative; }
   #header-home * {
@@ -220,7 +220,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  padding: 2rem 1rem;
+  padding: 1rem;
   margin-bottom: 5rem; }
 
 #home-a .item-image {

@@ -136,7 +136,7 @@ img {
 #header {
     &-home {
         background: $bg-image no-repeat center right / cover;
-        height: 70vh;
+        height: 60vh;
         color: #fff;
         position: relative; // overlay
         * {
@@ -248,7 +248,7 @@ img {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 2rem;
-            padding: 2rem 1rem;
+            padding: 1rem;
             margin-bottom: 5rem;
         }
 
