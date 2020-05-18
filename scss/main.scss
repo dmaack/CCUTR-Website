@@ -144,23 +144,29 @@ img {
         }
 
         &.races-header {
-            position: relative;
+            //position: relative;
             background: $races-image no-repeat center right / cover;
             height: 50vh;
-            background-attachment: fixed;
-            
-            .race-header {
-                // font-size: 6rem;
-                // position: fixed;
+            //background-attachment: fixed;
+        
+            h1 {
+                //position: fixed;
+                //z-index: 0;
             }
 
-            p.race-date {
-                padding: 1.5rem 2rem;
-                bottom: 0;
-                position: absolute;
-                margin-bottom: 0;
-                
+            p {
+                // margin-top: 4.5rem;
+                // position: fixed;
+                // z-index: 0;
             }
+
+            // p.race-date {
+            //     padding: 1.5rem 2rem;
+            //     bottom: 0;
+            //     position: absolute;
+            //     margin-bottom: 0;
+                
+            // }
         }
 
         .header-content {
@@ -374,39 +380,42 @@ img {
 
 
 // Race Pages
+
 #races {
+    &-a {
+        p {
+            font-size: 1.4rem;
+            color: $dark-color;
+        }
+    }
+
     &-b {
+        .sticky-offset {
+            position: sticky;
+            top: 5.5rem;
+            overflow-y: auto;
+            
+            .nav-pills .nav-link {
+                font-size: 1.4rem;
+                color: $dark-color;
+            }
+            .nav-pills .nav-link.active {
+                    background: $main-color;
+                    color: #fff;
+            } 
+        }
+
+        #myScrollspy {
+            h4 {
+                margin-top: 2rem;
+            }
+        }
+
         
     }
 }
-#navScrollspy {
-//position: fixed;
-// top:90px;
-
-}
-#races-b{
-    // overflow-x: auto;
-}
-.sticky-offset {
-    position: sticky;
-    top: 5.5rem;
-    overflow-y: auto;
-    // height: calc(100vh-5.5rem);
-    // width: 40%;
-}
 
 
-
-#myScrollspy {
-    h4 {
-        margin-top: 2rem;
-    }
-}
-
-.scroll-example {
-    position: relative;
-    overflow: auto;
-}
 
 // #races {
 //     &-a {

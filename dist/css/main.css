@@ -162,15 +162,8 @@ img {
   #header-home * {
     z-index: 10; }
   #header-home.races-header {
-    position: relative;
     background: url("../img/50kheader.jpg") no-repeat center right/cover;
-    height: 50vh;
-    background-attachment: fixed; }
-    #header-home.races-header p.race-date {
-      padding: 1.5rem 2rem;
-      bottom: 0;
-      position: absolute;
-      margin-bottom: 0; }
+    height: 50vh; }
   #header-home .header-content {
     display: flex;
     flex-direction: column;
@@ -293,17 +286,23 @@ img {
   padding-left: 2.5rem;
   padding-right: 1rem; }
 
-.sticky-offset {
+#races-a p {
+  font-size: 1.4rem;
+  color: #0B0F09; }
+
+#races-b .sticky-offset {
   position: sticky;
   top: 5.5rem;
   overflow-y: auto; }
+  #races-b .sticky-offset .nav-pills .nav-link {
+    font-size: 1.4rem;
+    color: #0B0F09; }
+  #races-b .sticky-offset .nav-pills .nav-link.active {
+    background: #28a745;
+    color: #fff; }
 
-#myScrollspy h4 {
+#races-b #myScrollspy h4 {
   margin-top: 2rem; }
-
-.scroll-example {
-  position: relative;
-  overflow: auto; }
 
 #contact-a {
   margin-bottom: 13rem; }
