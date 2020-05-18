@@ -286,20 +286,32 @@ img {
   padding-left: 2.5rem;
   padding-right: 1rem; }
 
-#races-a p {
-  font-size: 1.4rem;
-  color: #0B0F09; }
+#races-a {
+  border-bottom: 3px solid #28a745; }
+  #races-a p {
+    font-size: 1.4rem;
+    color: #0B0F09; }
 
 #races-b .sticky-offset {
   position: sticky;
   top: 5.5rem;
-  overflow-y: auto; }
+  overflow-y: auto;
+  border-bottom: 1px solid #0B0F09; }
   #races-b .sticky-offset .nav-pills .nav-link {
     font-size: 1.4rem;
     color: #0B0F09; }
+    #races-b .sticky-offset .nav-pills .nav-link:first-child {
+      text-align: center;
+      color: #fff;
+      margin: 2rem 0; }
+      #races-b .sticky-offset .nav-pills .nav-link:first-child:hover {
+        background: #136A1A; }
+    #races-b .sticky-offset .nav-pills .nav-link:last-child {
+      margin-bottom: 2rem; }
   #races-b .sticky-offset .nav-pills .nav-link.active {
-    background: #28a745;
-    color: #fff; }
+    background: #fff;
+    border-right: 3px solid #28a745;
+    border-radius: 0; }
 
 #races-b #myScrollspy h4 {
   margin-top: 2rem; }

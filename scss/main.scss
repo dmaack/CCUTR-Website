@@ -383,6 +383,7 @@ img {
 
 #races {
     &-a {
+        border-bottom: 3px solid $main-color;
         p {
             font-size: 1.4rem;
             color: $dark-color;
@@ -390,18 +391,38 @@ img {
     }
 
     &-b {
+
+        
+
         .sticky-offset {
             position: sticky;
             top: 5.5rem;
-            overflow-y: auto;
+            overflow-y: auto; 
+            border-bottom: 1px solid $dark-color;
             
             .nav-pills .nav-link {
                 font-size: 1.4rem;
                 color: $dark-color;
+
+                &:first-child {
+                    text-align: center;
+                    color: #fff;
+                    margin: 2rem 0;
+
+                    &:hover {
+                        background:#136A1A;
+                    }
+                }
+
+                &:last-child{
+                    margin-bottom: 2rem;
+                }
             }
             .nav-pills .nav-link.active {
-                    background: $main-color;
-                    color: #fff;
+                    background: #fff;
+                    //color: #fff;
+                    border-right: 3px solid $main-color;
+                    border-radius: 0;
             } 
         }
 
