@@ -147,17 +147,17 @@ img {
             //position: relative;
             background: $races-image no-repeat center right / cover;
             height: 50vh;
-            background-attachment: fixed;
+            //background-attachment: fixed;
         
             h1 {
-                position: fixed;
-                z-index: 0;
+                //position: fixed;
+                //z-index: 0;
             }
 
             p {
-                margin-top: 4.5rem;
-                position: fixed;
-                z-index: 0;
+                // margin-top: 4.5rem;
+                // position: fixed;
+                // z-index: 0;
             }
 
             // p.race-date {
@@ -384,6 +384,7 @@ img {
     padding: 0 15px;
     margin: 0 auto;
 }
+
 #races {
     &-b {
         .nav-pills .nav-link {

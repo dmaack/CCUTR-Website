@@ -163,15 +163,7 @@ img {
     z-index: 10; }
   #header-home.races-header {
     background: url("../img/50kheader.jpg") no-repeat center right/cover;
-    height: 50vh;
-    background-attachment: fixed; }
-    #header-home.races-header h1 {
-      position: fixed;
-      z-index: 0; }
-    #header-home.races-header p {
-      margin-top: 4.5rem;
-      position: fixed;
-      z-index: 0; }
+    height: 50vh; }
   #header-home .header-content {
     display: flex;
     flex-direction: column;
