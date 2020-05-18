@@ -25,11 +25,13 @@ ul {
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
+    // font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 h2, h3, h4, h5 {
-    font-family: 'Open Sans', sans-serif;
+    // font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 img {
@@ -351,6 +353,14 @@ img {
                 object-fit: cover;
             }
 
+            #slider {
+                .carousel-control-prev,
+                .carousel-control-next {
+                    background: none;
+                }
+            }
+            
+
 
         }
     }
@@ -632,7 +642,7 @@ img {
 #main-footer {
     background: $dark-color;
     color: #fff;
-    padding: 2rem 0;
+    padding: .5rem 0;
 
     .footer-content {
         display: flex;
@@ -644,14 +654,15 @@ img {
 
     .address {
         text-align: center;  
+        align-items: center;
         
         p {
             line-height: 1.8;
         }
 
         p.strong {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
+            font-size: 1rem;
+            margin-top: 1.5rem;
         }
     }
 
