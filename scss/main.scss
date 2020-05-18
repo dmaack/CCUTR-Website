@@ -380,45 +380,42 @@ img {
 
 
 // Race Pages
-.my-container {
-    padding: 0 15px;
-    margin: 0 auto;
-}
 
 #races {
-    &-b {
-        .nav-pills .nav-link {
+    &-a {
+        p {
             font-size: 1.4rem;
             color: $dark-color;
         }
-        .nav-pills .nav-link.active {
-                background: $main-color;
-                color: #fff;
-        } 
+    }
+
+    &-b {
+        .sticky-offset {
+            position: sticky;
+            top: 5.5rem;
+            overflow-y: auto;
+            
+            .nav-pills .nav-link {
+                font-size: 1.4rem;
+                color: $dark-color;
+            }
+            .nav-pills .nav-link.active {
+                    background: $main-color;
+                    color: #fff;
+            } 
+        }
+
+        #myScrollspy {
+            h4 {
+                margin-top: 2rem;
+            }
+        }
+
+        
     }
 }
-#navScrollspy {
 
 
-}
-
-.sticky-offset {
-    position: sticky;
-    top: 5.5rem;
-    overflow-y: auto;
-
-}
-
-#myScrollspy {
-    h4 {
-        margin-top: 2rem;
-    }
-}
-
-.scroll-to {
-    position: relative;
-    overflow: auto;
-}
 
 // #races {
 //     &-a {

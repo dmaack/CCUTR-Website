@@ -286,29 +286,23 @@ img {
   padding-left: 2.5rem;
   padding-right: 1rem; }
 
-.my-container {
-  padding: 0 15px;
-  margin: 0 auto; }
-
-#races-b .nav-pills .nav-link {
+#races-a p {
   font-size: 1.4rem;
   color: #0B0F09; }
 
-#races-b .nav-pills .nav-link.active {
-  background: #28a745;
-  color: #fff; }
-
-.sticky-offset {
+#races-b .sticky-offset {
   position: sticky;
   top: 5.5rem;
   overflow-y: auto; }
+  #races-b .sticky-offset .nav-pills .nav-link {
+    font-size: 1.4rem;
+    color: #0B0F09; }
+  #races-b .sticky-offset .nav-pills .nav-link.active {
+    background: #28a745;
+    color: #fff; }
 
-#myScrollspy h4 {
+#races-b #myScrollspy h4 {
   margin-top: 2rem; }
-
-.scroll-to {
-  position: relative;
-  overflow: auto; }
 
 #contact-a {
   margin-bottom: 13rem; }
