@@ -144,23 +144,29 @@ img {
         }
 
         &.races-header {
-            position: relative;
+            //position: relative;
             background: $races-image no-repeat center right / cover;
             height: 50vh;
             background-attachment: fixed;
-            
-            .race-header {
-                // font-size: 6rem;
-                // position: fixed;
+        
+            h1 {
+                position: fixed;
+                z-index: 0;
             }
 
-            p.race-date {
-                padding: 1.5rem 2rem;
-                bottom: 0;
-                position: absolute;
-                margin-bottom: 0;
-                
+            p {
+                margin-top: 4.5rem;
+                position: fixed;
+                z-index: 0;
             }
+
+            // p.race-date {
+            //     padding: 1.5rem 2rem;
+            //     bottom: 0;
+            //     position: absolute;
+            //     margin-bottom: 0;
+                
+            // }
         }
 
         .header-content {
@@ -376,7 +382,12 @@ img {
 // Race Pages
 #races {
     &-b {
-        
+        .nav-pills .nav-link {
+            font-size: 1.4rem;
+        }
+        .nav-pills .nav-link.active {
+                background: $main-color;
+        } 
     }
 }
 #navScrollspy {
