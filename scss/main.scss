@@ -357,13 +357,15 @@ img {
 
     // Section: C - Sponsors
     &-c {
-
+        
         //background: $medium-color;
         .sponsor {
+            
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            //grid-gap: 1rem;
+            // grid-gap: 1rem;
             //padding-left: 2rem;
+            //height: 100%;
 
             div:nth-child(11) {
                 grid-column: 2 / span 1;
