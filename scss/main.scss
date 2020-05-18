@@ -183,11 +183,12 @@ img {
                 //margin-bottom: 2rem;
             }
 
-            .btn-main {
+            a {
                 margin-top: 1%;
                 color: #fff;
                 font-size: 1.2rem;
                 border: none;
+                text-decoration: none;
                 
                 &:hover {
                     background:#136A1A;
@@ -273,6 +274,7 @@ img {
                 left: 50%;
                 transform: translate(-50%, -50%);
                 font-weight: bold;
+                text-decoration: none;
 
                 &:hover {
                     //background: #d0cbcb;
@@ -325,8 +327,9 @@ img {
                 margin-bottom: 2.5rem;
             }
 
-            a.btn-main {
+            a {
                 color: #fff;
+                text-decoration: none;
 
                 &:hover {
                     background:#136A1A;
@@ -336,6 +339,7 @@ img {
             img {
                 width: 700px;
                 height: 400px;
+                object-fit: cover;
             }
 
 
@@ -370,16 +374,38 @@ img {
 
 
 // Race Pages
+#races {
+    &-b {
+        
+    }
+}
 #navScrollspy {
 //position: fixed;
 // top:90px;
+
+}
+#races-b{
+    // overflow-x: auto;
 }
 .sticky-offset {
-    // top: 90px;
+    position: sticky;
+    top: 5.5rem;
+    overflow-y: auto;
+    // height: calc(100vh-5.5rem);
+    // width: 40%;
 }
 
+
+
 #myScrollspy {
-    // position: relative;
+    h4 {
+        margin-top: 2rem;
+    }
+}
+
+.scroll-example {
+    position: relative;
+    overflow: auto;
 }
 
 // #races {
@@ -529,6 +555,7 @@ img {
             background: $main-color;
             color: #fff;
             font-size: 1rem;
+            text-decoration: none;
             cursor: pointer;
             &:hover {
                 background:#136A1A;
@@ -548,7 +575,8 @@ img {
             color: #fff;
 
             a {
-                color: #fff
+                color: #fff;
+                text-decoration: none;
             }
 
         }
@@ -600,6 +628,7 @@ img {
      
         a {
             color: #fff;
+            text-decoration: none;
 
             border-bottom: 3px transparent solid;
             //padding-bottom: 0.5rem;

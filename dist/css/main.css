@@ -184,12 +184,13 @@ img {
     #header-home .header-content p {
       font-size: 1.5rem;
       font-weight: bold; }
-    #header-home .header-content .btn-main {
+    #header-home .header-content a {
       margin-top: 1%;
       color: #fff;
       font-size: 1.2rem;
-      border: none; }
-      #header-home .header-content .btn-main:hover {
+      border: none;
+      text-decoration: none; }
+      #header-home .header-content a:hover {
         background: #136A1A; }
   #header-home::before {
     content: '';
@@ -240,7 +241,8 @@ img {
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight: bold; }
+    font-weight: bold;
+    text-decoration: none; }
     #home-a .item-image .centered-btn:hover {
       background: #0B0F09;
       color: #fff; }
@@ -268,13 +270,15 @@ img {
       font-size: 2.3rem; }
     #home-b .about p {
       margin-bottom: 2.5rem; }
-    #home-b .about a.btn-main {
-      color: #fff; }
-      #home-b .about a.btn-main:hover {
+    #home-b .about a {
+      color: #fff;
+      text-decoration: none; }
+      #home-b .about a:hover {
         background: #136A1A; }
     #home-b .about img {
       width: 700px;
-      height: 400px; }
+      height: 400px;
+      object-fit: cover; }
 
 #home-c .sponsor {
   display: grid;
@@ -288,6 +292,18 @@ img {
   margin-top: 2.5rem;
   padding-left: 2.5rem;
   padding-right: 1rem; }
+
+.sticky-offset {
+  position: sticky;
+  top: 5.5rem;
+  overflow-y: auto; }
+
+#myScrollspy h4 {
+  margin-top: 2rem; }
+
+.scroll-example {
+  position: relative;
+  overflow: auto; }
 
 #contact-a {
   margin-bottom: 13rem; }
@@ -315,6 +331,7 @@ img {
     background: #28a745;
     color: #fff;
     font-size: 1rem;
+    text-decoration: none;
     cursor: pointer; }
     #contact-a button[type='submit']:hover {
       background: #136A1A; }
@@ -327,7 +344,8 @@ img {
   text-align: center;
   color: #fff; }
   #contact-b .contact-info a {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
 
 #contact-c h1 {
   text-align: center;
@@ -357,6 +375,7 @@ img {
     line-height: 2; }
     #main-footer .footer-links a {
       color: #fff;
+      text-decoration: none;
       border-bottom: 3px transparent solid;
       transition: border-color .5s; }
       #main-footer .footer-links a:hover {
