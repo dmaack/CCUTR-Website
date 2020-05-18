@@ -299,6 +299,9 @@ img {
   overflow-y: auto;
   height: calc(100vh-5.5rem); }
 
+#myScrollspy h4 {
+  margin-top: 2rem; }
+
 .scroll-example {
   position: relative;
   overflow: auto; }
