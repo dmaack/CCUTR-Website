@@ -97,15 +97,16 @@ img {
   width: 100%; }
 
 #logo {
-  width: 90px;
-  height: 70px;
+  width: 70px;
+  height: 50px;
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-left: 1rem; }
 
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding: .5rem;
+  align-items: center;
   background: #0B0F09;
   transition: .5s ease-in;
   position: fixed;
@@ -116,7 +117,8 @@ img {
     z-index: 20; }
   #main-nav ul {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-top: .5rem; }
   #main-nav li {
     position: relative;
     padding: 1rem 1.5rem;
@@ -141,7 +143,6 @@ img {
           background: #e0e0e0;
           color: inherit; }
   #main-nav a {
-    font-size: 1.2rem;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
