@@ -29,7 +29,7 @@ h1 {
     font-family: 'Lato', sans-serif;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4 {
     // font-family: 'Open Sans', sans-serif;
     font-family: 'Lato', sans-serif;
 }
@@ -77,7 +77,7 @@ img {
     li {
         position: relative;
         padding: 1rem 1.5rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-transform: uppercase;
 
         // Hide nested ul by default
@@ -321,7 +321,8 @@ img {
     &-b {
         //background: $medium-color;
         // background: #d9ecc5;
-        background-color: #eaf5e0;
+        //background-color: #eaf5e0;
+        background-color: $light-grey;
         .about {
             //background-color: $medium-color;
             display: grid;
@@ -348,7 +349,7 @@ img {
             }
 
             img {
-                width: 700px;
+                width: 600px;
                 height: 400px;
                 object-fit: cover;
             }
@@ -444,6 +445,36 @@ img {
         #myScrollspy {
             h4 {
                 margin-top: 2rem;
+            }
+
+            h5 {
+                font-weight: bold;
+                font-size: 1.4rem;
+                margin-bottom: 1.5rem
+            }
+
+            .btn-main {
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                    background:#136A1A;
+                }
+            }
+
+            #course-info {
+                ul {
+                    margin-left: 2rem;
+                }
+            }
+
+            #course-maps{
+                h5 {
+                    // margin-bottom: 1.5rem;
+                }
+
+                p {
+                    text-align: center;
+                }
             }
         }
 

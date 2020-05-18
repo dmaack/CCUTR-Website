@@ -90,7 +90,7 @@ ul {
 h1 {
   font-family: 'Lato', sans-serif; }
 
-h2, h3, h4, h5 {
+h2, h3, h4 {
   font-family: 'Lato', sans-serif; }
 
 img {
@@ -122,7 +122,7 @@ img {
   #main-nav li {
     position: relative;
     padding: 1rem 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-transform: uppercase; }
     #main-nav li ul {
       display: none; }
@@ -253,7 +253,7 @@ img {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
 
 #home-b {
-  background-color: #eaf5e0; }
+  background-color: #EFF2EF; }
   #home-b .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -270,7 +270,7 @@ img {
       #home-b .about a:hover {
         background: #136A1A; }
     #home-b .about img {
-      width: 700px;
+      width: 600px;
       height: 400px;
       object-fit: cover; }
     #home-b .about #slider .carousel-control-prev,
@@ -319,6 +319,23 @@ img {
 
 #races-b #myScrollspy h4 {
   margin-top: 2rem; }
+
+#races-b #myScrollspy h5 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem; }
+
+#races-b #myScrollspy .btn-main {
+  color: #fff;
+  text-decoration: none; }
+  #races-b #myScrollspy .btn-main:hover {
+    background: #136A1A; }
+
+#races-b #myScrollspy #course-info ul {
+  margin-left: 2rem; }
+
+#races-b #myScrollspy #course-maps p {
+  text-align: center; }
 
 #contact-a {
   margin-bottom: 13rem; }
