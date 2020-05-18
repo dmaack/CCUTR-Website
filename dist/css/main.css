@@ -68,7 +68,7 @@
   width: 4rem;
   background: #28a745;
   display: block;
-  margin: 0 auto 1rem auto; }
+  margin: 0 auto 3rem auto; }
 
 * {
   margin: 0;
@@ -293,8 +293,11 @@ img {
 #races-a {
   border-bottom: 3px solid #28a745; }
   #races-a p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #0B0F09; }
+
+#races-b span {
+  color: red; }
 
 #races-b .sticky-offset {
   position: sticky;
@@ -302,7 +305,7 @@ img {
   overflow-y: auto;
   border-bottom: 1px solid #0B0F09; }
   #races-b .sticky-offset .nav-pills .nav-link {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #0B0F09; }
     #races-b .sticky-offset .nav-pills .nav-link:first-child {
       text-align: center;
@@ -323,7 +326,7 @@ img {
 #races-b #myScrollspy h5 {
   font-weight: bold;
   font-size: 1.4rem;
-  margin-bottom: 1.5rem; }
+  margin: 1.5rem 0; }
 
 #races-b #myScrollspy .btn-main {
   color: #fff;
@@ -334,8 +337,24 @@ img {
 #races-b #myScrollspy #course-info ul {
   margin-left: 2rem; }
 
+#races-b #myScrollspy #course-info .course-marking {
+  display: flex;
+  justify-content: space-between; }
+  #races-b #myScrollspy #course-info .course-marking .marking-content {
+    width: 55%; }
+  #races-b #myScrollspy #course-info .course-marking img {
+    width: 45%;
+    padding: 2rem;
+    object-fit: cover; }
+
 #races-b #myScrollspy #course-maps p {
   text-align: center; }
+
+#races-b #myScrollspy #course-maps .maps-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
 
 #contact-a {
   margin-bottom: 13rem; }
