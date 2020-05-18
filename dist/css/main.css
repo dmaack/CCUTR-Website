@@ -296,8 +296,7 @@ img {
 .sticky-offset {
   position: sticky;
   top: 5.5rem;
-  overflow-y: auto;
-  height: calc(100vh-5.5rem); }
+  overflow-y: auto; }
 
 #myScrollspy h4 {
   margin-top: 2rem; }

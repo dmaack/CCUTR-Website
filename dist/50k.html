@@ -52,41 +52,42 @@
     </section> -->
 
 
-    <div class="row"> 
+    <div id='races-b' class="row"> 
         <div class="col-3">
-            <div id='navScrollspy' class="container sticky-offset" style='border:1px solid #333'>
-                <ul class="nav nav-pills flex-column">
-                    <li class="nav-link">
-                            <a href="#" class="nav-link">Register</a>
-                    </li>
-                    <li class="nav-item">
-                            <a href="#courseInfo" class="nav-link active">Course Information</a>
-                    </li>
-                    <li class="nav-item">
+            <nav id='navScrollspy' class="navbar sticky-offset " style='border:1px solid #333'>
+                <!-- <a href="#" class="navbar-brand">Register</a> -->
+                <nav class="nav nav-pills flex-column">
+                    <!-- <li class="nav-link"> -->
+                            <a href="#" class="nav-link ">Register</a>
+                    <!-- </li> -->
+                    <!-- <li class="nav-item"> -->
+                            <a href="#courseInfo" class="nav-link">Course Information</a>
+                    <!-- </li> -->
+                    <!-- <li class="nav-item"> -->
                             <a href="#courseMaps" class="nav-link">Course Maps</a>
-                    </li>
-                    <li class="nav-item">
+                    <!-- </li> -->
+                    <!-- <li class="nav-item"> -->
                         <a href="#aidStations" class="nav-link">Aid Stations</a>
-                    </li>
-                    <li class="nav-item">
+                    <!-- </li> -->
+                    <!-- <li class="nav-item"> -->
                         <a href="#racerInfo" class="nav-link">Racer Information</a>
-                    </li>
-                    <li class="nav-item">
+                    <!-- </li> -->
+                    <!-- <li class="nav-item"> -->
                         <a href="#rules" class="nav-link">Rules & Etiquette</a>
-                    </li>
-                    <li class="nav-item">
+                    <!-- </li> -->
+                    <!-- <li class="nav-item"> -->
                         <a href="#results" class="nav-link">Results & Entrants</a>
-                    </li>
-                </ul>
+                    <!-- </li> -->
+                </nav>
            
-            </div>
+            </nav>
          </div>  
 
        
         <div class="col-9">
-            <div id='myScrollspy' class="container scroll-example" style='border:1px solid green' data-spy='scroll' data-target='navScrollspy' data-offset='0'>
+            <div id='myScrollspy' class="container scroll-example" style='border:1px solid green' data-spy='scroll' data-target='navScrollspy' data-offset='1'>
                 <div id="courseInfo" class="container pb-5">
-                    <h4 class="section-title pt-5">Course Information</h4>
+                    <h4 class="section-title">Course Information</h4>
                     <div class="bottom-line"></div>
                     <div class='mt-4'>
                         <h5>Description</h5>
@@ -469,7 +470,7 @@
     }
 
 
-    $('div').scrollspy({ target: 'myScrollspy'});
+    $('body').scrollspy({ target: '#navScrollspy'});
 
    
 </script>

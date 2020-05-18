@@ -374,16 +374,24 @@ img {
 
 
 // Race Pages
+#races {
+    &-b {
+        
+    }
+}
 #navScrollspy {
 //position: fixed;
 // top:90px;
-}
 
+}
+#races-b{
+    // overflow-x: auto;
+}
 .sticky-offset {
     position: sticky;
     top: 5.5rem;
     overflow-y: auto;
-    height: calc(100vh-5.5rem);
+    // height: calc(100vh-5.5rem);
     // width: 40%;
 }
 
