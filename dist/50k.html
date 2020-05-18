@@ -50,42 +50,27 @@
             </div>
         </div>
     </section> -->
-
-
+<div class="my-container">
     <div id='races-b' class="row"> 
+
+        <!-- Side Nav -->
         <div class="col-4">
             <nav id='navScrollspy' class="navbar sticky-offset " style='border:1px solid #333'>
-                <!-- <a href="#" class="navbar-brand">Register</a> -->
                 <nav class="nav nav-pills flex-column">
-                    <!-- <li class="nav-link"> -->
-                            <a href="#" class="nav-link ">Register</a>
-                    <!-- </li> -->
-                    <!-- <li class="nav-item"> -->
-                            <a href="#courseInfo" class="nav-link">Course Information</a>
-                    <!-- </li> -->
-                    <!-- <li class="nav-item"> -->
-                            <a href="#courseMaps" class="nav-link">Course Maps</a>
-                    <!-- </li> -->
-                    <!-- <li class="nav-item"> -->
-                        <a href="#aidStations" class="nav-link">Aid Stations</a>
-                    <!-- </li> -->
-                    <!-- <li class="nav-item"> -->
-                        <a href="#racerInfo" class="nav-link">Racer Information</a>
-                    <!-- </li> -->
-                    <!-- <li class="nav-item"> -->
-                        <a href="#rules" class="nav-link">Rules & Etiquette</a>
-                    <!-- </li> -->
-                    <!-- <li class="nav-item"> -->
-                        <a href="#results" class="nav-link">Results & Entrants</a>
-                    <!-- </li> -->
+                    <a href="#" class="nav-link ">Register</a>
+                    <a href="#courseInfo" class="nav-link">Course Information</a>
+                    <a href="#courseMaps" class="nav-link">Course Maps</a>
+                    <a href="#aidStations" class="nav-link">Aid Stations</a>
+                    <a href="#racerInfo" class="nav-link">Racer Information</a>
+                    <a href="#rules" class="nav-link">Rules & Etiquette</a>
+                    <a href="#results" class="nav-link">Results & Entrants</a>
                 </nav>
-           
             </nav>
          </div>  
 
-       
+       <!-- Main Content-->
         <div class="col-8">
-            <div id='myScrollspy' class="container scroll-example" style='border:1px solid green' data-spy='scroll' data-target='navScrollspy' data-offset='100'>
+            <div id='myScrollspy' class="container scroll-to" style='border:1px solid green' data-spy='scroll' data-target='navScrollspy' data-offset='100'>
                 <div id="courseInfo" class="container pb-5">
                     <h4 class="section-title">Course Information</h4>
                     <div class="bottom-line"></div>
@@ -238,13 +223,8 @@
         </div>
 
     </div> <!--row close-->
+</div>
 
-
-
-          
-    
-        
-   
 
 <!-- Previous Code - saving for later in case I need to revert -->
 
@@ -472,7 +452,7 @@
 
     $('body').scrollspy({ target: '#navScrollspy'});
 
-   
+
 </script>
 </body>
 </html>

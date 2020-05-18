@@ -380,33 +380,33 @@ img {
 
 
 // Race Pages
+.my-container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
 #races {
     &-b {
         .nav-pills .nav-link {
             font-size: 1.4rem;
+            color: $dark-color;
         }
         .nav-pills .nav-link.active {
                 background: $main-color;
+                color: #fff;
         } 
     }
 }
 #navScrollspy {
-//position: fixed;
-// top:90px;
+
 
 }
-#races-b{
-    // overflow-x: auto;
-}
+
 .sticky-offset {
     position: sticky;
     top: 5.5rem;
     overflow-y: auto;
-    // height: calc(100vh-5.5rem);
-    // width: 40%;
+
 }
-
-
 
 #myScrollspy {
     h4 {
@@ -414,7 +414,7 @@ img {
     }
 }
 
-.scroll-example {
+.scroll-to {
     position: relative;
     overflow: auto;
 }

@@ -294,11 +294,17 @@ img {
   padding-left: 2.5rem;
   padding-right: 1rem; }
 
+.my-container {
+  padding: 0 15px;
+  margin: 0 auto; }
+
 #races-b .nav-pills .nav-link {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  color: #0B0F09; }
 
 #races-b .nav-pills .nav-link.active {
-  background: #28a745; }
+  background: #28a745;
+  color: #fff; }
 
 .sticky-offset {
   position: sticky;
@@ -308,7 +314,7 @@ img {
 #myScrollspy h4 {
   margin-top: 2rem; }
 
-.scroll-example {
+.scroll-to {
   position: relative;
   overflow: auto; }
 
