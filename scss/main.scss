@@ -283,6 +283,7 @@ img {
                 transform: scale(1) translateX(5px) translateY(5px); 
                 box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);  
             }
+
         }
 
         
@@ -491,11 +492,64 @@ img {
     }
 }
 
+// About Page
+
+#about {
+    &-b {
+        .container {
+            display: flex;
+            position: relative;
+            .who-we-are {
+                h4 {
+                    font-size: 1.2rem;
+                    margin-bottom: 2rem;
+                }
+                border-left: 2px solid $main-color;
+                width: 600px;
+                height: 200px;
+                top: 100;
+                left: 20;
+                line-height: 1.6;
+                padding-left: 1rem;
+            }
+            .john {
+                display: inline-block;
+                position: relative;
+                width: 500px;
+                top:75;
+                right: 300;
+            }
+            .troy {
+                
+                display: block;
+                width: 300px;
+                top:105;
+                right: 300;
+            }
+
+        }
+    }
+
+    &-c {
+        margin-top: 3rem;
+        h4 {
+            margin-bottom: 2rem;
+        }
+        .recipients {
+            display: flex;
+            .recipient {
+                width: 200px;
+                height: 100px;
+            }
+        }
+    }
+}
+
 
 // Contact Page
 #contact {
     &-a {
-        margin-bottom: 13rem;
+        margin-bottom: 3rem;
         .text-fields {
             display: grid;
             grid-template-areas: 
@@ -546,29 +600,40 @@ img {
     }
 
     &-b {
-        .contact-info {
+        .process {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            //grid-gap: 1rem;
             text-align: center;
-            color: #fff;
 
-            a {
+            //process-icon
+            &-image {
+                border-radius: 50%;
+                // background: $dark-color;
                 color: #fff;
-                text-decoration: none;
+                padding: 1rem;
+                width: 300px;
+                height: 300px;
+                line-height: 70px;
+                text-align: center;
+                position: relative;
+                transition: all 1s;
+                object-fit: cover;
+
+                // hover
+                &:hover {
+                    //background-color: $main-color;
+                    // width: 215px;
+                    // height: 215px;
+                    //line-height: 70px;
+                }
             }
-
         }
+
     }
 
-    &-c {
-        h1 {
-            text-align: center;
-            font-size: 3rem;
-            color: #fff;
-            padding: 4rem;
-        }
-    }
 }
+
 
 
 // Footer
