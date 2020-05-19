@@ -151,7 +151,7 @@ img {
         &.races-header {
             //position: relative;
             background: $races-image no-repeat center right / cover;
-            height: 50vh;
+            height: 40vh;
             //background-attachment: fixed;
         
             h1 {
@@ -504,6 +504,21 @@ img {
                     justify-content: space-evenly;
 
                     
+                }
+            }
+
+            #aid-station {
+                i {
+                    color: $main-color;
+                    padding-left: 1.5rem;
+                }
+            }
+
+            #results-entrants {
+                a {
+                    &:last-child {
+                        margin-left: 1rem;
+                    }
                 }
             }
         }
