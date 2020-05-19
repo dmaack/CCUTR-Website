@@ -25,11 +25,13 @@ ul {
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
+    // font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
-h2, h3, h4, h5 {
-    font-family: 'Open Sans', sans-serif;
+h2, h3, h4 {
+    // font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 img {
@@ -38,10 +40,11 @@ img {
 
 // Logo
 #logo {
-    width: 90px;
-    height: 70px;
+    width: 70px;
+    height: 50px;
     color: #fff;
     text-transform: uppercase;
+    margin-left: 1rem;
 }
 
 
@@ -49,7 +52,8 @@ img {
 #main-nav {
     display: flex;
     justify-content: space-between;
-    padding: .5rem;
+    align-items: center;
+    //padding: .5rem;
 
 
     //navbar addition
@@ -67,12 +71,13 @@ img {
     ul {
         display: flex;
         justify-content: space-between;
+        margin-top: .5rem;
     }
 
     li {
         position: relative;
         padding: 1rem 1.5rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-transform: uppercase;
 
         // Hide nested ul by default
@@ -113,7 +118,7 @@ img {
 
     a {
         //display: block; //makes underline the width of container
-        font-size: 1.2rem;
+        //font-size: 1.2rem;
         text-decoration: none;
         color: #fff;
         text-transform: uppercase;
@@ -316,7 +321,8 @@ img {
     &-b {
         //background: $medium-color;
         // background: #d9ecc5;
-        background-color: #eaf5e0;
+        //background-color: #eaf5e0;
+        background-color: $light-grey;
         .about {
             //background-color: $medium-color;
             display: grid;
@@ -343,10 +349,18 @@ img {
             }
 
             img {
-                width: 700px;
+                width: 600px;
                 height: 400px;
                 object-fit: cover;
             }
+
+            #slider {
+                .carousel-control-prev,
+                .carousel-control-next {
+                    background: none;
+                }
+            }
+            
 
 
         }
@@ -354,13 +368,15 @@ img {
 
     // Section: C - Sponsors
     &-c {
-
+        
         //background: $medium-color;
         .sponsor {
+            
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            //grid-gap: 1rem;
+            // grid-gap: 1rem;
             //padding-left: 2rem;
+            //height: 100%;
 
             div:nth-child(11) {
                 grid-column: 2 / span 1;
@@ -383,31 +399,107 @@ img {
 
 #races {
     &-a {
+        border-bottom: 3px solid $main-color;
         p {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             color: $dark-color;
         }
     }
 
     &-b {
+        span {
+            color: red;
+        }
         .sticky-offset {
             position: sticky;
             top: 5.5rem;
-            overflow-y: auto;
+            overflow-y: auto; 
+            border-bottom: 1px solid $dark-color;
             
             .nav-pills .nav-link {
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 color: $dark-color;
+
+                &:first-child {
+                    text-align: center;
+                    color: #fff;
+                    margin: 2rem 0;
+
+                    &:hover {
+                        background:#136A1A;
+                    }
+                }
+
+                &:last-child{
+                    margin-bottom: 2rem;
+                }
             }
             .nav-pills .nav-link.active {
-                    background: $main-color;
-                    color: #fff;
+                    background: #fff;
+                    //color: #fff;
+                    border-right: 3px solid $main-color;
+                    border-radius: 0;
             } 
         }
 
         #myScrollspy {
             h4 {
                 margin-top: 2rem;
+            }
+
+            h5 {
+                font-weight: bold;
+                font-size: 1.4rem;
+                margin: 1.5rem 0;
+            }
+
+            .btn-main {
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                    background:#136A1A;
+                }
+            }
+
+            #course-info {
+                ul {
+                    margin-left: 2rem;
+                }
+
+                .course-marking {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .marking-content {
+                        width: 55%;
+                    }
+                    img {
+                        width: 45%;
+                        padding: 2rem;
+                        // height: 75px;
+                        object-fit: cover;
+                        
+                    }
+                }
+            }
+
+            #course-maps{
+                h5 {
+                    // margin-bottom: 1.5rem;
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                .maps-buttons {
+                    margin-top: 1.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    
+                }
             }
         }
 
@@ -606,7 +698,7 @@ img {
 #main-footer {
     background: $dark-color;
     color: #fff;
-    padding: 2rem 0;
+    padding: .5rem 0;
 
     .footer-content {
         display: flex;
@@ -618,14 +710,15 @@ img {
 
     .address {
         text-align: center;  
+        align-items: center;
         
         p {
             line-height: 1.8;
         }
 
         p.strong {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
+            font-size: 1rem;
+            margin-top: 1.5rem;
         }
     }
 

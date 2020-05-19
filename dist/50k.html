@@ -11,6 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/8ed908e81d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>50k | Corner Canyon Ultra Trail Run</title>
 </head>
@@ -46,10 +47,10 @@
     <div id='races-a' class="container-fluid">
         <div class="row text-center pt-4 pb-3">
             <div class="col-4">
-                <p><i class="fas fa-mountain"></i> 6241 ft.</p>
+                <p><i class="fas fa-mountain"></i> 6478 ft.</p>
             </div>
             <div class="col-4">
-                <p><i class="fas fa-clock"></i>   6:00 a.m.</p>
+                <p><i class="fas fa-clock"></i> 6:00 a.m.</p>
             </div>
             <div class="col-4">
                 <p><i class="fas fa-cloud-sun"></i> 68°F</p>
@@ -62,9 +63,9 @@
 
             <!-- Side Nav -->
             <div class="col-4">
-                <nav id='navScrollspy' class="navbar sticky-offset " style='border:1px solid #333'>
+                <nav id='navScrollspy' class="navbar sticky-offset">
                     <nav class="nav nav-pills flex-column">
-                        <a href="#" class="nav-link ">Register</a>
+                        <a href="https://ultrasignup.com/register.aspx?did=75438" class="nav-link btn-main">Register</a>
                         <a href="#courseInfo" class="nav-link">Course Information</a>
                         <a href="#courseMaps" class="nav-link">Course Maps</a>
                         <a href="#aidStations" class="nav-link">Aid Stations</a>
@@ -77,21 +78,24 @@
 
             <!-- Main Content-->
             <div class="col-8">
-                <div id='myScrollspy' class="container scroll-to" style='border:1px solid green' data-spy='scroll' data-target='navScrollspy' data-offset='80'>
-                    <div id="courseInfo" class="container pb-5">
-                        <h4 class="section-title">Course Information</h4>
+                <div id='myScrollspy' class="container scroll-to" data-spy='scroll' data-target='navScrollspy' data-offset='80'>
+                    <div id="course-info" class="container pb-5">
+                        <h4 id="courseInfo" class="section-title">Course Information</h4>
                         <div class="bottom-line"></div>
                         <div class='mt-4'>
                             <h5>Description</h5>
-                            <p>This course takes place on the trail system throughout Corner Canyon. Each runner will receive a finisher medal, a tech shirt and random swag items</p>
+                            <p>You will run on many trails throughout Corner Canyon to name a few, Ghost Falls, Rattler, Turkey Road, Clarks Trail, Anne’s Trail, Canyon Hollow, Oak Hollow, Bonneville Shore Line and the famous Widowmaker climb</p>
                             <h5>Drop Bags:</h5>
                             <p>Drop bags will be at:</p>
-                            <p>Aid Station #4 (mile 18)</p>
-                            <p>Aid Station $6 (mile 27.5)</p>
+                            <ul>
+                                <li>Aid Station #4 (mile 18)</li>
+                                <li>Aid Station #6 (mile 27.5)</li>
+                            </ul>
+                            
                             <p><span>**</span>Please have your drop bags at the line by 5:30a.m.</p>
                         </div>
                         <div class="course-marking">
-                            <div class='mt-4'>
+                            <div class='marking-content'>
                                 <h5>Marking and Signage</h5>
                                 <p>You will be folling the florescent pink ribbon with signage for critical turns and juctions</p>
                                 <p>Keep an eye out for caution take that are meant to show the wrong direction. Dont cross over them!</p>
@@ -108,8 +112,10 @@
                         <img src="./img/profile.png" alt="50k course map profile">
                         <h5 class='mt-5'>Map</h5>
                         <img src="./img/25course.png" alt="50k course map">
-                        <a href="#" class="btn-main">Interact</a>
-                        <a href="#" class="btn-main">Download GPX</a>
+                        <div class="maps-buttons">
+                            <a href="http://elevatemyrace.com/corner_canyon_50k/" target='_blank' class="btn-main">Launch Map</a>
+                            <a href="./img/50kgpx.gpx" class="btn-main" dowload>Download GPX</a>
+                        </div>
                     </div>  
             
                     <div id='aid-station' class="container mb-5">
@@ -179,20 +185,20 @@
                         </ul>
                     </div>
             
-                    <div id='racer-info' class="container text-center mb-5">
+                    <div id='racer-info' class="container text-center">
                         <h4 id="racerInfo" class="section-title">Racer Information</h4>
                         <div class="bottom-line"></div>
-                        <div class="locations d-flex justify-content-around mb-4">
-                        <div class='mt-4'>
+                        <div class="locations d-flex justify-content-around mb-5">
+                        <div class=''>
                             <h5>Start + Finish Location</h5>
                             <p>October 10, 2020</p>
                             <p>6:00 a.m.</p>
                             <p>Andy Ballard Arena</p>
                             <p>1600 E Highland Drive</p>
                             <p>Draper, UT 84020</p>
-                            <a href="#" class="btn-main">Get Directions</a>
+                            <a href="https://goo.gl/maps/6VWiJepcg3K4VAQn9" class="btn-main">Get Directions</a>
                         </div>
-                        <div class='mt-4'>
+                        <div class=''>
                             <h5>Packet Pick-up</h5>
                             <p>October 9, 2020</p>
                             <p>4-7:30 p.m.</p>
@@ -222,7 +228,7 @@
                     <div id='results-entrants' class="container text-center mb-4">
                         <h4 id="results" class="section-title">Results/Entrants</h4>
                         <div class="bottom-line"></div>
-                        <a href="#" class="btn-main">View Results</a>
+                        <a href="https://ultrasignup.com/results_event.aspx?did=65508" class="btn-main">View Results</a>
                         <a href="#" class="btn-main">2020 Entrants</a>
                     </div>
             
@@ -244,8 +250,8 @@
             </div>
     
             <div class="footer-links">
+                <a href="https://ultrasignup.com/register.aspx?did=75438">Sign Up</a>
                 <a href="about.html">About Us</a>
-                <a href="#">Become a Volunteer</a>
                 <a href="contact.html">Contact Us</a>
             </div>
                     
