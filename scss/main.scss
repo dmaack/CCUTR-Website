@@ -399,7 +399,9 @@ img {
 
 #races {
     &-a {
-        border-bottom: 3px solid $main-color;
+        //border-bottom: 3px solid $main-color;
+        //background: #F2C24D;
+        background: $light-grey;
         p {
             font-size: 1.2rem;
             color: $dark-color;
@@ -414,8 +416,9 @@ img {
             position: sticky;
             top: 5.5rem;
             overflow-y: auto; 
-            border-bottom: 1px solid $dark-color;
-            
+            //border-bottom: 2px solid $main-color;
+            //background: $medium-color;
+
             .nav-pills .nav-link {
                 font-size: 1.2rem;
                 color: $dark-color;
@@ -443,6 +446,8 @@ img {
         }
 
         #myScrollspy {
+            
+            //border-left: 1px solid $main-color;
             h4 {
                 margin-top: 2rem;
             }

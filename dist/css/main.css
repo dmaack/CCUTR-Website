@@ -70,6 +70,12 @@
   display: block;
   margin: 0 auto 3rem auto; }
 
+.section-line {
+  height: 2px;
+  width: 100%;
+  background: #28a745;
+  display: block; }
+
 * {
   margin: 0;
   padding: 0;
@@ -291,7 +297,7 @@ img {
   padding-right: 1rem; }
 
 #races-a {
-  border-bottom: 3px solid #28a745; }
+  background: #EFF2EF; }
   #races-a p {
     font-size: 1.2rem;
     color: #0B0F09; }
@@ -302,8 +308,7 @@ img {
 #races-b .sticky-offset {
   position: sticky;
   top: 5.5rem;
-  overflow-y: auto;
-  border-bottom: 1px solid #0B0F09; }
+  overflow-y: auto; }
   #races-b .sticky-offset .nav-pills .nav-link {
     font-size: 1.2rem;
     color: #0B0F09; }
