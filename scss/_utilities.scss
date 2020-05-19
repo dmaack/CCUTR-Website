@@ -103,3 +103,11 @@
     display: block;
     margin: 0 auto 3rem auto;
 }
+
+.section-line {
+    height: 2px;
+    width: 100%;
+    background: $main-color;
+    display: block;
+    margin: 2rem auto;
+}

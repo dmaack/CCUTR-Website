@@ -6,7 +6,10 @@
     <meta name='keywords' content='corner canyon, trail running, utah, trail race, about corner canyon ultra trail run'>
     <script src="https://kit.fontawesome.com/8ed908e81d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
     <title>About Us | Corner Canyon Ultra Trail Run</title>
 </head>
 <body>
@@ -39,6 +42,63 @@
         </div>
     </section>
 
+    <section id="about-b" class="about-heading">
+        <div class="container">
+            <div class="who-we-are">
+                <h4>Who we are</h4>
+                <p>It started as a vision years ago to put on a race in Corner Canyon on the trails in this beautiful area. Hoping it would bring exposure to the trails in Draper, create a race that would help others by donating the proceeds and designing courses that would be challenging yet accommodate runners of all skill levels.</p>
+            </div>
+            <div class="race-directors">
+                <img class='john' src="./img/JohnMaack2.jpg" alt="Runner">
+                <img class='troy' src="./img/TroyRobertson.jpg" alt="Troy Robertson">
+            </div>
+           
+        </div>
+    </section>
+
+    <section id="about-c" class="history">
+        <div class="container">
+            <h4>Our history: Past Recipients</h4>
+            <div class="recipients">
+                <div class="recipient">
+                    <img src="" alt="#">
+                    <p>First Recipient</p>
+                </div>
+                <div class="recipient">
+                    <img src="" alt="#">
+                    <p>First Recipient</p>
+                </div>
+                <div class="recipient">
+                    <img src="" alt="#">
+                    <p>First Recipient</p>
+                </div>
+                <div class="recipient">
+                    <img src="" alt="#">
+                    <p>First Recipient</p>
+                </div>
+                <div class="recipient">
+                    <img src="" alt="#">
+                    <p>First Recipient</p>
+                </div>
+                <div class="recipient">
+                    <img src="" alt="#">
+                    <p>First Recipient</p>
+                </div>
+                <div class="recipient">
+                    <img src="" alt="#">
+                    <p>First Recipient</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-d" class="video">
+        <div class="container">
+            <h4>Check out our video from 2017</h4>
+            
+        </div>
+    </section>
+
      <!-- Footer -->
      <footer id="main-footer">
         <div class="footer-content container">
@@ -68,6 +128,29 @@
                 <p> Copyright &copy; 2020. All Rights Reserved</p>
             </div>
     </footer>
+
+    <script>
+        const navbar = document.getElementById('main-nav');
+        let scrolled = false;
+
+        window.onscroll = function() {
+            if(window.pageYOffset > 20 ) {
+                navbar.classList.remove('top');
+                navbar.style.zIndex = '15';
+                //navbar.style.color = '#333';
+                if(!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(() => {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200)
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        }
+    </script>
 
 </body>
 </html>

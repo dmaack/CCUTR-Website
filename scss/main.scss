@@ -10,7 +10,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    //font-family: 'Lato', sans-serif;
     line-height: 1.6;
     background: #fff;
     position: relative;
@@ -53,16 +52,14 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //padding: .5rem;
 
-
-    //navbar addition
+    // Navbar addition
     background: $dark-color;
     transition: .5s ease-in;
     position: fixed;
     width: 100%;
     z-index: 20;
-    //navbar addition
+    // Navbar addition
     &.top {
         background: transparent;
         z-index: 20;
@@ -118,7 +115,6 @@ img {
 
     a {
         //display: block; //makes underline the width of container
-        //font-size: 1.2rem;
         text-decoration: none;
         color: #fff;
         text-transform: uppercase;
@@ -149,29 +145,9 @@ img {
         }
 
         &.races-header {
-            //position: relative;
             background: $races-image no-repeat center right / cover;
-            height: 50vh;
-            //background-attachment: fixed;
-        
-            h1 {
-                //position: fixed;
-                //z-index: 0;
-            }
-
-            p {
-                // margin-top: 4.5rem;
-                // position: fixed;
-                // z-index: 0;
-            }
-
-            // p.race-date {
-            //     padding: 1.5rem 2rem;
-            //     bottom: 0;
-            //     position: absolute;
-            //     margin-bottom: 0;
-                
-            // }
+            height: 40vh;
+            //border-bottom: 3px solid $main-color;
         }
 
         .header-content {
@@ -191,7 +167,6 @@ img {
             p {
                 font-size: 1.5rem;
                 font-weight: bold;
-                //margin-bottom: 2rem;
             }
 
             a {
@@ -252,9 +227,7 @@ img {
 #home {
 
     // Section: A - The Races
-    &-a {
-        //background: $medium-color;
-        
+    &-a {        
         .items {
             //box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
             display: grid;
@@ -309,8 +282,8 @@ img {
             &:hover {
                 transform: scale(1) translateX(5px) translateY(5px); 
                 box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);  
-                // border-bottom: 4px solid $main-color; 
             }
+
         }
 
         
@@ -319,10 +292,8 @@ img {
 
     // Section: B - About Us
     &-b {
-        //background: $medium-color;
-        // background: #d9ecc5;
-        //background-color: #eaf5e0;
         background-color: $light-grey;
+
         .about {
             //background-color: $medium-color;
             display: grid;
@@ -374,9 +345,6 @@ img {
             
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            // grid-gap: 1rem;
-            //padding-left: 2rem;
-            //height: 100%;
 
             div:nth-child(11) {
                 grid-column: 2 / span 1;
@@ -399,7 +367,9 @@ img {
 
 #races {
     &-a {
-        border-bottom: 3px solid $main-color;
+        //border-bottom: 3px solid $main-color;
+        //background: #F2C24D;
+        background: $light-grey;
         p {
             font-size: 1.2rem;
             color: $dark-color;
@@ -407,6 +377,10 @@ img {
     }
 
     &-b {
+        padding-right:  0;
+        padding-left:  0;
+            
+       
         span {
             color: red;
         }
@@ -414,8 +388,7 @@ img {
             position: sticky;
             top: 5.5rem;
             overflow-y: auto; 
-            border-bottom: 1px solid $dark-color;
-            
+
             .nav-pills .nav-link {
                 font-size: 1.2rem;
                 color: $dark-color;
@@ -443,6 +416,7 @@ img {
         }
 
         #myScrollspy {
+            
             h4 {
                 margin-top: 2rem;
             }
@@ -484,10 +458,6 @@ img {
             }
 
             #course-maps{
-                h5 {
-                    // margin-bottom: 1.5rem;
-                }
-
                 p {
                     text-align: center;
                 }
@@ -501,124 +471,85 @@ img {
                     
                 }
             }
+
+            #aid-station {
+                i {
+                    color: $main-color;
+                    padding-left: 1.5rem;
+                }
+            }
+
+            #results-entrants {
+                a {
+                    &:last-child {
+                        margin-left: 1rem;
+                    }
+                }
+            }
         }
 
         
     }
 }
 
+// About Page
 
-
-// #races {
-//     &-a {
-//         //border: 1px solid black;
-//     }
-//     &-b {
-//         display: flex;
-//         margin: 0 2rem;
-//         padding: 3rem 0;
-//         //border: 1px solid black;
-
-//     #navbar-example3 {
-//         font-size: 1.3rem;
-//         width: 35%;
-//         // height: 100%;
-//         // position: fixed;
-//         // z-index: 1;
-//         // top: 2000;
-//         // left: 0;
-//         // overflow-x: hidden;
-//         // border: 2px solid green;
-//         display: flex;
-//         flex-direction: column;
-
-//         //button
-//         .navbar-brand {
-//             text-align: center;
-//             color: #fff;
-//             width: 250px;
-//             margin-left: 1.5rem;
-//             // border-right: none;
-
-//             &:hover {
-//                 background:#136A1A;
-//             }
-//         }
-        
-//         a {
-//             text-decoration: none;
-//             color: #000;
-//             //border-right: 3px solid $main-color;
-//             padding-right: 2rem;
-//             margin-left: 1.5rem;
-//         }
-    
-//         .nav {
-//             display: flex;
-//             flex-direction: column;
-//             padding: 1rem;
-//             line-height: 2.5;
-//             // border: 1px solid blue;
-
-//             .nav-link {
+#about {
+    &-b {
+        .container {
+            display: flex;
+            position: relative;
+            .who-we-are {
+                h4 {
+                    font-size: 1.2rem;
+                    margin-bottom: 2rem;
+                }
+                border-left: 2px solid $main-color;
+                width: 600px;
+                height: 200px;
+                top: 100;
+                left: 20;
+                line-height: 1.6;
+                padding-left: 1rem;
+            }
+            .john {
+                display: inline-block;
+                position: relative;
+                width: 500px;
+                top:75;
+                right: 300;
+            }
+            .troy {
                 
-                
+                display: block;
+                width: 300px;
+                top:105;
+                right: 300;
+            }
 
-//                 &:hover {
-//                     //margin-right: 5rem;
-//                     border-right: 3px solid $main-color;
-//                     //background-color: $medium-color;
-//                 }
-//             }
-//         }
-//     }    
+        }
+    }
 
-//     .race-info {
-//         margin: 0 3rem;
+    &-c {
+        margin-top: 3rem;
+        h4 {
+            margin-bottom: 2rem;
+        }
+        .recipients {
+            display: flex;
+            .recipient {
+                width: 200px;
+                height: 100px;
+            }
+        }
+    }
+}
 
-//         h5 {
-//             font-size: 1.4rem;
-//             margin: 1.5rem 0;
-//         }
-
-//         span {
-//             color: red;
-//             font-size: 1.2rem;
-//         }
-
-//         .btn-main {
-//             color: #fff;
-
-//             &:hover {
-//                 background:#136A1A;
-//             }
-//         }
-
-//         .course-information {
-//             margin-bottom: 2rem;
-//             .course-marking {
-//                 display: flex;
-//                 justify-content: space-between;
-
-//                 div {
-//                     width: 55%;
-
-
-//                 }
-//                 img {
-//                     width: 30%;
-//                 }
-//             }
-//         }
-//     }
-            
-// }
-// }
 
 // Contact Page
 #contact {
     &-a {
-        margin-bottom: 13rem;
+        margin-bottom: 3rem;
         .text-fields {
             display: grid;
             grid-template-areas: 
@@ -669,29 +600,40 @@ img {
     }
 
     &-b {
-        .contact-info {
+        .process {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            //grid-gap: 1rem;
             text-align: center;
-            color: #fff;
 
-            a {
+            //process-icon
+            &-image {
+                border-radius: 50%;
+                // background: $dark-color;
                 color: #fff;
-                text-decoration: none;
+                padding: 1rem;
+                width: 300px;
+                height: 300px;
+                line-height: 70px;
+                text-align: center;
+                position: relative;
+                transition: all 1s;
+                object-fit: cover;
+
+                // hover
+                &:hover {
+                    //background-color: $main-color;
+                    // width: 215px;
+                    // height: 215px;
+                    //line-height: 70px;
+                }
             }
-
         }
+
     }
 
-    &-c {
-        h1 {
-            text-align: center;
-            font-size: 3rem;
-            color: #fff;
-            padding: 4rem;
-        }
-    }
 }
+
 
 
 // Footer
@@ -745,13 +687,10 @@ img {
 
     .social .fab {
         margin-right: 1.2rem;
-        //border: 2px #fff solid;
-        //border-radius: 50%;
         height: 20px;
         width: 20px;
         line-height: 20px;
         text-align: center;
-        //padding: 1rem;
         color: #fff;
         font-size: 1.7rem;
 

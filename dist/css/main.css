@@ -70,6 +70,13 @@
   display: block;
   margin: 0 auto 3rem auto; }
 
+.section-line {
+  height: 2px;
+  width: 100%;
+  background: #28a745;
+  display: block;
+  margin: 2rem auto; }
+
 * {
   margin: 0;
   padding: 0;
@@ -164,7 +171,7 @@ img {
     z-index: 10; }
   #header-home.races-header {
     background: url("../img/50kheader.jpg") no-repeat center right/cover;
-    height: 50vh; }
+    height: 40vh; }
   #header-home .header-content {
     display: flex;
     flex-direction: column;
@@ -291,73 +298,108 @@ img {
   padding-right: 1rem; }
 
 #races-a {
-  border-bottom: 3px solid #28a745; }
+  background: #EFF2EF; }
   #races-a p {
     font-size: 1.2rem;
     color: #0B0F09; }
 
-#races-b span {
-  color: red; }
+#races-b {
+  padding-right: 0;
+  padding-left: 0; }
+  #races-b span {
+    color: red; }
+  #races-b .sticky-offset {
+    position: sticky;
+    top: 5.5rem;
+    overflow-y: auto; }
+    #races-b .sticky-offset .nav-pills .nav-link {
+      font-size: 1.2rem;
+      color: #0B0F09; }
+      #races-b .sticky-offset .nav-pills .nav-link:first-child {
+        text-align: center;
+        color: #fff;
+        margin: 2rem 0; }
+        #races-b .sticky-offset .nav-pills .nav-link:first-child:hover {
+          background: #136A1A; }
+      #races-b .sticky-offset .nav-pills .nav-link:last-child {
+        margin-bottom: 2rem; }
+    #races-b .sticky-offset .nav-pills .nav-link.active {
+      background: #fff;
+      border-right: 3px solid #28a745;
+      border-radius: 0; }
+  #races-b #myScrollspy h4 {
+    margin-top: 2rem; }
+  #races-b #myScrollspy h5 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 1.5rem 0; }
+  #races-b #myScrollspy .btn-main {
+    color: #fff;
+    text-decoration: none; }
+    #races-b #myScrollspy .btn-main:hover {
+      background: #136A1A; }
+  #races-b #myScrollspy #course-info ul {
+    margin-left: 2rem; }
+  #races-b #myScrollspy #course-info .course-marking {
+    display: flex;
+    justify-content: space-between; }
+    #races-b #myScrollspy #course-info .course-marking .marking-content {
+      width: 55%; }
+    #races-b #myScrollspy #course-info .course-marking img {
+      width: 45%;
+      padding: 2rem;
+      object-fit: cover; }
+  #races-b #myScrollspy #course-maps p {
+    text-align: center; }
+  #races-b #myScrollspy #course-maps .maps-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+  #races-b #myScrollspy #aid-station i {
+    color: #28a745;
+    padding-left: 1.5rem; }
+  #races-b #myScrollspy #results-entrants a:last-child {
+    margin-left: 1rem; }
 
-#races-b .sticky-offset {
-  position: sticky;
-  top: 5.5rem;
-  overflow-y: auto;
-  border-bottom: 1px solid #0B0F09; }
-  #races-b .sticky-offset .nav-pills .nav-link {
-    font-size: 1.2rem;
-    color: #0B0F09; }
-    #races-b .sticky-offset .nav-pills .nav-link:first-child {
-      text-align: center;
-      color: #fff;
-      margin: 2rem 0; }
-      #races-b .sticky-offset .nav-pills .nav-link:first-child:hover {
-        background: #136A1A; }
-    #races-b .sticky-offset .nav-pills .nav-link:last-child {
+#about-b .container {
+  display: flex;
+  position: relative; }
+  #about-b .container .who-we-are {
+    border-left: 2px solid #28a745;
+    width: 600px;
+    height: 200px;
+    top: 100;
+    left: 20;
+    line-height: 1.6;
+    padding-left: 1rem; }
+    #about-b .container .who-we-are h4 {
+      font-size: 1.2rem;
       margin-bottom: 2rem; }
-  #races-b .sticky-offset .nav-pills .nav-link.active {
-    background: #fff;
-    border-right: 3px solid #28a745;
-    border-radius: 0; }
+  #about-b .container .john {
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    top: 75;
+    right: 300; }
+  #about-b .container .troy {
+    display: block;
+    width: 300px;
+    top: 105;
+    right: 300; }
 
-#races-b #myScrollspy h4 {
-  margin-top: 2rem; }
-
-#races-b #myScrollspy h5 {
-  font-weight: bold;
-  font-size: 1.4rem;
-  margin: 1.5rem 0; }
-
-#races-b #myScrollspy .btn-main {
-  color: #fff;
-  text-decoration: none; }
-  #races-b #myScrollspy .btn-main:hover {
-    background: #136A1A; }
-
-#races-b #myScrollspy #course-info ul {
-  margin-left: 2rem; }
-
-#races-b #myScrollspy #course-info .course-marking {
-  display: flex;
-  justify-content: space-between; }
-  #races-b #myScrollspy #course-info .course-marking .marking-content {
-    width: 55%; }
-  #races-b #myScrollspy #course-info .course-marking img {
-    width: 45%;
-    padding: 2rem;
-    object-fit: cover; }
-
-#races-b #myScrollspy #course-maps p {
-  text-align: center; }
-
-#races-b #myScrollspy #course-maps .maps-buttons {
-  margin-top: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly; }
+#about-c {
+  margin-top: 3rem; }
+  #about-c h4 {
+    margin-bottom: 2rem; }
+  #about-c .recipients {
+    display: flex; }
+    #about-c .recipients .recipient {
+      width: 200px;
+      height: 100px; }
 
 #contact-a {
-  margin-bottom: 13rem; }
+  margin-bottom: 3rem; }
   #contact-a .text-fields {
     display: grid;
     grid-template-areas: 'name email' 'subject phone' 'message message';
@@ -389,20 +431,21 @@ img {
   #contact-a p {
     margin-bottom: 1.4rem; }
 
-#contact-b .contact-info {
+#contact-b .process {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center;
-  color: #fff; }
-  #contact-b .contact-info a {
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center; }
+  #contact-b .process-image {
+    border-radius: 50%;
     color: #fff;
-    text-decoration: none; }
-
-#contact-c h1 {
-  text-align: center;
-  font-size: 3rem;
-  color: #fff;
-  padding: 4rem; }
+    padding: 1rem;
+    width: 300px;
+    height: 300px;
+    line-height: 70px;
+    text-align: center;
+    position: relative;
+    transition: all 1s;
+    object-fit: cover; }
 
 #main-footer {
   background: #0B0F09;
