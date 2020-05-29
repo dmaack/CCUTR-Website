@@ -137,7 +137,7 @@ img {
 #header {
     &-home {
         background: $bg-image no-repeat center right / cover;
-        height: 60vh;
+        height: 70vh;
         color: #fff;
         position: relative; // overlay
         * {
@@ -243,6 +243,7 @@ img {
             color: #fff;
             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
             font-size: 0;
+            transition: all .2s ease-in-out;
         
             .centered-text {
                 position: absolute;
@@ -280,13 +281,13 @@ img {
             }
 
             &:hover {
-                transform: scale(1) translateX(5px) translateY(5px); 
-                box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);  
+                // transform: scale(1) translateX(5px) translateY(5px); 
+                //box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);  
+                transform: scale(1.1);
+                //border-bottom: 1px solid $main-color;
             }
 
         }
-
-        
 
     }
 
@@ -345,6 +346,8 @@ img {
             
             display: grid;
             grid-template-columns: repeat(5, 1fr);
+            grid-gap: 2rem;
+            padding-bottom: 2rem;
 
             div:nth-child(11) {
                 grid-column: 2 / span 1;
@@ -352,11 +355,19 @@ img {
         }
 
         .sponsor-logo {
-            width: 175px;
-            height: 175px;
-            margin-top: 2.5rem;
-            padding-left: 2.5rem;
-            padding-right: 1rem;
+            width: 150px;
+            height: 150px;
+            margin-top: 2rem;
+
+            //border: 1px solid red;
+            //object-fit: cover;
+            
+            a > img {
+                // object-fit: cover;
+                // padding: 1rem;
+                // text-align: center;
+                
+            }
 
         }
     }
@@ -383,11 +394,14 @@ img {
        
         span {
             color: red;
+            font-size: 20px;
+            font-weight: bold;
         }
         .sticky-offset {
             position: sticky;
             top: 5.5rem;
             overflow-y: auto; 
+            //background: $light-grey;
 
             .nav-pills .nav-link {
                 font-size: 1.2rem;
@@ -416,7 +430,7 @@ img {
         }
 
         #myScrollspy {
-            
+            //border-left: 1px solid $main-color;
             h4 {
                 margin-top: 2rem;
             }
@@ -550,6 +564,7 @@ img {
 #contact {
     &-a {
         margin-bottom: 3rem;
+
         .text-fields {
             display: grid;
             grid-template-areas: 
@@ -600,9 +615,21 @@ img {
     }
 
     &-b {
+        display: flex;
+        align-items: center;
+        .form {
+            width: 30%;
+            height: 100%;
+            border: 1px solid black;
+        }
+
+        .directors {
+            width: 60%;
+            border: 1px solid black;
+        }
         .process {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             //grid-gap: 1rem;
             text-align: center;
 
