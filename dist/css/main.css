@@ -164,7 +164,7 @@ img {
 
 #header-home {
   background: url("../img/mainHeader2.jpg") no-repeat center right/cover;
-  height: 60vh;
+  height: 70vh;
   color: #fff;
   position: relative; }
   #header-home * {
@@ -230,7 +230,8 @@ img {
   text-align: center;
   color: #fff;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-  font-size: 0; }
+  font-size: 0;
+  transition: all .2s ease-in-out; }
   #home-a .item-image .centered-text {
     position: absolute;
     top: 30%;
@@ -256,8 +257,7 @@ img {
     height: 100%;
     background: rgba(0, 0, 0, 0.2); }
   #home-a .item-image:hover {
-    transform: scale(1) translateX(5px) translateY(5px);
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
+    transform: scale(1.1); }
 
 #home-b {
   background-color: #EFF2EF; }
@@ -286,16 +286,16 @@ img {
 
 #home-c .sponsor {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); }
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+  padding-bottom: 2rem; }
   #home-c .sponsor div:nth-child(11) {
     grid-column: 2 / span 1; }
 
 #home-c .sponsor-logo {
-  width: 175px;
-  height: 175px;
-  margin-top: 2.5rem;
-  padding-left: 2.5rem;
-  padding-right: 1rem; }
+  width: 150px;
+  height: 150px;
+  margin-top: 2rem; }
 
 #races-a {
   background: #EFF2EF; }
@@ -307,7 +307,9 @@ img {
   padding-right: 0;
   padding-left: 0; }
   #races-b span {
-    color: red; }
+    color: red;
+    font-size: 20px;
+    font-weight: bold; }
   #races-b .sticky-offset {
     position: sticky;
     top: 5.5rem;
@@ -431,21 +433,31 @@ img {
   #contact-a p {
     margin-bottom: 1.4rem; }
 
-#contact-b .process {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  text-align: center; }
-  #contact-b .process-image {
-    border-radius: 50%;
-    color: #fff;
-    padding: 1rem;
-    width: 300px;
-    height: 300px;
-    line-height: 70px;
-    text-align: center;
-    position: relative;
-    transition: all 1s;
-    object-fit: cover; }
+#contact-b {
+  display: flex;
+  align-items: center; }
+  #contact-b .form {
+    width: 30%;
+    height: 100%;
+    border: 1px solid black; }
+  #contact-b .directors {
+    width: 60%;
+    border: 1px solid black; }
+  #contact-b .process {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center; }
+    #contact-b .process-image {
+      border-radius: 50%;
+      color: #fff;
+      padding: 1rem;
+      width: 300px;
+      height: 300px;
+      line-height: 70px;
+      text-align: center;
+      position: relative;
+      transition: all 1s;
+      object-fit: cover; }
 
 #main-footer {
   background: #0B0F09;
