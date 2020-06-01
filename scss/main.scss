@@ -44,6 +44,7 @@ img {
     color: #fff;
     text-transform: uppercase;
     margin-left: 1rem;
+    
 }
 
 
@@ -80,6 +81,7 @@ img {
         // Hide nested ul by default
         ul {
             display: none;
+            //border: 1px solid black;
         }
 
         &:hover {
@@ -97,6 +99,12 @@ img {
         
             li {
                 background: #fff;
+                // padding: 2rem;
+                // border-bottom: 1px solid black;
+                &:hover {
+                    //border-left: 3px solid $main-color;
+                    
+                }
 
                 a {
                     color: #333; 
@@ -108,6 +116,7 @@ img {
                     
                     //background: #fff;
                     color: inherit; 
+                    
                 } 
             }
         }
@@ -130,7 +139,12 @@ img {
         &.current {
             border-color: $main-color;
         }
+        
     }
+    .logo-link {
+        border-bottom: none;
+    }
+
 }
 
 // Header
