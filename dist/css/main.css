@@ -161,6 +161,8 @@ img {
       border-color: #F5FBEF; }
     #main-nav a.current {
       border-color: #28a745; }
+  #main-nav .logo-link {
+    border-bottom: none; }
 
 #header-home {
   background: url("../img/mainHeader2.jpg") no-repeat center right/cover;
