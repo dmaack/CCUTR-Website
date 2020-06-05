@@ -445,10 +445,12 @@ img {
   #about-c h4 {
     margin-bottom: 2rem; }
   #about-c .recipients {
-    display: flex; }
-    #about-c .recipients .recipient {
-      width: 200px;
-      height: 100px; }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    #about-c .recipients img {
+      height: 200px;
+      object-fit: cover; }
 
 #contact-b {
   margin-bottom: 3rem; }

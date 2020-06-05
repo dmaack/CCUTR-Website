@@ -656,9 +656,11 @@ img {
         }
         .recipients {
             display: flex;
-            .recipient {
-                width: 200px;
-                height: 100px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            img {
+                height: 200px;
+                object-fit: cover;
             }
         }
     }
