@@ -617,6 +617,7 @@ img {
             color: #fff;
             font-size: 1rem;
             text-decoration: none;
+            border: none;
             cursor: pointer;
             &:hover {
                 background:#136A1A;
@@ -639,6 +640,7 @@ img {
 
         .directors {
             width: 40%;
+            padding-bottom: 2rem;
            // border: 1px solid black;
         }
         .process {
