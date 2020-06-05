@@ -382,20 +382,23 @@ img {
   #races-b #myScrollspy #course-info ul {
     margin-left: 2rem; }
   #races-b #myScrollspy #course-info .course-marking {
-    display: flex;
-    justify-content: space-between; }
+    display: flex; }
     #races-b #myScrollspy #course-info .course-marking .marking-content {
-      width: 55%; }
+      width: 60%;
+      padding-right: 1rem; }
     #races-b #myScrollspy #course-info .course-marking img {
-      width: 45%;
+      width: 40%;
       padding: 2rem;
-      object-fit: cover; }
+      object-fit: contain; }
     #races-b #myScrollspy #course-info .course-marking .pink-ribbon {
       color: #fd217f; }
     #races-b #myScrollspy #course-info .course-marking .blue-ribbon {
       color: #0169eb; }
     #races-b #myScrollspy #course-info .course-marking .orange-ribbon {
       color: #e56d47; }
+  #races-b #myScrollspy #course-maps .ascent-and-max-elevation {
+    display: flex;
+    justify-content: space-evenly; }
   #races-b #myScrollspy #course-maps p {
     text-align: center; }
   #races-b #myScrollspy #course-maps .maps-buttons {

@@ -538,16 +538,20 @@ img {
 
                 .course-marking {
                     display: flex;
-                    justify-content: space-between;
+                    //justify-content: space-evenly;
+                    
 
                     .marking-content {
-                        width: 55%;
+                        // width: 600px;
+                        width: 60%;
+                        padding-right: 1rem;
                     }
                     img {
-                        width: 45%;
+                        width: 40%;
+                        // width: 500px;
+                        // height: 400px;
                         padding: 2rem;
-                        // height: 75px;
-                        object-fit: cover;
+                        object-fit: contain;
                     }
 
                     .pink-ribbon {
@@ -563,6 +567,12 @@ img {
             }
 
             #course-maps{
+
+                .ascent-and-max-elevation {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+                
                 p {
                     text-align: center;
                 }
