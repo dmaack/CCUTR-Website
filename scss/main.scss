@@ -388,8 +388,8 @@ img {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-gap: 2rem;
-            padding-bottom: 2rem;
-            
+            margin-bottom: 3rem;
+            //border: 1px solid red;
 
             div:nth-child(11) {
                 grid-column: 2 / span 1;
@@ -740,7 +740,7 @@ img {
 #main-footer {
     background: $dark-color;
     color: #fff;
-    padding: .5rem 0;
+    padding: 1.5rem 0 .5rem 0;
 
     .footer-content {
         display: flex;
@@ -778,8 +778,22 @@ img {
             //padding-bottom: 0.5rem;
             transition: border-color .5s;
 
+            &:first-child {
+                border: 2px solid $main-color;
+                
+                border-radius: 5px;
+                margin-bottom: .5rem;
+                padding: .2rem;
+            }
+
             &:hover {
                 border-color: $main-color;
+
+                &:first-child {
+                    background-color: $main-color;
+                    
+                    
+                }
             }
 
         }
