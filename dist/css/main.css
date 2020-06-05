@@ -439,12 +439,10 @@ img {
   display: flex;
   align-items: center; }
   #contact-b .form {
-    width: 30%;
-    height: 100%;
-    border: 1px solid black; }
-  #contact-b .directors {
     width: 60%;
-    border: 1px solid black; }
+    height: 100%; }
+  #contact-b .directors {
+    width: 40%; }
   #contact-b .process {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
