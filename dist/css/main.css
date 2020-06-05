@@ -384,6 +384,12 @@ img {
       width: 45%;
       padding: 2rem;
       object-fit: cover; }
+    #races-b #myScrollspy #course-info .course-marking .pink-ribbon {
+      color: #fd217f; }
+    #races-b #myScrollspy #course-info .course-marking .blue-ribbon {
+      color: #0169eb; }
+    #races-b #myScrollspy #course-info .course-marking .orange-ribbon {
+      color: #e56d47; }
   #races-b #myScrollspy #course-maps p {
     text-align: center; }
   #races-b #myScrollspy #course-maps .maps-buttons {
