@@ -171,8 +171,14 @@ img {
   position: relative; }
   #header-home * {
     z-index: 10; }
-  #header-home.races-header {
-    background: url("../img/50kheader.jpg") no-repeat center right/cover;
+  #header-home.fiftyk-header {
+    background: url("../img/Rattlertrail.jpg") no-repeat center right/cover;
+    height: 40vh; }
+  #header-home.twentyfivek-header {
+    background: url("../img/greentrees.jpg") no-repeat center right/cover;
+    height: 40vh; }
+  #header-home.fivek-header {
+    background: url("../img/falltrees.jpg") no-repeat center right/cover;
     height: 40vh; }
   #header-home .header-content {
     display: flex;

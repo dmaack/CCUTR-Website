@@ -158,10 +158,17 @@ img {
             z-index: 10;
         }
 
-        &.races-header {
-            background: $races-image no-repeat center right / cover;
+        &.fiftyk-header {
+            background: $fiftyk-image no-repeat center right / cover;
             height: 40vh;
-            //border-bottom: 3px solid $main-color;
+        }
+        &.twentyfivek-header {
+            background: $twentyfivek-image no-repeat center right / cover;
+            height: 40vh;
+        }
+        &.fivek-header {
+            background: $fivek-image no-repeat center right / cover;
+            height: 40vh;
         }
 
         .header-content {
