@@ -618,14 +618,16 @@ img {
         .container {
             display: flex;
             position: relative;
+            justify-content: space-between;
             .who-we-are {
+                width: 50%;
                 h4 {
-                    font-size: 1.2rem;
+                    //font-size: 1.2rem;
                     margin-bottom: 2rem;
                 }
                 border-left: 2px solid $main-color;
-                width: 600px;
-                height: 200px;
+                // width: 600px;
+                // height: 200px;
                 top: 100;
                 left: 20;
                 line-height: 1.6;
@@ -637,13 +639,7 @@ img {
                 width: 500px;
                 top:75;
                 right: 300;
-            }
-            .troy {
-                
-                display: block;
-                width: 300px;
-                top:105;
-                right: 300;
+                opacity: 0.9;
             }
 
         }

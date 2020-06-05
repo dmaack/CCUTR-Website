@@ -416,29 +416,24 @@ img {
 
 #about-b .container {
   display: flex;
-  position: relative; }
+  position: relative;
+  justify-content: space-between; }
   #about-b .container .who-we-are {
+    width: 50%;
     border-left: 2px solid #28a745;
-    width: 600px;
-    height: 200px;
     top: 100;
     left: 20;
     line-height: 1.6;
     padding-left: 1rem; }
     #about-b .container .who-we-are h4 {
-      font-size: 1.2rem;
       margin-bottom: 2rem; }
   #about-b .container .john {
     display: inline-block;
     position: relative;
     width: 500px;
     top: 75;
-    right: 300; }
-  #about-b .container .troy {
-    display: block;
-    width: 300px;
-    top: 105;
-    right: 300; }
+    right: 300;
+    opacity: 0.9; }
 
 #about-c {
   margin-top: 3rem; }
