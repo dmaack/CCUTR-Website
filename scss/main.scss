@@ -216,7 +216,7 @@ img {
     // Header Inner
     &-inner {
         //background: $dark-color;
-        background: $bg-image no-repeat 20% 10% / cover;
+        background: $bg-image no-repeat 40% 62% / cover;
         height: 6rem;
         border-bottom: 3px solid $main-color;
         position: relative; // overlay
@@ -232,6 +232,10 @@ img {
             width: 100%;
             height: 100%;
             background: rgba(0,0,0,0.2);
+        }
+
+        .logo-link {
+            padding-top: 1rem;
         }
     }
 }
