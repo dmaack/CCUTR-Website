@@ -20,7 +20,7 @@
 <body>
 
     <!-- Header -->
-    <header id='header-home' class="races-header"> 
+    <header id='header-home' class="twentyfivek-header"> 
        
             <nav id="main-nav" class="top nav-bg">
                 <a class='logo-link' href="index.html"><img src="img/logo.png" alt="Corner Canyon Trail Run Logo" id="logo" /></a>
@@ -91,10 +91,10 @@
                         <div class="course-marking">
                             <div class='marking-content'>
                                 <h5>Marking and Signage</h5>
-                                <p>You will be following the florescent blue ribbon with signage for critical turns and juctions</p>
+                                <p>You will be following the florescent <strong class='blue-ribbon'>blue ribbon</strong> with signage for critical turns and juctions</p>
                                 <p>Keep an eye out for caution tape that are meant to show the wrong direction. Dont cross over them!</p>
                             </div>
-                            <img src="./img/pinkRibbon2.jpg" alt="Sunflower with pink ribbon tied to it">
+                            <img src="./img/blue-ribbon.jpeg" alt="Sunflower with pink ribbon tied to it">
                         </div>
                     </div>
 
@@ -104,10 +104,13 @@
                         <h4 id="courseMaps" class="section-title">Course Maps</h4>
                         <div class="bottom-line"></div>
                         <h5>Profile</h5>
-                        <p><i class="fas fa-mountain"></i> 3,951 ft. total gain </p>
-                        <img src="./img/profile.png" alt="50k course map profile">
+                        <div class='ascent-and-max-elevation'>
+                            <p><i class="fas fa-mountain"></i> 3,951 ft. total gain </p>
+                            <p><i class="fas fa-mountain"></i> 6,335 ft. max elevation</p>
+                        </div>
+                        <img src="./img/25kProfile.png" alt="50k course map profile">
                         <h5 class='mt-5'>Map</h5>
-                        <img src="./img/25course.png" alt="50k course map">
+                        <img src="./img/25kMap.png" alt="50k course map">
                         <div class="maps-buttons">
                             <a href="http://elevatemyrace.com/corner_canyon_25k/" target='_blank' class="btn-main">Launch Map</a>
                             <a href="./img/25kgpx.gpx" class="btn-main" dowload>Download GPX</a>
@@ -202,6 +205,28 @@
                         <div class="bottom-line"></div>
                         <a href="https://ultrasignup.com/results_event.aspx?did=65508" class="btn-main">View Results</a>
                         <a href="#" class="btn-main">2021 Entrants</a>
+
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Record Holder</th>
+                                <!-- <th scope="col">Name</th> -->
+                                <th scope="col">Time</th>
+                                <th scope="col">Year</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                        
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope='row'>Eli White</td>
+                                    <td>4:13:54</td>
+                                    <td>2019</td>
+                                   
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
             
                 </div>
@@ -210,9 +235,17 @@
         </div> <!--row close-->
     </div>
 
-     <!-- Footer -->
-     <footer id="main-footer">
+    <!-- Footer -->
+    <footer id="main-footer">
         <div class="footer-content container">
+
+            <div class="footer-links">
+                <a href="https://ultrasignup.com/register.aspx?did=75438">Sign Up</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="#">Become a Volunteer</a>
+            </div>
+            
             <div class="address">
                 <p class="strong">Andy Ballard Arena</p>
                 <p>
@@ -220,25 +253,20 @@
                     Draper, UT 84020
                 </p>
             </div>
-    
-            <div class="footer-links">
-                <a href="https://ultrasignup.com/register.aspx?did=75438">Sign Up</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="#">Become a Volunteer</a>
-            </div>
-                    
-                    
+
+           
+            
+            
             <div class="social">
                 <a href='https://www.facebook.com/CornerCanyonUltraTrailRun/' target='_blank'><i class="fab fa-facebook"></i></a>
                 <a href='https://www.instagram.com/corner_canyon_ultra_trail_race/?hl=en' target='_blank'><i class="fab fa-instagram"></i></a>
             </div>
-                    
-            </div>
-
-            <div class="copyright">
-                <p> Copyright &copy; 2020. All Rights Reserved</p>
-            </div>
+            
+        </div>
+        <!-- <p class="copyright">Copyright &copy; 2020. All Rights Reserved</p> -->
+        <div class="copyright">
+            <p> Copyright &copy; 2020. All Rights Reserved</p>
+        </div>
     </footer>
 
 
