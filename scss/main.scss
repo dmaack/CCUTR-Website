@@ -308,46 +308,31 @@ img {
     // Section: B - About Us
     &-b {
         background-color: $light-grey;
+        
+        .container {
+            display: flex;
+            // align-self: center;
+            justify-content: center;
+            //justify-content: space-between;
+            //border: 1px solid red;
+            
+        }
 
         .about {
             //background-color: $medium-color;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 3rem;
-            padding: 3rem 1rem;
-
-            h2 {
-                margin-bottom: 4rem;
-                font-size: 2.3rem;
-            }
-
-            p {
-                margin-bottom: 2.5rem;
-                
-
-            }
-
-            a {
-                color: #fff;
-                text-decoration: none;
-                margin-bottom: 1.5rem;
-                &:first-child {
-                    color: $main-color;
-                }
-
-                &:hover {
-                    background:#136A1A;
-
-                    &:first-child {
-                        background: none;
-                    }
-                }
-            }
+           // display: grid;
+            //grid-template-columns: repeat(2, 1fr);
+            // grid-gap: 3rem;
+            padding: 0 1rem;
+            margin: 6rem 0 0 0;
+            width: 50%;
+            // border: 1px solid blue;
 
             img {
                 width: 600px;
                 height: 400px;
                 object-fit: cover;
+                //border: 1px solid blue;
             }
 
             #slider {
@@ -357,8 +342,42 @@ img {
                 }
             }
             
+        }
 
+        .about-text {
 
+            width: 50%;
+            padding: 2rem;
+            //border: 1px solid green;
+            h2 {
+                margin-bottom: 4rem;
+                font-size: 2.3rem;
+            }
+
+            p {
+                margin-bottom: 2.5rem;
+                
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                margin-bottom: 2rem;
+
+                &:first-child {
+                    color: $main-color;
+                    margin-top: none;
+                }
+
+                &:hover {
+                    background:#136A1A;
+
+                    &:first-child {
+                        background: none;
+                    }
+
+                }
+            }
         }
     }
 
