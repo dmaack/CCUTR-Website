@@ -275,9 +275,14 @@ img {
       margin-bottom: 2.5rem; }
     #home-b .about a {
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      margin-bottom: 1.5rem; }
+      #home-b .about a:first-child {
+        color: #28a745; }
       #home-b .about a:hover {
         background: #136A1A; }
+        #home-b .about a:hover:first-child {
+          background: none; }
     #home-b .about img {
       width: 600px;
       height: 400px;

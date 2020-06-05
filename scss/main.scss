@@ -323,14 +323,24 @@ img {
 
             p {
                 margin-bottom: 2.5rem;
+                
+
             }
 
             a {
                 color: #fff;
                 text-decoration: none;
+                margin-bottom: 1.5rem;
+                &:first-child {
+                    color: $main-color;
+                }
 
                 &:hover {
                     background:#136A1A;
+
+                    &:first-child {
+                        background: none;
+                    }
                 }
             }
 
