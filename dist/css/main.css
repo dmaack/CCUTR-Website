@@ -409,7 +409,7 @@ img {
   #races-b #myScrollspy #aid-station i {
     color: #28a745;
     padding-left: 1.5rem; }
-  #races-b #myScrollspy #results-entrants a:last-child {
+  #races-b #myScrollspy #results-entrants a {
     margin-left: 1rem; }
   #races-b #myScrollspy #results-entrants table {
     margin-top: 3rem; }
