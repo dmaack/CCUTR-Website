@@ -442,7 +442,7 @@ img {
   #about-c .recipients {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-evenly; }
     #about-c .recipients img {
       height: 200px;
       object-fit: cover; }
