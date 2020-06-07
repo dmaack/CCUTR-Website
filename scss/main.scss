@@ -596,9 +596,7 @@ img {
 
             #results-entrants {
                 a {
-                    &:last-child {
-                        margin-left: 1rem;
-                    }
+                    margin-left: 1rem;
                 }
 
                 table {
@@ -653,7 +651,7 @@ img {
         .recipients {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-evenly;
             img {
                 height: 200px;
                 object-fit: cover;
