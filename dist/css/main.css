@@ -426,7 +426,8 @@ img {
     line-height: 1.6;
     padding-left: 1rem; }
     #about-b .container .who-we-are h4 {
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      font-weight: bold; }
   #about-b .container .john {
     display: inline-block;
     position: relative;
