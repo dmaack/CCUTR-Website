@@ -580,3 +580,10 @@ img {
     font-size: 1rem;
     text-align: center;
     margin: 0 5rem 0 9rem; }
+
+@media (max-width: 1000px) {
+  #home-a .centered-text {
+    font-size: 1rem;
+    font-weight: 0; }
+  #home-a a {
+    padding: 0.6rem 1.2rem; } }
