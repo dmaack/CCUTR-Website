@@ -576,7 +576,7 @@ img {
     padding-top: 2rem;
     font-size: 1rem;
     text-align: center;
-    margin: 0 5rem 0 9rem; }
+    margin: 0 auto; }
 
 @media (max-width: 1000px) {
   #home-a .centered-text {
@@ -607,4 +607,20 @@ img {
       width: 100%;
       margin-bottom: 1.5rem; }
     #about-b .container .john {
-      width: 325px; } }
+      width: 325px; }
+  #main-footer {
+    font-size: 1.2rem; }
+    #main-footer .footer-content {
+      flex-direction: column; }
+    #main-footer .address {
+      margin-top: 1.2rem; }
+      #main-footer .address p.strong {
+        font-size: 1.2rem;
+        margin-bottom: 0; }
+    #main-footer .footer-links a:first-child {
+      padding: .2rem 2rem; }
+    #main-footer .social .fab {
+      margin-top: 1rem;
+      width: 25px; }
+    #main-footer .copyright {
+      margin: 0 auto; } }
