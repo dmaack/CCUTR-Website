@@ -171,16 +171,59 @@
 
 // Smartphone
 @media(max-width:500px) {
+
+    #logo {
+        display: none;
+    }
+    // Nav
+    #main-nav {
+        flex-direction: column;
+
+        ul {
+            // flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        li {
+            // display: block;
+            // position: relative;
+            padding: 0;
+
+            ul {
+                li {
+                    padding: 1rem;
+
+                    a {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+
+            a {
+                padding: .8rem;
+                font-size: 1rem;
+            }
+        }
+    }
+
+
     // Header 
     #header {
         &-home {
+            height: 25rem;
             .header-content {
+                // display: none;
+                
                 h1 {
-                    font-size: 2.5rem;
+                    font-size: 2rem;
+                    margin-bottom: 2rem;
                 }
 
                 p {
-                    font-size: 1.2rem;
+                    margin: 3rem 0 0 0;
+                    font-size: 1rem;
                 }
 
                 a {
@@ -189,6 +232,16 @@
                 }
             }
         }
+
+        &-inner {
+            height: 10rem;
+
+            ul {
+                padding: 1rem 0;
+            }
+        }
+            
+
     }
 
 
@@ -300,8 +353,17 @@
                                 }
                             }
                         }
+
+                        #aid-station {
+                            //horizontal scroll table?
+                        }
     
                         #racer-info {
+
+                            .locations {
+                                flex-direction: column;
+                            }
+
                             a {
                                 margin-top: 1rem;
     
@@ -402,9 +464,16 @@
             }
         }
 
-        .social .fab {
-            margin-top: 1rem;
-            width: 25px;
+        .social {
+            margin-top: 2rem;
+
+            .fab {
+                margin-right: 0;
+            }
+
+            a:last-child {
+                margin-left: 2rem;
+            }
         }
 
         .copyright {

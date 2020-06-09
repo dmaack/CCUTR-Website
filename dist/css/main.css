@@ -652,13 +652,38 @@ img {
       margin-top: 2rem; } }
 
 @media (max-width: 500px) {
-  #header-home .header-content h1 {
-    font-size: 2.5rem; }
-  #header-home .header-content p {
-    font-size: 1.2rem; }
-  #header-home .header-content a {
-    padding: .8rem 2rem;
-    font-size: 1rem; }
+  #logo {
+    display: none; }
+  #main-nav {
+    flex-direction: column; }
+    #main-nav ul {
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0; }
+    #main-nav li {
+      padding: 0; }
+      #main-nav li ul li {
+        padding: 1rem; }
+        #main-nav li ul li a {
+          font-size: 1.1rem; }
+      #main-nav li a {
+        padding: .8rem;
+        font-size: 1rem; }
+  #header-home {
+    height: 25rem; }
+    #header-home .header-content h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem; }
+    #header-home .header-content p {
+      margin: 3rem 0 0 0;
+      font-size: 1rem; }
+    #header-home .header-content a {
+      padding: .8rem 2rem;
+      font-size: 1rem; }
+  #header-inner {
+    height: 10rem; }
+    #header-inner ul {
+      padding: 1rem 0; }
   #home-a .container {
     padding: 0; }
   #home-a .section-title {
@@ -703,6 +728,8 @@ img {
         flex-direction: column; }
         #races-b .row .col-9 #myScrollspy #course-maps .maps-buttons a:first-child {
           margin-bottom: 1rem; }
+      #races-b .row .col-9 #myScrollspy #racer-info .locations {
+        flex-direction: column; }
       #races-b .row .col-9 #myScrollspy #racer-info a {
         margin-top: 1rem; }
         #races-b .row .col-9 #myScrollspy #racer-info a:last-child {
@@ -736,8 +763,11 @@ img {
         margin-bottom: 0; }
     #main-footer .footer-links a:first-child {
       padding: .2rem 2rem; }
-    #main-footer .social .fab {
-      margin-top: 1rem;
-      width: 25px; }
+    #main-footer .social {
+      margin-top: 2rem; }
+      #main-footer .social .fab {
+        margin-right: 0; }
+      #main-footer .social a:last-child {
+        margin-left: 2rem; }
     #main-footer .copyright {
       margin: 0 auto; } }
