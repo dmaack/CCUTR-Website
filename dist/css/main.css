@@ -582,6 +582,51 @@ img {
     padding: 0.6rem 1.2rem; } }
 
 @media (max-width: 800px) {
+  #header-home .header-content {
+    text-align: center; }
+    #header-home .header-content h1 {
+      margin: 1rem 2rem; }
+    #header-home .header-content a {
+      padding: 1rem 3rem;
+      font-size: 1.3rem; }
+  #home-a {
+    margin-bottom: 3rem; }
+    #home-a .items {
+      grid-template-columns: repeat(1, 1fr);
+      width: 600px;
+      margin: 0 auto; }
+    #home-a .item .centered-text {
+      font-size: 5.5rem; }
+    #home-a .item .centered-btn {
+      padding: 1.2rem 3rem;
+      font-size: 1.3rem; }
+  #home-b .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 3rem; }
+  #home-b .about {
+    width: 100%; }
+    #home-b .about img {
+      width: 100%; }
+  #home-b .about-text {
+    width: 100%; }
+    #home-b .about-text h2 {
+      margin-top: 1.5rem; }
+    #home-b .about-text p {
+      font-size: 1.4rem; }
+    #home-b .about-text a {
+      padding: 1rem 3rem;
+      font-size: 1.3rem; }
+      #home-b .about-text a:first-child {
+        padding: 0;
+        font-size: 1.4rem; }
+  #home-c .sponsor {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem; }
+    #home-c .sponsor div:nth-child(13) {
+      grid-column: 2 / span 1; }
+    #home-c .sponsor .sponsor-logo {
+      margin: 0 auto; }
   #about-b .container {
     flex-direction: column;
     justify-content: center;
