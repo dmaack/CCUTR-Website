@@ -681,6 +681,36 @@ img {
       grid-column: 1; }
     #home-c .sponsor .sponsor-logo {
       width: 100%; }
+  #races-a .row p {
+    font-size: 1rem; }
+  #races-b .row .col-3 {
+    display: none; }
+  #races-b .row .col-9 {
+    max-width: 100%; }
+    #races-b .row .col-9 #myScrollspy {
+      text-align: center; }
+      #races-b .row .col-9 #myScrollspy #course-info .course-marking {
+        flex-direction: column; }
+        #races-b .row .col-9 #myScrollspy #course-info .course-marking .marking-content {
+          width: auto; }
+        #races-b .row .col-9 #myScrollspy #course-info .course-marking img {
+          width: 100%;
+          padding: 1rem; }
+      #races-b .row .col-9 #myScrollspy #course-maps .ascent-and-max-elevation {
+        flex-direction: column;
+        margin-bottom: 1rem; }
+      #races-b .row .col-9 #myScrollspy #course-maps .maps-buttons {
+        flex-direction: column; }
+        #races-b .row .col-9 #myScrollspy #course-maps .maps-buttons a:first-child {
+          margin-bottom: 1rem; }
+      #races-b .row .col-9 #myScrollspy #racer-info a {
+        margin-top: 1rem; }
+        #races-b .row .col-9 #myScrollspy #racer-info a:last-child {
+          margin-bottom: 1rem; }
+      #races-b .row .col-9 #myScrollspy #results-entrants a {
+        margin-bottom: 1rem; }
+      #races-b .row .col-9 #myScrollspy #results-entrants table {
+        margin-bottom: 3rem; }
   #about-b .container {
     flex-direction: column; }
     #about-b .container .who-we-are {

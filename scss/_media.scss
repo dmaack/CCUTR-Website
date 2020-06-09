@@ -241,6 +241,96 @@
         }
     }
 
+    // Race Pages 
+    #races {
+        &-a {
+            .row p{
+                font-size: 1rem;
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+
+                .col-4 {
+                    // border-bottom: 1px solid black;
+                }
+            }
+        }
+
+        &-b {
+
+            .row {
+                // text-align: center;
+
+                .col-3 {
+                    display: none;
+                }
+
+                .col-9 {
+                    max-width: 100%;
+
+                    #myScrollspy {
+                        text-align: center;
+
+                        #course-info {
+                            .course-marking {
+                                flex-direction: column;
+
+                                .marking-content {
+                                    width: auto;
+                                }
+
+                                img {
+                                    width: 100%;
+                                    padding: 1rem;
+                                }
+                            }
+                        }
+
+                        #course-maps {
+                            .ascent-and-max-elevation {
+                                flex-direction: column;
+                                margin-bottom: 1rem;
+                            }
+    
+                            .maps-buttons {
+                                flex-direction: column;
+    
+                                a:first-child {
+                                    margin-bottom: 1rem;
+                                }
+                            }
+                        }
+    
+                        #racer-info {
+                            a {
+                                margin-top: 1rem;
+    
+                                &:last-child {
+                                    margin-bottom: 1rem;
+                                }
+                            }
+                        }
+    
+                        #results-entrants {
+                            a {
+                                margin-bottom: 1rem;
+                            }
+
+                            table {
+                                margin-bottom: 3rem;
+                            }
+                        }
+
+
+                    } // closes myScrollspy
+
+                    
+                } // closes col-9
+            } // closes row
+                    
+        } // &-b
+    } // closes #races
+
 
     // About Page
     #about {
