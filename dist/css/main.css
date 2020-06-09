@@ -416,7 +416,6 @@ img {
 
 #about-b .container {
   display: flex;
-  position: relative;
   justify-content: space-between; }
   #about-b .container .who-we-are {
     width: 50%;
@@ -429,8 +428,6 @@ img {
       margin-bottom: 2rem;
       font-weight: bold; }
   #about-b .container .john {
-    display: inline-block;
-    position: relative;
     width: 500px;
     top: 75;
     right: 300;
@@ -587,3 +584,27 @@ img {
     font-weight: 0; }
   #home-a a {
     padding: 0.6rem 1.2rem; } }
+
+@media (max-width: 800px) {
+  #about-b .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #about-b .container .who-we-are {
+      width: 100%;
+      margin-bottom: 1.5rem; }
+      #about-b .container .who-we-are h4 {
+        font-size: 1.6rem; }
+      #about-b .container .who-we-are p {
+        font-size: 1.2rem; }
+    #about-b .container .john {
+      width: 600px; } }
+
+@media (max-width: 500px) {
+  #about-b .container {
+    flex-direction: column; }
+    #about-b .container .who-we-are {
+      width: 100%;
+      margin-bottom: 1.5rem; }
+    #about-b .container .john {
+      width: 325px; } }

@@ -615,7 +615,7 @@ img {
     &-b {
         .container {
             display: flex;
-            position: relative;
+            //position: relative;
             justify-content: space-between;
             .who-we-are {
                 width: 50%;
@@ -633,8 +633,8 @@ img {
                 padding-left: 1rem;
             }
             .john {
-                display: inline-block;
-                position: relative;
+                //display: inline-block;
+                //position: relative;
                 width: 500px;
                 top:75;
                 right: 300;
