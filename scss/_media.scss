@@ -171,6 +171,77 @@
 
 // Smartphone
 @media(max-width:500px) {
+    // Header 
+    #header {
+        &-home {
+            .header-content {
+                h1 {
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+
+                a {
+                    padding: .8rem 2rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+
+    // Home Page 
+    #home {
+        
+        &-a {
+            .container {
+                padding: 0;
+            }
+            .section-title {
+                margin-top: 2rem;
+            }
+    
+            .items {
+                width: 100%;
+
+                .centered-text {
+                    font-size: 4rem;
+                }
+
+                .centered-btn {
+                    padding: .8rem 2rem;
+                    font-size: 1rem;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        &-c {
+
+            .section-title {
+                margin-top: 2rem;
+            }
+
+            .sponsor {
+                grid-template-columns: repeat(2, 1fr);
+
+                div:nth-child(11) {
+                    grid-column: 1 ;
+                }
+                div:nth-child(13) {
+                    grid-column: 1 ;
+                }
+
+                .sponsor-logo {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
     // About Page
     #about {
         &-b {
