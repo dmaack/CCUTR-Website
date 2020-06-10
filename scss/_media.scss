@@ -114,6 +114,24 @@
         }
     }
 
+    // Race Pages 
+    #races {
+        
+        &-b {
+            .row {
+                margin: 0;
+
+                #navScrollspy {
+                    padding: 0;
+                    
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
     // About Page
     #about {
         &-b {
@@ -135,8 +153,8 @@
                     }
                 }
         
-                .john {
-                   width: 600px;
+                img {
+                   width: auto;
                 }
             }
         }
@@ -231,13 +249,35 @@
                     font-size: 1rem;
                 }
             }
+
+            &.fiftyk-header, 
+            &.twentyfivek-header,
+            &.fivek-header {
+                h1 {
+                    font-size: 4rem;
+                    margin: 3rem 0 1rem 0;
+                }
+
+                p {
+                    margin-top: 0;
+                    font-size: 1.2rem;
+                }
+            }
         }
 
         &-inner {
             height: 10rem;
 
             ul {
-                padding: 1rem 0;
+                // padding: 1rem 0;
+
+                li {
+                    // padding: 0;
+
+                    a {
+                        // padding: 0 .8rem;
+                    }
+                }
             }
         }
             

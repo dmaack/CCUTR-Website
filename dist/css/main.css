@@ -627,6 +627,12 @@ img {
       grid-column: 2 / span 1; }
     #home-c .sponsor .sponsor-logo {
       margin: 0 auto; }
+  #races-b .row {
+    margin: 0; }
+    #races-b .row #navScrollspy {
+      padding: 0; }
+      #races-b .row #navScrollspy a {
+        font-size: 1rem; }
   #about-b .container {
     flex-direction: column;
     justify-content: center;
@@ -638,8 +644,8 @@ img {
         font-size: 1.6rem; }
       #about-b .container .who-we-are p {
         font-size: 1.2rem; }
-    #about-b .container .john {
-      width: 600px; }
+    #about-b .container img {
+      width: auto; }
   #contact-a {
     flex-direction: column;
     margin-top: 1rem;
@@ -680,10 +686,14 @@ img {
     #header-home .header-content a {
       padding: .8rem 2rem;
       font-size: 1rem; }
+    #header-home.fiftyk-header h1, #header-home.twentyfivek-header h1, #header-home.fivek-header h1 {
+      font-size: 4rem;
+      margin: 3rem 0 1rem 0; }
+    #header-home.fiftyk-header p, #header-home.twentyfivek-header p, #header-home.fivek-header p {
+      margin-top: 0;
+      font-size: 1.2rem; }
   #header-inner {
     height: 10rem; }
-    #header-inner ul {
-      padding: 1rem 0; }
   #home-a .container {
     padding: 0; }
   #home-a .section-title {
