@@ -670,6 +670,8 @@ img {
       font-size: 1.2rem; }
   #header-inner {
     height: 10rem; }
+    #header-inner ul.contact {
+      margin-bottom: 1rem; }
   #home-a .container {
     padding: 0; }
   #home-a .section-title {

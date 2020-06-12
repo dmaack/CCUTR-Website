@@ -33,6 +33,8 @@
                  }
             }
         }
+
+       
     }
 
     // Home Page 
@@ -268,16 +270,8 @@
         &-inner {
             height: 10rem;
 
-            ul {
-                // padding: 1rem 0;
-
-                li {
-                    // padding: 0;
-
-                    a {
-                        // padding: 0 .8rem;
-                    }
-                }
+            ul.contact {
+                margin-bottom: 1rem;
             }
         }
             
