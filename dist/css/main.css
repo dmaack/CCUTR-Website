@@ -699,9 +699,11 @@ img {
   #races-b .row .col-3 {
     display: none; }
   #races-b .row .col-9 {
-    max-width: 100%; }
+    max-width: 100%;
+    padding: 0; }
     #races-b .row .col-9 #myScrollspy {
-      text-align: center; }
+      text-align: center;
+      padding: 0; }
       #races-b .row .col-9 #myScrollspy #course-info .course-marking {
         flex-direction: column; }
         #races-b .row .col-9 #myScrollspy #course-info .course-marking .marking-content {
