@@ -371,12 +371,14 @@
                 .col-9 {
                     max-width: 100%;
                     padding: 0;
+                    flex: none;
 
                     #myScrollspy {
                         text-align: center;
-                        padding: 0;
+                        // padding: 0;
 
                         #course-info {
+                            padding: 0;
                             .course-marking {
                                 flex-direction: column;
 
@@ -392,6 +394,7 @@
                         }
 
                         #course-maps {
+                            padding: 0;
                             .ascent-and-max-elevation {
                                 flex-direction: column;
                                 margin-bottom: 1rem;
@@ -407,11 +410,12 @@
                         }
 
                         #aid-station {
+                            padding: 0;
                             //horizontal scroll table?
                         }
     
                         #racer-info {
-
+                            padding: 0;
                             .locations {
                                 flex-direction: column;
                             }
@@ -426,6 +430,7 @@
                         }
     
                         #results-entrants {
+                            padding: 0;
                             a {
                                 margin-bottom: 1rem;
                             }
