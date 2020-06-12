@@ -565,6 +565,8 @@ img {
     #header-home .header-content a {
       padding: 1rem 3rem;
       font-size: 1.3rem; }
+  #header-inner ul.contact {
+    margin-bottom: 1rem; }
   #home-a {
     margin-bottom: 3rem; }
     #home-a .items {
@@ -581,7 +583,8 @@ img {
     align-items: center;
     padding-bottom: 3rem; }
   #home-b .about {
-    width: 100%; }
+    width: 100%;
+    margin-top: 0; }
     #home-b .about img {
       width: 100%; }
   #home-b .about-text {
@@ -685,7 +688,8 @@ img {
       font-size: 1rem;
       font-weight: normal; }
   #home-b .about {
-    padding: 0; }
+    padding: 0;
+    margin-top: 1rem; }
   #home-b .about-text {
     padding: 0; }
   #home-c .section-title {
