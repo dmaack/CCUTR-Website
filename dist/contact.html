@@ -18,9 +18,9 @@
         <!-- <div class="container">-->
             <nav id="main-nav" class="top nav-bg">
                 <a class='logo-link' href="index.html"><img src="img/logo.png" alt="Corner Canyon Trail Run Logo" id="logo" /></a>
-                <ul>
+                <ul class='contact'>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href=""> Races <i class="fas fa-angle-down"></i>  </a>
+                    <li><a href="#"> Races <i class="fas fa-angle-down"></i>  </a>
                         <ul class='sub-menu'>
                             <li><a href="50k.html" class="race-link">50k</a></li>
                             <li><a href="25k.html" class="race-link">25k</a></li>
@@ -28,7 +28,7 @@
                         </ul>
                             
                     </li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html" ></a>About</a></li>
                     <li><a href="contact.html" class="current">Contact</a></li>
                 </ul>
             </nav>
@@ -121,27 +121,28 @@
         </footer>
 
 
-    <script>
-        const navbar = document.getElementById('main-nav');
-        let scrolled = false;
-
-        window.onscroll = function() {
-            if(window.pageYOffset > 20 ) {
-                navbar.classList.remove('top');
-                navbar.style.zIndex = '15';
-                //navbar.style.color = '#333';
-                if(!scrolled) {
-                    navbar.style.transform = 'translateY(-70px)';
+        <script>
+            const navbar = document.getElementById('main-nav');
+            let scrolled = false;
+    
+            window.onscroll = function() {
+                if(window.pageYOffset > 20 ) {
+                    navbar.classList.remove('top');
+                    navbar.style.zIndex = '15';
+                    // navbar.style.paddingTop = '1rem';
+                    // navbar.style.paddingBottom = '1rem';
+                    if(!scrolled) {
+                        navbar.style.transform = 'translateY(-70px)';
+                    }
+                    setTimeout(() => {
+                        navbar.style.transform = 'translateY(0)';
+                        scrolled = true;
+                    }, 200)
+                } else {
+                    navbar.classList.add('top');
+                    scrolled = false;
                 }
-                setTimeout(() => {
-                    navbar.style.transform = 'translateY(0)';
-                    scrolled = true;
-                }, 200)
-            } else {
-                navbar.classList.add('top');
-                scrolled = false;
             }
-        }
-    </script>
+        </script>
 </body>
 </html>

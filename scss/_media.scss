@@ -33,6 +33,12 @@
                  }
             }
         }
+
+       &-inner {
+           ul.contact {
+               margin-bottom: 1rem;
+           }
+       }
     }
 
     // Home Page 
@@ -42,7 +48,7 @@
             margin-bottom: 3rem;
             .items {
                 grid-template-columns: repeat(1, 1fr);
-                width: 600px;
+                // width: 600px;
                 margin: 0 auto;
             }
 
@@ -69,7 +75,7 @@
 
             .about {
                 width: 100%;
-                // margin-bottom: 2rem;
+                margin-top: 0;
                 img {
                     width: 100%;
                 }
@@ -268,16 +274,8 @@
         &-inner {
             height: 10rem;
 
-            ul {
-                // padding: 1rem 0;
-
-                li {
-                    // padding: 0;
-
-                    a {
-                        // padding: 0 .8rem;
-                    }
-                }
+            ul.contact {
+                margin-bottom: 1rem;
             }
         }
             
@@ -308,6 +306,18 @@
                     font-size: 1rem;
                     font-weight: normal;
                 }
+            }
+        }
+
+        &-b {
+
+            .about {
+                padding: 0;
+                margin-top: 1rem;
+            }
+
+            .about-text {
+                padding: 0;
             }
         }
 
@@ -360,11 +370,15 @@
 
                 .col-9 {
                     max-width: 100%;
+                    padding: 0;
+                    flex: none;
 
                     #myScrollspy {
                         text-align: center;
+                        // padding: 0;
 
                         #course-info {
+                            padding: 0;
                             .course-marking {
                                 flex-direction: column;
 
@@ -380,6 +394,7 @@
                         }
 
                         #course-maps {
+                            padding: 0;
                             .ascent-and-max-elevation {
                                 flex-direction: column;
                                 margin-bottom: 1rem;
@@ -395,11 +410,12 @@
                         }
 
                         #aid-station {
+                            padding: 0;
                             //horizontal scroll table?
                         }
     
                         #racer-info {
-
+                            padding: 0;
                             .locations {
                                 flex-direction: column;
                             }
@@ -414,6 +430,7 @@
                         }
     
                         #results-entrants {
+                            padding: 0;
                             a {
                                 margin-bottom: 1rem;
                             }
