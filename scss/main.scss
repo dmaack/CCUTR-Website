@@ -262,13 +262,17 @@ img {
             margin-bottom: 5rem;
         }
 
-        .item-image {
+        .item-content {
             position: relative;
             text-align: center;
             color: #fff;
             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
             font-size: 0;
             transition: all .2s ease-in-out;
+
+            overflow: hidden;
+            display: block;
+          
         
             .centered-text {
                 position: absolute;
@@ -287,9 +291,6 @@ img {
                 text-decoration: none;
 
                 &:hover {
-                    //background: #d0cbcb;
-                    //background: #ece9e9;
-                    //border: 2px solid $main-color;
                     background: $dark-color;
                     color: #fff;
                 }
@@ -309,7 +310,6 @@ img {
                 // transform: scale(1) translateX(5px) translateY(5px); 
                 //box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);  
                 transform: scale(1.1);
-                //border-bottom: 1px solid $main-color;
             }
 
         }
@@ -322,18 +322,10 @@ img {
         
         .container {
             display: flex;
-            // align-self: center;
-            justify-content: center;
-            //justify-content: space-between;
-            //border: 1px solid red;
-            
+            justify-content: center;      
         }
 
         .about {
-            //background-color: $medium-color;
-           // display: grid;
-            //grid-template-columns: repeat(2, 1fr);
-            // grid-gap: 3rem;
             padding: 0 1rem;
             margin: 6rem 0 0 0;
             width: 50%;
@@ -392,15 +384,12 @@ img {
 
     // Section: C - Sponsors
     &-c {
-        
-        //background: $medium-color;
         .sponsor {
             
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-gap: 2rem;
             margin-bottom: 3rem;
-            //border: 1px solid red;
 
             div:nth-child(11) {
                 grid-column: 2 / span 1;
@@ -440,11 +429,6 @@ img {
             width: 150px;
             height: 150px;
             margin-top: 2rem;
-
-            //border: 1px solid red;
-            //object-fit: cover;
-
-
         }
     }
 }
@@ -533,14 +517,11 @@ img {
                     
 
                     .marking-content {
-                        // width: 600px;
                         width: 60%;
                         padding-right: 1rem;
                     }
                     img {
                         width: 40%;
-                        // width: 500px;
-                        // height: 400px;
                         padding: 2rem;
                         object-fit: contain;
                     }
@@ -606,26 +587,20 @@ img {
     &-b {
         .container {
             display: flex;
-            //position: relative;
             justify-content: space-between;
             .who-we-are {
                 width: 50%;
                 h4 {
-                    //font-size: 1.2rem;
                     margin-bottom: 2rem;
                     font-weight: bold;
                 }
                 border-left: 2px solid $main-color;
-                // width: 600px;
-                // height: 200px;
                 top: 100;
                 left: 20;
                 line-height: 1.6;
                 padding-left: 1rem;
             }
             .john {
-                //display: inline-block;
-                //position: relative;
                 width: 500px;
                 top:75;
                 right: 300;
