@@ -754,7 +754,7 @@ img {
 
     &-a {
         display: flex;
-        justify-content: space-around;
+        // justify-content: space-around;
         margin: 4rem;
         
         .form {
@@ -763,9 +763,10 @@ img {
 
         .directors {
             padding-bottom: 2rem;
+            width: 50%;
         }
         .process {
-
+            // width: 50%;
             //process-icon
             &-image {
                 border-radius: 50%;
@@ -837,10 +838,9 @@ img {
 
             &:first-child {
                 border: 2px solid $main-color;
-                
                 border-radius: 5px;
                 margin-bottom: .5rem;
-                padding: .2rem;
+                padding: .2rem 1rem;
             }
 
             &:hover {

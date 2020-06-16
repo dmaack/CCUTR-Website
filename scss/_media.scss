@@ -1,4 +1,4 @@
-@media(max-width: 1200px) {
+@media(max-width: 1000px) {
     #home {
         &-a {
 
@@ -20,7 +20,7 @@
 
 
 // Tablet
-@media(max-width:900px) {
+@media(max-width:800px) {
 
     // Header  
     #header {
@@ -37,12 +37,6 @@
                  }
             }
         }
-
-       &-inner {
-           ul.contact {
-               margin-bottom: 1rem;
-           }
-       }
     }
 
     // Home Page 
@@ -52,7 +46,6 @@
             margin-bottom: 3rem;
             .items {
                 grid-template-columns: repeat(1, 1fr);
-                // width: 600px;
                 margin: 0 auto;
             }
 
@@ -74,7 +67,6 @@
                 flex-direction: column-reverse;
                 align-items: center;
                 padding-bottom: 3rem;
-                // justify-content: space-evenly;
             }
 
             .about {
@@ -170,6 +162,13 @@
            
             //     }
             // }
+            .about-info {
+                grid-template-areas: 
+                'bio'
+                'bio'
+                'bioimage';
+
+            }
         }
     }
 
@@ -185,7 +184,6 @@
             }
 
             .form {
-                // margin: 0;
                 width: 100%;
             }
 
@@ -211,15 +209,12 @@
         flex-direction: column;
 
         ul {
-            // flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 1rem 0;
         }
 
         li {
-            // display: block;
-            // position: relative;
             padding: 0;
 
             ul {
@@ -245,7 +240,6 @@
         &-home {
             height: 25rem;
             .header-content {
-                // display: none;
                 
                 h1 {
                     font-size: 2rem;
@@ -277,16 +271,6 @@
                 }
             }
         }
-
-        &-inner {
-            height: 10rem;
-
-            ul.contact {
-                margin-bottom: 1rem;
-            }
-        }
-            
-
     }
 
 
@@ -356,20 +340,12 @@
         &-a {
             .row p{
                 font-size: 1rem;
-                // display: flex;
-                // flex-direction: column;
-                // align-items: center;
-
-                .col-4 {
-                    // border-bottom: 1px solid black;
-                }
             }
         }
 
         &-b {
 
             .row {
-                // text-align: center;
 
                 .col-3 {
                     display: none;
@@ -382,7 +358,6 @@
 
                     #myScrollspy {
                         text-align: center;
-                        // padding: 0;
 
                         #course-info {
                             padding: 0;
@@ -473,7 +448,7 @@
             //         width: 325px;
             //     }
             // }
-            margin: 2rem auto;
+            // margin: 2rem auto;
             .about-info {
                 grid-template-areas: 
                 'bio'
@@ -487,6 +462,7 @@
     // Contact Page 
     #contact {
         &-a {
+           
             .text-fields {
                 grid-template-areas:
                 'name'
@@ -551,7 +527,4 @@
         }
     }
 } // closes media query
-    
 
-//800px
-//500px
