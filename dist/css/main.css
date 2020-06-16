@@ -428,24 +428,25 @@ img {
 #races-b #myScrollspy #results-entrants table {
   margin-top: 3rem; }
 
-#about-b .container {
-  display: flex;
-  justify-content: space-between; }
-  #about-b .container .who-we-are {
-    width: 50%;
-    border-left: 2px solid #28a745;
-    top: 100;
-    left: 20;
-    line-height: 1.6;
-    padding-left: 1rem; }
-    #about-b .container .who-we-are h4 {
-      margin-bottom: 2rem;
-      font-weight: bold; }
-  #about-b .container .john {
-    width: 500px;
-    top: 75;
-    right: 300;
-    opacity: 0.9; }
+#about-b .about-info {
+  display: grid;
+  grid-template-areas: 'bio bioimage bioimage';
+  grid-gap: 1.2rem; }
+
+#about-b .bio-image {
+  grid-area: bioimage; }
+
+#about-b .bio {
+  grid-area: bio;
+  border-left: 3px solid #28a745;
+  padding: 1rem;
+  text-align: left; }
+  #about-b .bio h4 {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  #about-b .bio p {
+    margin-top: 1rem;
+    font-size: 1.2rem; }
 
 #about-c {
   margin-top: 3rem; }
@@ -564,14 +565,16 @@ img {
     text-align: center;
     margin: 0 auto; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   #home-a .centered-text {
     font-size: 1rem;
     font-weight: 0; }
+  #home-a .centered-btn {
+    padding: .8rem 1.2rem; }
   #home-a a {
     padding: 0.6rem 1.2rem; } }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   #header-home .header-content {
     text-align: center; }
     #header-home .header-content h1 {
@@ -625,19 +628,6 @@ img {
       padding: 0; }
       #races-b .row #navScrollspy a {
         font-size: 1rem; }
-  #about-b .container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    #about-b .container .who-we-are {
-      width: 100%;
-      margin-bottom: 1.5rem; }
-      #about-b .container .who-we-are h4 {
-        font-size: 1.6rem; }
-      #about-b .container .who-we-are p {
-        font-size: 1.2rem; }
-    #about-b .container img {
-      width: auto; }
   #contact-a {
     flex-direction: column;
     margin-top: 1rem;
@@ -759,20 +749,15 @@ img {
           margin-bottom: 1rem; }
         #races-b .row .col-9 #myScrollspy #results-entrants table {
           margin-bottom: 3rem; }
-  #about-b .container {
-    flex-direction: column; }
-    #about-b .container .who-we-are {
-      width: 100%;
-      margin-bottom: 1.5rem; }
-    #about-b .container .john {
-      width: 325px; }
-  #contact-a {
-    margin: auto; }
-    #contact-a .text-fields {
-      grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
-    #contact-a .directors .process-image {
-      width: 300px;
-      height: 300px; }
+  #about-b {
+    margin: 2rem auto; }
+    #about-b .about-info {
+      grid-template-areas: 'bio' 'bio' 'bioimage'; }
+  #contact-a .text-fields {
+    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
+  #contact-a .directors .process-image {
+    width: 300px;
+    height: 300px; }
   #main-footer {
     font-size: 1.2rem; }
     #main-footer .footer-content {

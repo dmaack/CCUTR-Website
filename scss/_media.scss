@@ -1,10 +1,14 @@
-@media(max-width: 1000px) {
+@media(max-width: 1200px) {
     #home {
         &-a {
 
             .centered-text {
                 font-size: 1rem;
                 font-weight: 0;
+            }
+
+            .centered-btn {
+                padding: .8rem 1.2rem;
             }
 
             a {
@@ -16,7 +20,7 @@
 
 
 // Tablet
-@media(max-width:800px) {
+@media(max-width:900px) {
 
     // Header  
     #header {
@@ -141,28 +145,31 @@
     // About Page
     #about {
         &-b {
-            .container {
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+            // .container {
+            //     flex-direction: column;
+            //     justify-content: center;
+            //     align-items: center;
         
-                .who-we-are {
-                    width: 100%;
-                    margin-bottom: 1.5rem;
+            //     .who-we-are {
+            //         width: 100%;
+            //         margin-bottom: 1.5rem;
+                  
+                  
 
-                    h4 {
-                        font-size: 1.6rem;
-                    }
+            //         h4 {
+            //             font-size: 1.6rem;
+            //         }
 
-                    p {
-                        font-size: 1.2rem;
-                    }
-                }
+            //         p {
+            //             font-size: 1.2rem;
+            //         }
+            //     }
         
-                img {
-                   width: auto;
-                }
-            }
+            //     img {
+            //        width: auto;
+           
+            //     }
+            // }
         }
     }
 
@@ -454,17 +461,25 @@
     // About Page
     #about {
         &-b {
-            .container {
-                flex-direction: column;
+            // .container {
+            //     flex-direction: column;
         
-                .who-we-are {
-                    width: 100%;
-                    margin-bottom: 1.5rem;
-                }
+            //     .who-we-are {
+            //         width: 100%;
+            //         margin-bottom: 1.5rem;
+            //     }
         
-                .john {
-                    width: 325px;
-                }
+            //     .john {
+            //         width: 325px;
+            //     }
+            // }
+            margin: 2rem auto;
+            .about-info {
+                grid-template-areas: 
+                'bio'
+                'bio'
+                'bioimage';
+
             }
         }
     }
@@ -472,8 +487,6 @@
     // Contact Page 
     #contact {
         &-a {
-            margin: auto;
-            //padding: 0;
             .text-fields {
                 grid-template-areas:
                 'name'

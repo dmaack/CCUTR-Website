@@ -575,28 +575,55 @@ img {
 
 #about {
     &-b {
-        .container {
-            display: flex;
-            justify-content: space-between;
-            .who-we-are {
-                width: 50%;
-                h4 {
-                    margin-bottom: 2rem;
-                    font-weight: bold;
-                }
-                border-left: 2px solid $main-color;
-                top: 100;
-                left: 20;
-                line-height: 1.6;
-                padding-left: 1rem;
-            }
-            .john {
-                width: 500px;
-                top:75;
-                right: 300;
-                opacity: 0.9;
+        // .container {
+        //     display: flex;
+        //     justify-content: space-between;
+        //     .who-we-are {
+        //         width: 60%;
+                
+        //         h4 {
+        //             margin-bottom: 2rem;
+        //             font-weight: bold;
+        //         }
+        //         border-left: 2px solid $main-color;
+        //         // top: 100;
+        //         // left: 20;
+        //         line-height: 1.6;
+        //         padding-left: 1rem;
+        //     }
+        //     .john {
+        //         width: 450px;
+        //         opacity: 0.9;
+        //     }
+
+        // }
+        .about-info {
+            display: grid;
+            grid-template-areas:
+            'bio bioimage bioimage';
+            grid-gap: 1.2rem;
+        }
+
+        .bio-image {
+            grid-area: bioimage;
+        }
+
+        .bio {
+            grid-area: bio;
+            border-left: 3px solid $main-color;
+            padding: 1rem;
+            text-align: left;
+
+            h4 {
+                font-size: 1.5rem;
+                font-weight: bold;
             }
 
+            p {
+                margin-top: 1rem;
+                // padding: 2rem;
+                font-size: 1.2rem;
+            }
         }
 
     }
