@@ -81,7 +81,6 @@ img {
         // Hide nested ul by default
         ul {
             display: none;
-            //border: 1px solid black;
         }
 
         &:hover {
@@ -99,12 +98,6 @@ img {
         
             li {
                 background: #fff;
-                // padding: 2rem;
-                // border-bottom: 1px solid black;
-                &:hover {
-                    //border-left: 3px solid $main-color;
-                    
-                }
 
                 a {
                     color: #333; 
@@ -113,8 +106,6 @@ img {
                 
                 &:hover {
                     background: #e0e0e0;
-                    
-                    //background: #fff;
                     color: inherit; 
                     
                 } 
@@ -222,7 +213,6 @@ img {
 
     // Header Inner
     &-inner {
-        //background: $dark-color;
         background: $bg-image no-repeat 40% 62% / cover;
         height: 6rem;
         border-bottom: 3px solid $main-color;
@@ -262,13 +252,17 @@ img {
             margin-bottom: 5rem;
         }
 
-        .item-image {
+        .item-content {
             position: relative;
             text-align: center;
             color: #fff;
             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
             font-size: 0;
             transition: all .2s ease-in-out;
+
+            overflow: hidden;
+            display: block;
+          
         
             .centered-text {
                 position: absolute;
@@ -287,9 +281,6 @@ img {
                 text-decoration: none;
 
                 &:hover {
-                    //background: #d0cbcb;
-                    //background: #ece9e9;
-                    //border: 2px solid $main-color;
                     background: $dark-color;
                     color: #fff;
                 }
@@ -309,7 +300,6 @@ img {
                 // transform: scale(1) translateX(5px) translateY(5px); 
                 //box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);  
                 transform: scale(1.1);
-                //border-bottom: 1px solid $main-color;
             }
 
         }
@@ -322,18 +312,10 @@ img {
         
         .container {
             display: flex;
-            // align-self: center;
-            justify-content: center;
-            //justify-content: space-between;
-            //border: 1px solid red;
-            
+            justify-content: center;      
         }
 
         .about {
-            //background-color: $medium-color;
-           // display: grid;
-            //grid-template-columns: repeat(2, 1fr);
-            // grid-gap: 3rem;
             padding: 0 1rem;
             margin: 6rem 0 0 0;
             width: 50%;
@@ -392,15 +374,12 @@ img {
 
     // Section: C - Sponsors
     &-c {
-        
-        //background: $medium-color;
         .sponsor {
             
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-gap: 2rem;
             margin-bottom: 3rem;
-            //border: 1px solid red;
 
             div:nth-child(11) {
                 grid-column: 2 / span 1;
@@ -440,11 +419,6 @@ img {
             width: 150px;
             height: 150px;
             margin-top: 2rem;
-
-            //border: 1px solid red;
-            //object-fit: cover;
-
-
         }
     }
 }
@@ -533,14 +507,11 @@ img {
                     
 
                     .marking-content {
-                        // width: 600px;
                         width: 60%;
                         padding-right: 1rem;
                     }
                     img {
                         width: 40%;
-                        // width: 500px;
-                        // height: 400px;
                         padding: 2rem;
                         object-fit: contain;
                     }
@@ -604,34 +575,55 @@ img {
 
 #about {
     &-b {
-        .container {
-            display: flex;
-            //position: relative;
-            justify-content: space-between;
-            .who-we-are {
-                width: 50%;
-                h4 {
-                    //font-size: 1.2rem;
-                    margin-bottom: 2rem;
-                    font-weight: bold;
-                }
-                border-left: 2px solid $main-color;
-                // width: 600px;
-                // height: 200px;
-                top: 100;
-                left: 20;
-                line-height: 1.6;
-                padding-left: 1rem;
-            }
-            .john {
-                //display: inline-block;
-                //position: relative;
-                width: 500px;
-                top:75;
-                right: 300;
-                opacity: 0.9;
+        // .container {
+        //     display: flex;
+        //     justify-content: space-between;
+        //     .who-we-are {
+        //         width: 60%;
+                
+        //         h4 {
+        //             margin-bottom: 2rem;
+        //             font-weight: bold;
+        //         }
+        //         border-left: 2px solid $main-color;
+        //         // top: 100;
+        //         // left: 20;
+        //         line-height: 1.6;
+        //         padding-left: 1rem;
+        //     }
+        //     .john {
+        //         width: 450px;
+        //         opacity: 0.9;
+        //     }
+
+        // }
+        .about-info {
+            display: grid;
+            grid-template-areas:
+            'bio bioimage bioimage';
+            grid-gap: 1.2rem;
+        }
+
+        .bio-image {
+            grid-area: bioimage;
+        }
+
+        .bio {
+            grid-area: bio;
+            border-left: 3px solid $main-color;
+            padding: 1rem;
+            text-align: left;
+
+            h4 {
+                font-size: 1.5rem;
+                font-weight: bold;
             }
 
+            p {
+                margin-top: 1rem;
+                // padding: 2rem;
+                font-size: 1.2rem;
+            }
         }
 
     }
@@ -764,7 +756,6 @@ img {
         display: flex;
         justify-content: space-around;
         margin: 4rem;
-        //border: 1px solid $main-color;
         
         .form {
             width: 50%;
@@ -774,9 +765,6 @@ img {
             padding-bottom: 2rem;
         }
         .process {
-            // display: grid;
-            // grid-template-columns: repeat(1, 1fr);
-            // text-align: center;
 
             //process-icon
             &-image {
@@ -817,7 +805,6 @@ img {
     .footer-content {
         display: flex;
         justify-content: space-between;
-        //height: 5rem;
         align-items: center;
 
     }
@@ -845,9 +832,7 @@ img {
         a {
             color: #fff;
             text-decoration: none;
-
             border-bottom: 3px transparent solid;
-            //padding-bottom: 0.5rem;
             transition: border-color .5s;
 
             &:first-child {
