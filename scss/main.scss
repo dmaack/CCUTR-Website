@@ -756,11 +756,12 @@ img {
 
     &-a {
         display: flex;
-        // justify-content: space-around;
+        // justify-content: space-between;
+        // align-items: center;
         margin: 4rem;
         
         .form {
-            width: 50%;
+            // width: 50%;
         }
 
         .directors {
@@ -768,7 +769,7 @@ img {
             
         }
         .process {
-            // width: 50%;
+            // width: 40%;
             //process-icon
             &-image {
                 border-radius: 50%;

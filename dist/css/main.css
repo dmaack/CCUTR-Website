@@ -487,8 +487,6 @@ img {
 #contact-a {
   display: flex;
   margin: 4rem; }
-  #contact-a .form {
-    width: 50%; }
   #contact-a .directors {
     padding-bottom: 2rem; }
   #contact-a .process-image {
