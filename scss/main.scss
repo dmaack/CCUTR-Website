@@ -436,7 +436,9 @@ img {
     }
 
     &-b {
-       
+       padding-left: 0;
+       padding-right: 0;
+
         span {
             color: red;
             font-size: 20px;
@@ -754,18 +756,20 @@ img {
 
     &-a {
         display: flex;
-        justify-content: space-around;
+        // justify-content: space-between;
+        // align-items: center;
         margin: 4rem;
         
         .form {
-            width: 50%;
+            // width: 50%;
         }
 
         .directors {
             padding-bottom: 2rem;
+            
         }
         .process {
-
+            // width: 40%;
             //process-icon
             &-image {
                 border-radius: 50%;
@@ -837,10 +841,9 @@ img {
 
             &:first-child {
                 border: 2px solid $main-color;
-                
                 border-radius: 5px;
                 margin-bottom: .5rem;
-                padding: .2rem;
+                padding: .2rem 1rem;
             }
 
             &:hover {
