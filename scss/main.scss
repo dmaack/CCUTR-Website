@@ -24,12 +24,10 @@ ul {
 }
 
 h1 {
-    // font-family: 'Open Sans', sans-serif;
     font-family: 'Lato', sans-serif;
 }
 
 h2, h3, h4 {
-    // font-family: 'Open Sans', sans-serif;
     font-family: 'Lato', sans-serif;
 }
 
@@ -114,7 +112,6 @@ img {
     }
 
     a {
-        //display: block; //makes underline the width of container
         text-decoration: none;
         color: #fff;
         text-transform: uppercase;
@@ -248,7 +245,6 @@ img {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 2rem;
-            padding: 1rem;
             margin-bottom: 5rem;
         }
 
@@ -259,7 +255,6 @@ img {
             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
             font-size: 0;
             transition: all .2s ease-in-out;
-
             overflow: hidden;
             display: block;
           
@@ -388,21 +383,27 @@ img {
             div:nth-child(2) {
                 padding-top: 2.5rem;
             }
+
             div:nth-child(3) {
                 padding-top: 1.5rem;
             }
+
             div:nth-child(4) {
                 padding-top: 1.5rem;
             }
+
             div:nth-child(5) {
                 padding-top: 2rem;
             }
+
             div:nth-child(6) {
                 padding-top: 2rem;
             }
+
             div:nth-child(7) {
                 padding-top: 2rem;
             }
+
             div:nth-child(8) {
                 padding-top: 2rem;
             }
@@ -410,6 +411,7 @@ img {
             div:nth-child(10) {
                 padding: 0 1.5rem 3rem 1.5rem;
             }
+
             div:nth-child(12) {
                 padding-top: 1rem;
             }
@@ -468,6 +470,7 @@ img {
                     margin-bottom: 2rem;
                 }
             }
+
             .nav-pills .nav-link.active {
                     background: #fff;
                     border-right: 3px solid $main-color;
@@ -479,7 +482,6 @@ img {
         }
 
         #myScrollspy {
-            // padding: 1rem 2rem 1rem 0;
             h4 {
                 margin-top: 2rem;
             }
@@ -505,13 +507,12 @@ img {
 
                 .course-marking {
                     display: flex;
-                    //justify-content: space-evenly;
                     
-
                     .marking-content {
                         width: 60%;
                         padding-right: 1rem;
                     }
+
                     img {
                         width: 40%;
                         padding: 2rem;
@@ -623,7 +624,6 @@ img {
 
             p {
                 margin-top: 1rem;
-                // padding: 2rem;
                 font-size: 1.2rem;
             }
         }
@@ -756,24 +756,17 @@ img {
 
     &-a {
         display: flex;
-        // justify-content: space-between;
-        // align-items: center;
         margin: 4rem;
-        
-        .form {
-            // width: 50%;
-        }
+       
 
         .directors {
             padding-bottom: 2rem;
             
         }
         .process {
-            // width: 40%;
             //process-icon
             &-image {
                 border-radius: 50%;
-                // background: $dark-color;
                 color: #fff;
                 padding: 1rem;
                 width: 350px;
@@ -783,14 +776,6 @@ img {
                 position: relative;
                 transition: all 1s;
                 object-fit: cover;
-
-                // hover
-                &:hover {
-                    //background-color: $main-color;
-                    // width: 215px;
-                    // height: 215px;
-                    //line-height: 70px;
-                }
             }
         }
 
