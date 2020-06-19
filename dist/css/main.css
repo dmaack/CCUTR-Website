@@ -232,7 +232,6 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  padding: 1rem;
   margin-bottom: 5rem; }
 
 #home-a .item-content {
@@ -573,7 +572,8 @@ img {
     margin-bottom: 3rem; }
     #home-a .items {
       grid-template-columns: repeat(1, 1fr);
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding: 1rem; }
     #home-a .item .centered-text {
       font-size: 5.5rem; }
     #home-a .item .centered-btn {
