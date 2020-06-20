@@ -16,8 +16,7 @@
 </head>
 <body>
 
-    <header id='header-inner'> <!-- id's for the single elements -->
-        <!-- <div class="container">-->
+    <header id='header-inner'> 
             <nav id="main-nav" class="top nav-bg">
                 <a class='logo-link' href="index.html"><img src="img/logo.png" alt="Corner Canyon Trail Run Logo" id="logo" /></a>
                 <ul>
@@ -34,7 +33,6 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-        <!-- </div> -->
     </header>
 
     <section id="about-a" class='text-center py-2'>
@@ -222,7 +220,6 @@
             </div>
             
         </div>
-        <!-- <p class="copyright">Copyright &copy; 2020. All Rights Reserved</p> -->
         <div class="copyright">
             <p> Copyright &copy; 2020. All Rights Reserved</p>
         </div>
@@ -236,8 +233,6 @@
             if(window.pageYOffset > 20 ) {
                 navbar.classList.remove('top');
                 navbar.style.zIndex = '15';
-                // navbar.style.paddingTop = '1rem';
-                // navbar.style.paddingBottom = '1rem';
                 if(!scrolled) {
                     navbar.style.transform = 'translateY(-70px)';
                 }
