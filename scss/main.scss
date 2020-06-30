@@ -821,25 +821,33 @@ img {
         a {
             color: #fff;
             text-decoration: none;
-            border-bottom: 3px transparent solid;
-            transition: border-color .5s;
+            // border-bottom: 3px transparent solid;
+            // transition: border-color .5s;
+            &:hover {
+                color: $main-color;
+            }
 
             &:first-child {
                 border: 2px solid $main-color;
                 border-radius: 5px;
                 margin-bottom: .5rem;
                 padding: .2rem 1rem;
-            }
-
-            &:hover {
-                border-color: $main-color;
-
-                &:first-child {
+                &:hover {
                     background-color: $main-color;
-                    
-                    
+                    color: #fff;
                 }
             }
+
+            &:last-child {
+                background-color: $dark-color;
+                border: none;
+                &:hover {
+                    color: $main-color;
+                    background-color: $dark-color;
+                } 
+            }
+
+            
 
         }
     }
