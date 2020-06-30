@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='keywords' content='corner canyon, trail running, utah, trail race, about corner canyon ultra trail run'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/8ed908e81d.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8ed908e81d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -197,18 +199,65 @@
         <div class="footer-content container">
 
             <div class="footer-links">
-                <a href="https://ultrasignup.com/register.aspx?did=75438" target='_blank' rel="noreferrer">Sign Up</a>
+                <a href="https://ultrasignup.com/register.aspx?did=75438" target='_blank' rel="noreferrer" class='btn'>Sign Up</a>
                 <a href="about.html">About Us</a>
                 <a href="contact.html">Contact Us</a>
 
+                <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header text-center">
+                      <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body mx-3">
+                      <div class="md-form mb-5">
+                        <i class="fas fa-user prefix grey-text"></i>
+                        <input type="text" id="form34" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                      </div>
+              
+                      <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="email" id="form29" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                      </div>
+              
+                      <div class="md-form mb-5">
+                        <i class="fas fa-tag prefix grey-text"></i>
+                        <input type="text" id="form32" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="form32">Subject</label>
+                      </div>
+              
+                      <div class="md-form">
+                        <i class="fas fa-pencil prefix grey-text"></i>
+                        <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                        <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                      </div>
+              
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="text-center">
+                <a href="#" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Become A Volunteer</a>
+              </div>
+
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalLong">
+                <!-- <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalLong">
                     Become A Volunteer
-                </button>
+                </button> -->
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <!-- <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -226,7 +275,7 @@
                         </div>
                     </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- <a href="#">Become a Volunteer</a> -->
             </div>
             
@@ -273,7 +322,6 @@
             }
         }
 
-        $('#exampleModalLong').modal('show')
     </script>
 
 </body>
