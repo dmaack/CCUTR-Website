@@ -189,10 +189,6 @@ img {
                     background:#136A1A;
                 }
             }
-
-            
-
-            
         }
 
         &::before { // overlay
@@ -356,7 +352,7 @@ img {
                 }
 
                 &:hover {
-                    background:#136A1A;
+                    background: $main-color;
 
                     &:first-child {
                         background: none;
