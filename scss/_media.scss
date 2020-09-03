@@ -1,0 +1,531 @@
+@media(max-width: 1000px) {
+    #home {
+        &-a {
+
+            .centered-text {
+                font-size: 1rem;
+                font-weight: 0;
+            }
+
+            .centered-btn {
+                padding: .8rem 1.2rem;
+            }
+
+            a {
+               padding: 0.6rem 1.2rem;
+           }
+        }
+    }
+}
+
+
+// Tablet
+@media(max-width:800px) {
+
+    // Header  
+    #header {
+        &-home {
+            .header-content {
+                text-align: center;
+                 h1 {
+                     margin: 1rem 2rem;
+                 }
+
+                 a {
+                     padding: 1rem 3rem;
+                     font-size: 1.3rem;
+                 }
+            }
+        }
+    }
+
+    // Home Page 
+    #home {
+        &-a {
+
+            margin-bottom: 3rem;
+            .items {
+                grid-template-columns: repeat(1, 1fr);
+                margin: 0 auto;
+                padding: 1rem;
+            }
+
+            .item {
+                .centered-text {
+                    font-size: 5.5rem;
+                }
+
+                .centered-btn {
+                    padding: 1.2rem 3rem;
+                    font-size: 1.3rem;
+                }
+            }
+            
+        }
+
+        &-b {
+            .container {
+                flex-direction: column-reverse;
+                align-items: center;
+                padding-bottom: 3rem;
+            }
+
+            .about {
+                width: 100%;
+                margin-top: 0;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .about-text {
+                width: 100%;
+
+                h2 {
+                    margin-top: 1.5rem;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                }
+
+                a {
+                    padding: 1rem 3rem;
+                    font-size: 1.3rem;
+
+                    &:first-child {
+                        padding: 0;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+
+        &-c {
+            .sponsor {
+                grid-template-columns: repeat(3, 1fr);
+                padding: 1rem;
+
+                div:nth-child(13) {
+                    grid-column: 2 / span 1;
+                }
+            
+                .sponsor-logo {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    // Race Pages 
+    #races {
+        
+        &-b {
+            .row {
+                margin: 0;
+
+                #navScrollspy {
+                    padding: 0;
+                    
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // About Page
+    #about {
+        &-b {
+            // .container {
+            //     flex-direction: column;
+            //     justify-content: center;
+            //     align-items: center;
+        
+            //     .who-we-are {
+            //         width: 100%;
+            //         margin-bottom: 1.5rem;
+                  
+                  
+
+            //         h4 {
+            //             font-size: 1.6rem;
+            //         }
+
+            //         p {
+            //             font-size: 1.2rem;
+            //         }
+            //     }
+        
+            //     img {
+            //        width: auto;
+           
+            //     }
+            // }
+            .about-info {
+                grid-template-areas: 
+                'bio'
+                'bio'
+                'bioimage';
+
+            }
+        }
+    }
+
+    // Contact Page 
+    #contact {
+        &-a {
+            flex-direction: column;
+            margin-top: 1rem;
+            padding: 0;
+
+            .lead {
+                font-size: 1.5rem;
+            }
+
+            .form {
+                width: 100%;
+            }
+
+            .directors {
+                margin-top: 2rem;
+
+            }
+        }
+
+    }
+
+}
+
+
+// Smartphone
+@media(max-width:500px) {
+
+    #logo {
+        display: none;
+    }
+    // Nav
+    #main-nav {
+        flex-direction: column;
+
+        ul {
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        li {
+            padding: 0;
+
+            ul {
+                li {
+                    padding: 1rem;
+
+                    a {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+
+            a {
+                padding: .8rem;
+                font-size: 1rem;
+            }
+        }
+    }
+
+
+    // Header 
+    #header {
+        &-home {
+            height: 25rem;
+            .header-content {
+                
+                h1 {
+                    font-size: 2rem;
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    margin: 3rem 0 0 0;
+                    font-size: 1rem;
+                }
+
+                a {
+                    padding: .8rem 2rem;
+                    font-size: 1rem;
+                }
+            }
+
+            &.fiftyk-header, 
+            &.twentyfivek-header,
+            &.fivek-header {
+                h1 {
+                    font-size: 4rem;
+                    margin: 3rem 0 1rem 0;
+                }
+
+                p {
+                    margin-top: 0;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+
+    // Home Page 
+    #home {
+        
+        &-a {
+            .container {
+                padding: 0;
+            }
+            .section-title {
+                margin-top: 2rem;
+            }
+    
+            .items {
+                width: 100%;
+
+                .centered-text {
+                    font-size: 4rem;
+                }
+
+                .centered-btn {
+                    padding: .8rem 2rem;
+                    font-size: 1rem;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        &-b {
+
+            .about {
+                padding: 0;
+                margin-top: 1rem;
+            }
+
+            .about-text {
+                padding: 0;
+            }
+        }
+
+        &-c {
+
+            .section-title {
+                margin-top: 2rem;
+            }
+
+            .sponsor {
+                grid-template-columns: repeat(2, 1fr);
+
+                div:nth-child(11) {
+                    grid-column: 1 ;
+                }
+                div:nth-child(13) {
+                    grid-column: 1 ;
+                }
+
+                .sponsor-logo {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // Race Pages 
+    #races {
+        &-a {
+            .row p{
+                font-size: 1rem;
+            }
+        }
+
+        &-b {
+
+            .row {
+
+                .col-3 {
+                    display: none;
+                }
+
+                .col-9 {
+                    max-width: 100%;
+                    padding: 0;
+                    flex: none;
+
+                    #myScrollspy {
+                        text-align: center;
+
+                        #course-info {
+                            padding: 0;
+                            .course-marking {
+                                flex-direction: column;
+
+                                .marking-content {
+                                    width: auto;
+                                }
+
+                                img {
+                                    width: 100%;
+                                    padding: 1rem;
+                                }
+                            }
+                        }
+
+                        #course-maps {
+                            padding: 0;
+                            .ascent-and-max-elevation {
+                                flex-direction: column;
+                                margin-bottom: 1rem;
+                            }
+    
+                            .maps-buttons {
+                                flex-direction: column;
+    
+                                a:first-child {
+                                    margin-bottom: 1rem;
+                                }
+                            }
+                        }
+
+                        #aid-station {
+                            padding: 0;
+                            //horizontal scroll table?
+                        }
+    
+                        #racer-info {
+                            padding: 0;
+                            .locations {
+                                flex-direction: column;
+                            }
+
+                            a {
+                                margin-top: 1rem;
+    
+                                &:last-child {
+                                    margin-bottom: 1rem;
+                                }
+                            }
+                        }
+    
+                        #results-entrants {
+                            padding: 0;
+                            a {
+                                margin-bottom: 1rem;
+                            }
+
+                            table {
+                                margin-bottom: 3rem;
+                            }
+                        }
+
+
+                    } // closes myScrollspy
+
+                    
+                } // closes col-9
+            } // closes row
+                    
+        } // &-b
+    } // closes #races
+
+
+    // About Page
+    #about {
+        &-b {
+            // .container {
+            //     flex-direction: column;
+        
+            //     .who-we-are {
+            //         width: 100%;
+            //         margin-bottom: 1.5rem;
+            //     }
+        
+            //     .john {
+            //         width: 325px;
+            //     }
+            // }
+            // margin: 2rem auto;
+            .about-info {
+                grid-template-areas: 
+                'bio'
+                'bio'
+                'bioimage';
+
+            }
+        }
+    }
+
+    // Contact Page 
+    #contact {
+        &-a {
+           margin: 0;
+            .text-fields {
+                grid-template-areas:
+                'name'
+                'subject'
+                'email'
+                'phone'
+                'message';
+            }
+
+            .directors {
+                .process {
+                    &-image {
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+
+    // Footer
+    #main-footer {
+        font-size: 1.2rem;
+
+        .footer-content {
+            flex-direction: column;
+        }
+
+        .address {
+            margin-top: 1.2rem;
+
+            p.strong {
+                font-size: 1.2rem;
+                margin-bottom: 0;
+            }
+        }
+
+        .footer-links {
+
+            a:first-child {
+                padding: .2rem 2rem;
+            }
+        }
+
+        .social {
+            margin-top: 2rem;
+
+            .fab {
+                margin-right: 0;
+            }
+
+            a:last-child {
+                margin-left: 2rem;
+            }
+        }
+
+        .copyright {
+            margin: 0 auto;
+        }
+    }
+} // closes media query
+
