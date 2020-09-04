@@ -272,8 +272,9 @@ img {
                 text-decoration: none;
 
                 &:hover {
-                    background: $dark-color;
-                    color: #fff;
+                    // background: $dark-color;
+                    background: #dde0dd;
+                    // color: #fff;
                 }
             }
 
@@ -352,7 +353,7 @@ img {
                 }
 
                 &:hover {
-                    background: $main-color;
+                    background:#136A1A;
 
                     &:first-child {
                         background: none;
@@ -434,8 +435,7 @@ img {
     }
 
     &-b {
-       padding-left: 0;
-       padding-right: 0;
+        padding: 2rem 5rem;
 
         span {
             color: red;
@@ -629,55 +629,6 @@ img {
     &-c {
         margin-top: 3rem;
 
-        // .flip-card {
-        //     background-color: transparent;
-        //     width: 300px;
-        //     height: 300px;
-        //     perspective: 1000px;
-        //   }
-          
-        //   .flip-card-inner {
-        //     position: relative;
-        //     width: 100%;
-        //     height: 100%;
-        //     text-align: center;
-        //     transition: transform 0.6s;
-        //     transform-style: preserve-3d;
-        //     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        //   }
-          
-        //   .flip-card:hover .flip-card-inner {
-        //     transform: rotateY(180deg);
-        //   }
-          
-        //   .flip-card-front, .flip-card-back {
-        //     position: absolute;
-        //     width: 100%;
-        //     height: 100%;
-        //     -webkit-backface-visibility: hidden;
-        //     backface-visibility: hidden;
-        //   }
-          
-        //   .flip-card-front {
-        //     background-color: #bbb;
-        //     color: black;
-        //     img {
-        //         object-fit: cover;
-        //     }
-        //   }
-          
-        //   .flip-card-back {
-        //     background-color: $main-color;
-        //     color: white;
-        //     transform: rotateY(180deg);
-
-        //     h1 {
-        //         margin-top: 2rem;
-        //     }
-        //   }
-
-
-
         h4 {
             margin-bottom: 2rem;
         }
@@ -685,6 +636,17 @@ img {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
+
+            .card {
+                border: none;
+                border-radius: none;
+            }
+
+            .card-im, .card-img-top {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+
             img {
                 height: 200px;
                 
@@ -698,7 +660,8 @@ img {
 // Contact Page
 #contact {
     &-b {
-        margin-bottom: 3rem;
+        width: 70%;
+        margin-bottom: 5rem;
 
         .text-fields {
             display: grid;
@@ -752,11 +715,12 @@ img {
 
     &-a {
         display: flex;
-        margin: 4rem;
+        flex-direction: column;
+        margin: 2rem;
        
 
         .directors {
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
             
         }
         .process {
@@ -846,6 +810,8 @@ img {
             
 
         }
+
+
     }
 
     .social .fab {

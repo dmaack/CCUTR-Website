@@ -172,7 +172,7 @@ img {
   #header-home * {
     z-index: 10; }
   #header-home.fiftyk-header {
-    background: url("../img/Rattlertrail.jpg") no-repeat center right/cover;
+    background: url("../img/aspens.jpg") no-repeat center right/cover;
     height: 40vh; }
   #header-home.twentyfivek-header {
     background: url("../img/greentrees.jpg") no-repeat center right/cover;
@@ -257,8 +257,7 @@ img {
     font-weight: bold;
     text-decoration: none; }
     #home-a .item-content .centered-btn:hover {
-      background: #0B0F09;
-      color: #fff; }
+      background: #dde0dd; }
   #home-a .item-content::before {
     content: '';
     position: absolute;
@@ -302,7 +301,7 @@ img {
         color: #28a745;
         margin-top: none; }
       #home-b .about-text a:hover {
-        background: #28a745; }
+        background: #136A1A; }
         #home-b .about-text a:hover:first-child {
           background: none; }
 
@@ -344,8 +343,7 @@ img {
     color: #0B0F09; }
 
 #races-b {
-  padding-left: 0;
-  padding-right: 0; }
+  padding: 2rem 5rem; }
   #races-b span {
     color: red;
     font-size: 20px;
@@ -445,12 +443,19 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; }
+    #about-c .recipients .card {
+      border: none;
+      border-radius: none; }
+    #about-c .recipients .card-im, #about-c .recipients .card-img-top {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
     #about-c .recipients img {
       height: 200px;
       object-fit: cover; }
 
 #contact-b {
-  margin-bottom: 3rem; }
+  width: 70%;
+  margin-bottom: 5rem; }
   #contact-b .text-fields {
     display: grid;
     grid-template-areas: 'name email' 'subject phone' 'message message';
@@ -485,9 +490,10 @@ img {
 
 #contact-a {
   display: flex;
-  margin: 4rem; }
+  flex-direction: column;
+  margin: 2rem; }
   #contact-a .directors {
-    padding-bottom: 2rem; }
+    padding-bottom: 1rem; }
   #contact-a .process-image {
     border-radius: 50%;
     color: #fff;
@@ -611,12 +617,14 @@ img {
       grid-column: 2 / span 1; }
     #home-c .sponsor .sponsor-logo {
       margin: 0 auto; }
-  #races-b .row {
-    margin: 0; }
-    #races-b .row #navScrollspy {
-      padding: 0; }
-      #races-b .row #navScrollspy a {
-        font-size: 1rem; }
+  #races-b {
+    padding: 0; }
+    #races-b .row {
+      margin: 0; }
+      #races-b .row #navScrollspy {
+        padding: 0; }
+        #races-b .row #navScrollspy a {
+          font-size: 1rem; }
   #about-b .about-info {
     grid-template-areas: 'bio' 'bio' 'bioimage'; }
   #contact-a {
