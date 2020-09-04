@@ -574,28 +574,6 @@ img {
 
 #about {
     &-b {
-        // .container {
-        //     display: flex;
-        //     justify-content: space-between;
-        //     .who-we-are {
-        //         width: 60%;
-                
-        //         h4 {
-        //             margin-bottom: 2rem;
-        //             font-weight: bold;
-        //         }
-        //         border-left: 2px solid $main-color;
-        //         // top: 100;
-        //         // left: 20;
-        //         line-height: 1.6;
-        //         padding-left: 1rem;
-        //     }
-        //     .john {
-        //         width: 450px;
-        //         opacity: 0.9;
-        //     }
-
-        // }
         .about-info {
             display: grid;
             grid-template-areas:
@@ -614,8 +592,9 @@ img {
             text-align: left;
 
             h4 {
-                font-size: 1.5rem;
+                font-size: 1.7rem;
                 font-weight: bold;
+                margin-bottom: 35px;
             }
 
             p {
