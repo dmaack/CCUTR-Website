@@ -429,8 +429,9 @@ img {
   padding: 1rem;
   text-align: left; }
   #about-b .bio h4 {
-    font-size: 1.5rem;
-    font-weight: bold; }
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 35px; }
   #about-b .bio p {
     margin-top: 1rem;
     font-size: 1.2rem; }
